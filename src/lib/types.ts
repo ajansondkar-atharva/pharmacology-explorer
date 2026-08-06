@@ -126,6 +126,7 @@ export interface Monograph {
   safety?: Safety;
 
   interactions?: DrugInteraction[];
+  interactionNotes?: string[];  // free-text notes migrated from v1
   indications?: string[];
   guidelines?: string[];    // short guideline recs this drug features in
   clinicalPearls?: string[];

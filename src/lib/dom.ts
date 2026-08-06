@@ -8,11 +8,11 @@ export type ElAttrs = Record<string, unknown> & {
   text?: string;
 };
 
-export function el<K extends keyof HTMLElementTagNameMap>(
-  tag: K,
+export function el(
+  tag: string,
   attrs: ElAttrs = {},
   ...children: Array<Node | string | number | null | undefined | false>
-): HTMLElementTagNameMap[K] {
+): HTMLElement {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
     if (k === 'html') {
