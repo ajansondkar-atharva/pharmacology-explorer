@@ -1,0 +1,238 @@
+[
+  {
+    "id": "gerd",
+    "name": "Gastroesophageal reflux disease (GERD)",
+    "system": "gi",
+    "summary": "Retrograde flow of gastric contents causing troublesome symptoms and/or mucosal injury. The most common acid-related condition in ambulatory care.",
+    "pathophysiology": "Transient lower esophageal sphincter relaxations (tLESRs) allow reflux of acid and pepsin; mucosal defense fails with prolonged exposure. Risk factors include obesity, hiatus hernia, and pregnancy. Complications: erosive esophagitis, stricture, Barrett esophagus, aspiration.",
+    "diagnosis": "Typical symptoms (heartburn, regurgitation) justify an empiric trial; endoscopy when alarm features (dysphagia, weight loss, bleeding, anemia) or refractory symptoms are present.",
+    "guidelines": [
+      { "body": "ACG", "grade": "B", "rec": "An 8-week trial of a standard-dose PPI before the first meal is the empiric therapy of choice for typical GERD." },
+      { "body": "ACG", "grade": "C", "rec": "PPIs are the most effective agents for healing erosive esophagitis and maintaining remission." },
+      { "body": "ACG", "grade": "B", "rec": "Lifestyle modification (weight loss, head-of-bed elevation, avoiding late meals) complements but does not replace pharmacotherapy." },
+      { "body": "ACG", "grade": "B", "rec": "Refractory GERD (no response to adequate PPI) warrants adherence/timing review before escalating; consider PCABs or pH-impedance testing referral." }
+    ],
+    "treatmentTiers": [
+      { "tier": "First-line", "label": "Standard PPI 30–60 min before breakfast", "evidence": "B", "drugIds": ["omeprazole", "esomeprazole", "pantoprazole", "rabeprazole"] },
+      { "tier": "Alternative", "label": "H2-receptor antagonist (as-needed milder disease), antacids/alginate for breakthrough", "evidence": "C", "drugIds": [] },
+      { "tier": "Refractory / nocturnal", "label": "Dual delayed-release PPI or PCAB; reconsider adherence first", "evidence": "C", "drugIds": ["dexlansoprazole", "vonoprazan"] }
+    ],
+    "keyDrugIds": ["omeprazole", "esomeprazole", "pantoprazole", "rabeprazole", "lansoprazole", "dexlansoprazole", "vonoprazan"],
+    "refs": [
+      { "label": "ACG Clinical Guideline on GERD Management", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/34807007/" },
+      { "label": "ACG Clinical Guideline: Esophageal Reflux", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/28719599/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Guideline statements distilled from ACG clinical guidelines; grades reflect the published guideline ratings." }
+  },
+  {
+    "id": "peptic-ulcer-disease",
+    "name": "Peptic ulcer disease",
+    "system": "gi",
+    "summary": "Disruption of the gastroduodenal mucosa exceeding the muscularis mucosae — most often from H. pylori infection or NSAID use.",
+    "pathophysiology": "Imbalance between aggressive factors (acid, pepsin, H. pylori virulence) and mucosal defense. H. pylori colonizes the antral mucosa and impairs somatostatin/acid feedback; NSAIDs suppress mucosal prostaglandins. Complications: bleeding, perforation, gastric outlet obstruction.",
+    "diagnosis": "Endoscopy is the gold standard; non-invasive H. pylori testing (urea breath test, stool antigen) for young patients without alarm features.",
+    "guidelines": [
+      { "body": "ACG", "grade": "B", "rec": "Test for H. pylori in all patients with active or past peptic ulcer disease; treat if positive, with post-treatment confirmation." },
+      { "body": "ACG", "grade": "A", "rec": "Eradication therapy: clarithromycin triple therapy where resistance <15%, otherwise bismuth quadruple therapy (PPI + bismuth + metronidazole + tetracycline) for 14 days." },
+      { "body": "ACG", "grade": "A", "rec": "NSAID-associated ulcers: stop the NSAID if possible; PPI co-therapy for the duration if it must continue." },
+      { "body": "ACG", "grade": "B", "rec": "H. pylori-negative, NSAID-negative ulcers should raise suspicion for other causes (Zollinger–Ellison, Crohn, malignancy)." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Eradication", "label": "PPI + antibiotics (clarithromycin triple or bismuth quadruple), 10–14 days", "evidence": "A", "drugIds": ["omeprazole", "amoxicillin", "metronidazole"] },
+      { "tier": "Ulcer healing", "label": "PPI once daily for 4–8 weeks; longer for large/complicated ulcers", "evidence": "A", "drugIds": ["omeprazole", "pantoprazole"] },
+      { "tier": "Prevention", "label": "PPI co-therapy for continuing NSAID users at risk", "evidence": "A", "drugIds": ["omeprazole", "pantoprazole"] }
+    ],
+    "keyDrugIds": ["omeprazole", "pantoprazole", "amoxicillin", "metronidazole", "vonoprazan"],
+    "refs": [
+      { "label": "ACG Clinical Guideline: H. pylori Infection", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/27775977/" },
+      { "label": "ACG Clinical Guideline: Peptic Ulcer Disease", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/20458881/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "acne-vulgaris",
+    "name": "Acne vulgaris",
+    "system": "derm",
+    "summary": "Chronic inflammatory disease of the pilosebaceous unit — the most common skin condition treated by physicians.",
+    "pathophysiology": "Four interacting mechanisms: follicular hyperkeratinization, increased sebum production, Cutibacterium acnes colonization, and inflammation. Androgens drive sebocyte activity. Scarring risk tracks disease severity and duration.",
+    "diagnosis": "Clinical. Classify by predominant lesion type (comedonal, inflammatory, nodulocystic) and severity to choose therapy.",
+    "guidelines": [
+      { "body": "AAD", "grade": "A", "rec": "Combination topical therapy (retinoid + benzoyl peroxide) is the preferred backbone for mild-to-moderate acne." },
+      { "body": "AAD", "grade": "A", "rec": "Topical retinoids are first-line for comedonal acne and as maintenance." },
+      { "body": "AAD", "grade": "B", "rec": "Topical antibiotics should be combined with benzoyl peroxide to limit resistance and should not be used as monotherapy." },
+      { "body": "AAD", "grade": "A", "rec": "Systemic isotretinoin is the most effective therapy for severe or scarring acne; pregnancy prevention is mandatory." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Comedonal", "label": "Topical retinoid monotherapy, introduced gradually", "evidence": "A", "drugIds": ["adapalene", "tretinoin", "tazarotene"] },
+      { "tier": "Mild–moderate inflammatory", "label": "Topical retinoid + benzoyl peroxide combination (± topical antibiotic bridged with BPO)", "evidence": "A", "drugIds": ["adapalene", "benzoyl-peroxide", "clindamycin-topical"] },
+      { "tier": "Moderate–severe", "label": "Add time-limited oral antibiotic (tetracycline class) as bridge; plan topical maintenance after", "evidence": "B", "drugIds": ["doxycycline"] },
+      { "tier": "Severe / scarring", "label": "Isotretinoin under specialist care (iPLEDGE-style pregnancy prevention)", "evidence": "A", "drugIds": ["isotretinoin"] }
+    ],
+    "keyDrugIds": ["adapalene", "tretinoin", "tazarotene", "benzoyl-peroxide", "clindamycin-topical", "isotretinoin", "azelaic-acid", "doxycycline"],
+    "refs": [
+      { "label": "AAD Guidelines of care for acne vulgaris management", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/27178169/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "rosacea",
+    "name": "Rosacea",
+    "system": "derm",
+    "summary": "Chronic inflammatory facial dermatosis with erythema, papulopustules, and telangiectasia; subtype-driven management.",
+    "pathophysiology": "Multifactorial: dysregulation of innate immunity (cathelicidin peptides), Demodex folliculorum overgrowth, neurovascular hyperreactivity, and UV exposure. Triggers (heat, alcohol, spicy food) provoke flushing.",
+    "diagnosis": "Clinical, based on phenotype: erythematotelangiectatic (ETR), papulopustular (PPR), phymatous, ocular.",
+    "guidelines": [
+      { "body": "AAD", "grade": "A", "rec": "Topical metronidazole, azelaic acid, or ivermectin are effective for papulopustular rosacea." },
+      { "body": "AAD", "grade": "B", "rec": "Subantimicrobial-dose doxycycline (40 mg) is effective and minimizes antibiotic resistance pressure." },
+      { "body": "AAD", "grade": "C", "rec": "Brimonidine or oxymetazoline topical agents reduce persistent facial erythema." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Papulopustular", "label": "Topical azelaic acid or metronidazole; add subantimicrobial doxycycline for moderate severity", "evidence": "A", "drugIds": ["azelaic-acid", "doxycycline", "metronidazole"] },
+      { "tier": "Erythema", "label": "Vasoconstrictor topicals (brimonidine/oxymetazoline) or laser for telangiectasia", "evidence": "B", "drugIds": [] }
+    ],
+    "keyDrugIds": ["azelaic-acid", "doxycycline", "metronidazole"],
+    "refs": [
+      { "label": "AAD ROSacea guidelines (2017)", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/28431212/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "medium", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "psoriasis",
+    "name": "Psoriasis",
+    "system": "derm",
+    "summary": "Immune-mediated inflammatory skin disease driven by IL-23/Th17 axis; plaque psoriasis is the most common form.",
+    "pathophysiology": "IL-23 → Th17 differentiation → IL-17A drives keratinocyte hyperproliferation and neutrophil recruitment. Genetic predisposition (HLA-Cw6), triggers include infection, stress, drugs.",
+    "diagnosis": "Clinical (sharply demarcated erythematous plaques with silvery scale); guttate, inverse, pustular, and erythrodermic variants exist.",
+    "guidelines": [
+      { "body": "AAD-NPF", "grade": "A", "rec": "Topical corticosteroids ± vitamin D analogs are first-line for mild plaque psoriasis." },
+      { "body": "AAD-NPF", "grade": "A", "rec": "Phototherapy (narrowband UVB) is effective for moderate disease." },
+      { "body": "AAD-NPF", "grade": "A", "rec": "Biologics targeting TNF, IL-17, IL-23 are highly effective for moderate-to-severe disease." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Mild", "label": "Topical corticosteroid ± vitamin D analog", "evidence": "A", "drugIds": [] },
+      { "tier": "Moderate", "label": "Phototherapy or systemic (methotrexate, apremilast)", "evidence": "A", "drugIds": [] },
+      { "tier": "Severe", "label": "Biologic therapy (IL-17/IL-23/TNF inhibitors)", "evidence": "A", "drugIds": [] }
+    ],
+    "keyDrugIds": [],
+    "refs": [
+      { "label": "AAD-NPF Joint AAD-NPF guidelines of care for psoriasis", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/31010713/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "medium", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "hypertension",
+    "name": "Hypertension",
+    "system": "cardio",
+    "summary": "Sustained elevation of arterial pressure; the leading modifiable risk factor for cardiovascular disease worldwide.",
+    "pathophysiology": "Chronic elevation of systemic vascular resistance; contributions from sodium handling (kidney), RAAS activation, sympathetic tone, and arterial stiffness. Target-organ damage: heart, brain, kidneys, eyes.",
+    "diagnosis": "Office BP ≥130/80 mmHg (ACC/AHA 2017) confirmed on repeated measurement; out-of-office confirmation (ABPM/home) recommended.",
+    "guidelines": [
+      { "body": "ACC/AHA", "grade": "A", "rec": "Initiate pharmacotherapy at BP ≥130/80 mmHg with ASCVD risk ≥10%, or ≥140/90 regardless of risk." },
+      { "body": "ACC/AHA", "grade": "A", "rec": "First-line classes: thiazide diuretics, ACE inhibitors, ARBs, and calcium channel blockers — alone or in combination." },
+      { "body": "ACC/AHA", "grade": "A", "rec": "Beta-blockers are not first-line unless a compelling indication (CAD, HFrEF, arrhythmia) exists." },
+      { "body": "ACC/AHA", "grade": "B", "rec": "Two-drug combination (often ACEi/ARB + CCB or thiazide) for stage 2 hypertension or ≥20/10 mmHg above goal." }
+    ],
+    "treatmentTiers": [
+      { "tier": "First-line", "label": "ACE inhibitor or ARB, CCB, or thiazide — alone or combined", "evidence": "A", "drugIds": ["lisinopril", "losartan", "amlodipine"] },
+      { "tier": "Compelling indications", "label": "Beta-blocker for CAD/HF; ACEi/ARB for diabetes/CKD; consider mineralocorticoid antagonist for resistant HTN", "evidence": "A", "drugIds": ["metoprolol", "bisoprolol"] }
+    ],
+    "keyDrugIds": ["amlodipine", "lisinopril", "losartan", "metoprolol", "bisoprolol"],
+    "refs": [
+      { "label": "2017 ACC/AHA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/29133354/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "type-2-diabetes",
+    "name": "Type 2 diabetes mellitus",
+    "system": "endo",
+    "summary": "Progressive disorder of insulin resistance and relative insulin deficiency; management is individualized around glycemia, weight, and cardiovascular risk.",
+    "pathophysiology": "Peripheral insulin resistance plus progressive pancreatic beta-cell dysfunction. Visceral adiposity drives ectopic lipid accumulation and inflammation. Complications: microvascular (retinopathy, nephropathy, neuropathy) and macrovascular (ASCVD).",
+    "diagnosis": "A1c ≥6.5%, fasting glucose ≥126 mg/dL, 2-h OGTT ≥200 mg/dL, or random glucose ≥200 mg/dL with symptoms.",
+    "guidelines": [
+      { "body": "ADA", "grade": "A", "rec": "Metformin is the preferred initial agent for most people with T2DM (also consider earlier combination therapy)." },
+      { "body": "ADA", "grade": "A", "rec": "In patients with ASCVD, HF, or CKD, an SGLT2 inhibitor and/or GLP-1 receptor agonist with proven benefit is recommended regardless of A1c." },
+      { "body": "ADA", "grade": "A", "rec": "GIP/GLP-1 receptor agonists are preferred where weight loss is a goal." },
+      { "body": "ADA", "grade": "B", "rec": "Individualize glycemic targets (A1c <7% for most non-pregnant adults; less stringent for frailty/hypoglycemia risk)." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Initial", "label": "Metformin + lifestyle (or earlier combination for high A1c)", "evidence": "A", "drugIds": ["metformin"] },
+      { "tier": "ASCVD/HF/CKD", "label": "Add SGLT2 inhibitor (HF/CKD) and/or GLP-1 RA (ASCVD) with proven benefit", "evidence": "A", "drugIds": ["empagliflozin", "semaglutide"] },
+      { "tier": "Insulin", "label": "Basal insulin when catabolic symptoms or A1c very high, or when other agents insufficient", "evidence": "A", "drugIds": ["insulin-glargine"] }
+    ],
+    "keyDrugIds": ["metformin", "empagliflozin", "semaglutide", "insulin-glargine"],
+    "refs": [
+      { "label": "ADA Standards of Care in Diabetes (pharmacologic approaches to glycemic treatment)", "type": "guideline", "id": "https://diabetesjournals.org/care/issue/48/Supplement_1" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "asthma",
+    "name": "Asthma",
+    "system": "resp",
+    "summary": "Chronic inflammatory airway disease with variable airflow obstruction and bronchial hyperresponsiveness.",
+    "pathophysiology": "Type-2 inflammation (IL-4/IL-5/IL-13) drives eosinophilia, mucus hypersecretion, and airway remodeling. Triggers: allergens, viruses, exercise, irritants. Diagnosis requires variable expiratory airflow limitation (spirometry).",
+    "diagnosis": "Symptoms (wheeze, breathlessness, chest tightness, cough) + documented variable airflow obstruction (FEV1/FVC ratio <0.7 with bronchodilator response or PEF variability).",
+    "guidelines": [
+      { "body": "GINA", "grade": "A", "rec": "Preferred: as-needed low-dose ICS–formoterol for mild asthma (Track 1); SABA-only treatment is no longer recommended for adolescents/adults." },
+      { "body": "GINA", "grade": "A", "rec": "Controller therapy is ICS-based at every step; add LABA for moderate–severe disease (ICS–formoterol maintenance and reliever — MART)." },
+      { "body": "GINA", "grade": "A", "rec": "Add-on options at higher steps: long-acting muscarinic antagonist (LAMA), biologics for severe type-2 asthma." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Mild", "label": "As-needed low-dose ICS–formoterol (preferred) or low-dose ICS maintenance", "evidence": "A", "drugIds": ["budesonide-formoterol", "salbutamol"] },
+      { "tier": "Moderate", "label": "ICS–LABA maintenance and reliever (MART) or medium-dose ICS–LABA", "evidence": "A", "drugIds": ["budesonide-formoterol"] },
+      { "tier": "Severe", "label": "High-dose ICS–LABA + LAMA; consider biologics (anti-IgE/IL-5/IL-4Ra) and sputum-guided care", "evidence": "A", "drugIds": [] }
+    ],
+    "keyDrugIds": ["salbutamol", "budesonide-formoterol", "montelukast"],
+    "refs": [
+      { "label": "GINA 2024 Global Strategy for Asthma Management and Prevention", "type": "guideline", "id": "https://ginasthma.org/2024-report/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "copd",
+    "name": "Chronic obstructive pulmonary disease (COPD)",
+    "system": "resp",
+    "summary": "Preventable and treatable lung disease characterized by persistent airflow limitation, usually progressive.",
+    "pathophysiology": "Smoke/inhalant exposure → chronic inflammation, protease–antiprotease imbalance, oxidative stress; emphysema (alveolar destruction) + chronic bronchitis (mucus hypersecretion). Exacerbations accelerate decline.",
+    "diagnosis": "Post-bronchodilator FEV1/FVC <0.70 confirms persistent obstruction in the right clinical context.",
+    "guidelines": [
+      { "body": "GOLD", "grade": "A", "rec": "Smoking cessation is the single most effective intervention; vaccinate against influenza, pneumococcus, RSV, and COVID-19." },
+      { "body": "GOLD", "grade": "A", "rec": "Group E (high exacerbation risk): LAMA + LABA, with ICS added for eosinophil-guided benefit." },
+      { "body": "GOLD", "grade": "B", "rec": "SABA/SAMA as needed for all groups; LAMA preferred over LABA for monotherapy." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Group A", "label": "Bronchodilator as needed (SABA or SAMA)", "evidence": "B", "drugIds": ["salbutamol"] },
+      { "tier": "Group B", "label": "LAMA or LABA maintenance", "evidence": "A", "drugIds": [] },
+      { "tier": "Group E", "label": "LAMA + LABA; add ICS with eosinophilia (blood eos ≥300)", "evidence": "A", "drugIds": ["budesonide-formoterol"] }
+    ],
+    "keyDrugIds": ["salbutamol", "budesonide-formoterol"],
+    "refs": [
+      { "label": "GOLD 2024 Global Strategy for Prevention, Diagnosis and Management of COPD", "type": "guideline", "id": "https://goldcopd.org/2024-gold-report/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  },
+  {
+    "id": "community-acquired-pneumonia",
+    "name": "Community-acquired pneumonia",
+    "system": "resp",
+    "summary": "Acute infection of the pulmonary parenchyma acquired outside healthcare settings.",
+    "pathophysiology": "Aspiration of oropharyngeal flora or inhalation of aerosolized pathogens; Streptococcus pneumoniae remains the most common bacterial cause. Impaired host defenses, smoking, and age increase risk.",
+    "diagnosis": "Clinical (fever, cough, sputum, focal signs) + new infiltrate on imaging; severity scores (CURB-65/PSI) guide site of care.",
+    "guidelines": [
+      { "body": "IDSA/ATS", "grade": "A", "rec": "Outpatient, previously healthy, no resistance risk: amoxicillin or doxycycline." },
+      { "body": "IDSA/ATS", "grade": "A", "rec": "Outpatient with comorbidities or recent antibiotics: amoxicillin–clavulanate or cephalosporin + macrolide, or respiratory fluoroquinolone monotherapy." },
+      { "body": "IDSA/ATS", "grade": "B", "rec": "Empiric coverage must include atypical pathogens (Legionella, Mycoplasma) in most settings." }
+    ],
+    "treatmentTiers": [
+      { "tier": "Outpatient, healthy", "label": "Amoxicillin 1 g TID or doxycycline 100 mg BID × 5 days", "evidence": "A", "drugIds": ["amoxicillin", "doxycycline"] },
+      { "tier": "Outpatient, comorbidity", "label": "Amox-clav ± macrolide or respiratory fluoroquinolone", "evidence": "A", "drugIds": ["amoxicillin"] },
+      { "tier": "Inpatient", "label": "Beta-lactam + macrolide (preferred) or respiratory fluoroquinolone", "evidence": "A", "drugIds": [] }
+    ],
+    "keyDrugIds": ["amoxicillin", "doxycycline"],
+    "refs": [
+      { "label": "IDSA/ATS 2019 Diagnosis and Treatment of Adults with Community-acquired Pneumonia", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/31573350/" }
+    ],
+    "provenance": { "source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1 }
+  }
+]

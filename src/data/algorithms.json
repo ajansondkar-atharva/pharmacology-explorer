@@ -1,0 +1,373 @@
+{
+  "acid": {
+    "start": "q_start",
+    "nodes": {
+      "q_start": {
+        "q": "What’s the primary clinical picture?",
+        "options": [
+          {
+            "label": "Typical GERD symptoms (heartburn, regurgitation), no alarm features",
+            "next": "q_gerd_freq"
+          },
+          {
+            "label": "Suspected peptic ulcer",
+            "next": "q_ulcer_cause"
+          },
+          {
+            "label": "Alarm features present (dysphagia, weight loss, bleeding, anemia)",
+            "next": "L_alarm"
+          },
+          {
+            "label": "NSAID therapy planned or ongoing — assessing GI protection need",
+            "next": "q_nsaid_risk"
+          },
+          {
+            "label": "H. pylori positive, planning eradication",
+            "next": "L_hpylori"
+          }
+        ]
+      },
+      "q_gerd_freq": {
+        "q": "How frequent or severe are the symptoms?",
+        "options": [
+          {
+            "label": "Mild, fewer than 2x/week",
+            "next": "L_mild_gerd"
+          },
+          {
+            "label": "Frequent (≥2x/week) or nocturnal symptoms",
+            "next": "q_gerd_consideration"
+          },
+          {
+            "label": "Breakthrough symptoms despite a standard PPI dose",
+            "next": "L_refractory"
+          }
+        ]
+      },
+      "q_gerd_consideration": {
+        "q": "Any specific consideration that changes the choice of agent?",
+        "options": [
+          {
+            "label": "Patient is on clopidogrel",
+            "next": "L_gerd_clopidogrel"
+          },
+          {
+            "label": "Needs flexible dosing / irregular meal schedule",
+            "next": "L_gerd_dexlansoprazole"
+          },
+          {
+            "label": "No specific interaction or scheduling concern",
+            "next": "L_gerd_standard"
+          }
+        ]
+      },
+      "q_ulcer_cause": {
+        "q": "Is there a clear associated cause?",
+        "options": [
+          {
+            "label": "NSAID-associated",
+            "next": "L_nsaid_ulcer"
+          },
+          {
+            "label": "Suspected H. pylori",
+            "next": "L_hpylori"
+          },
+          {
+            "label": "Neither clearly identified",
+            "next": "L_ulcer_general"
+          }
+        ]
+      },
+      "q_nsaid_risk": {
+        "q": "What’s the patient’s GI risk profile?",
+        "options": [
+          {
+            "label": "Low risk — young, no prior ulcer, short course",
+            "next": "L_nsaid_low_risk"
+          },
+          {
+            "label": "High risk — age 65+, prior ulcer, or on anticoagulant/steroid",
+            "next": "L_nsaid_high_risk"
+          }
+        ]
+      },
+      "L_alarm": {
+        "leaf": true,
+        "tone": "caution",
+        "title": "Alarm features — evaluate before treating empirically",
+        "rec": "Dysphagia, unintentional weight loss, GI bleeding, or anemia alongside acid symptoms warrant endoscopic evaluation before starting or escalating empiric acid suppression.",
+        "why": "These features raise the likelihood of a structural or malignant cause that acid suppression alone would mask rather than address."
+      },
+      "L_mild_gerd": {
+        "leaf": true,
+        "title": "Mild, infrequent GERD",
+        "rec": "Lifestyle measures (weight, meal timing, trigger avoidance) plus as-needed antacids or an H2 blocker are often sufficient before reaching for a PPI.",
+        "why": "Reserving PPIs for more frequent or severe symptoms avoids unnecessary long-term acid suppression for a problem that may not need it."
+      },
+      "L_gerd_standard": {
+        "leaf": true,
+        "title": "Standard once-daily PPI trial",
+        "rec": "A standard-dose PPI taken 30–60 minutes before the first meal, for a defined trial period (commonly 4–8 weeks), is the typical starting point.",
+        "why": "Pre-meal dosing maximizes the number of actively secreting pumps available for irreversible binding.",
+        "links": [
+          [
+            "ppi",
+            "omeprazole",
+            "See omeprazole"
+          ]
+        ]
+      },
+      "L_gerd_clopidogrel": {
+        "leaf": true,
+        "tone": "caution",
+        "title": "PPI choice matters here",
+        "rec": "Pantoprazole is generally preferred over omeprazole/esomeprazole given its lower CYP2C19 interaction potential.",
+        "why": "Reduces the theoretical risk of blunting clopidogrel’s antiplatelet activation.",
+        "links": [
+          [
+            "interactions",
+            null,
+            "Check this interaction"
+          ]
+        ]
+      },
+      "L_gerd_dexlansoprazole": {
+        "leaf": true,
+        "title": "Flexible-timing option",
+        "rec": "Dexlansoprazole’s dual delayed-release formulation allows dosing without strict regard to meals.",
+        "why": "The two-pulse release profile removes the pre-meal timing requirement that limits other PPIs.",
+        "links": [
+          [
+            "ppi",
+            "dexlansoprazole",
+            "See dexlansoprazole"
+          ]
+        ]
+      },
+      "L_refractory": {
+        "leaf": true,
+        "title": "Refractory GERD despite standard PPI",
+        "rec": "First confirm adherence and timing are correct; if truly refractory, a PCAB or specialist referral for pH/impedance testing is reasonable.",
+        "why": "PCABs achieve more complete, more consistent acid suppression — including overnight — without needing acid-catalyzed activation.",
+        "links": [
+          [
+            "ppi",
+            "vonoprazan",
+            "See vonoprazan"
+          ]
+        ]
+      },
+      "L_nsaid_ulcer": {
+        "leaf": true,
+        "title": "NSAID-associated ulcer",
+        "rec": "Stop the NSAID if possible and treat with a PPI course; if the NSAID must continue, co-prescribe a PPI long-term or consider a COX-2 selective agent if cardiovascular risk is low.",
+        "why": "Removing the causative agent, where feasible, matters as much as acid suppression itself.",
+        "links": [
+          [
+            "nsaid",
+            null,
+            "See NSAID tradeoffs"
+          ]
+        ]
+      },
+      "L_hpylori": {
+        "leaf": true,
+        "title": "H. pylori eradication",
+        "rec": "A combination regimen — a PPI or PCAB plus multiple antibiotics — for roughly 10–14 days, with the specific combination guided by local resistance patterns.",
+        "why": "Acid suppression alone doesn’t eradicate H. pylori; it’s combined with antibiotics both to improve antibiotic stability in the stomach and to support mucosal healing.",
+        "caution": "This reference doesn’t specify an exact regimen — eradication protocols vary by local resistance and current guidelines."
+      },
+      "L_ulcer_general": {
+        "leaf": true,
+        "title": "Ulcer, cause unclear",
+        "rec": "Test for H. pylori and review medication history (including over-the-counter NSAID or aspirin use) before starting empiric acid suppression.",
+        "why": "Identifying the cause changes the whole management plan, not just the acid-suppression choice."
+      },
+      "L_nsaid_low_risk": {
+        "leaf": true,
+        "title": "Low GI-risk NSAID use",
+        "rec": "Gastroprotection is often unnecessary for short, low-risk courses — use the lowest effective NSAID dose for the shortest reasonable duration.",
+        "why": "Routine co-prescribing for every NSAID course isn’t evidence-based when baseline risk is low."
+      },
+      "L_nsaid_high_risk": {
+        "leaf": true,
+        "title": "High GI-risk NSAID use",
+        "rec": "Co-prescribe a PPI for the duration of NSAID therapy, or consider a COX-2 selective agent if cardiovascular risk is also low.",
+        "why": "Risk factors compound — age, prior ulcer, and concurrent anticoagulant/steroid use each independently raise GI bleeding risk.",
+        "links": [
+          [
+            "nsaid",
+            null,
+            "See gastroprotection"
+          ]
+        ]
+      }
+    }
+  },
+  "acne": {
+    "start": "q_start",
+    "nodes": {
+      "q_start": {
+        "q": "What’s the predominant lesion type and severity?",
+        "options": [
+          {
+            "label": "Comedonal only (blackheads/whiteheads), no inflammation",
+            "next": "A_comedonal"
+          },
+          {
+            "label": "Mild–moderate inflammatory (scattered papules/pustules)",
+            "next": "q_mild_history"
+          },
+          {
+            "label": "Moderate–severe inflammatory, widespread",
+            "next": "q_moderate_consideration"
+          },
+          {
+            "label": "Severe nodulocystic acne / high scarring risk",
+            "next": "A_severe"
+          },
+          {
+            "label": "Mostly post-inflammatory marks, few active lesions",
+            "next": "A_marks"
+          }
+        ]
+      },
+      "q_mild_history": {
+        "q": "Prior treatment history?",
+        "options": [
+          {
+            "label": "Treatment-naive",
+            "next": "A_mild_first_line"
+          },
+          {
+            "label": "Tried a retinoid alone without enough benefit after 8–12 weeks",
+            "next": "A_mild_escalate"
+          }
+        ]
+      },
+      "q_moderate_consideration": {
+        "q": "Any specific consideration?",
+        "options": [
+          {
+            "label": "Pregnant or planning pregnancy",
+            "next": "A_pregnancy_safe"
+          },
+          {
+            "label": "Significant pigmentation/PIH concern alongside active acne",
+            "next": "A_moderate_pigmentation"
+          },
+          {
+            "label": "No specific consideration",
+            "next": "A_moderate_standard"
+          }
+        ]
+      },
+      "A_comedonal": {
+        "leaf": true,
+        "title": "Comedonal acne",
+        "rec": "A topical retinoid as monotherapy — adapalene is a reasonable, well-tolerated starting point — introduced gradually to manage the initial purge.",
+        "why": "Comedonal acne is primarily a keratinization problem; a retinoid addresses that mechanism directly without needing an antimicrobial partner yet.",
+        "links": [
+          [
+            "acne",
+            "adapalene",
+            "See adapalene"
+          ]
+        ]
+      },
+      "A_mild_first_line": {
+        "leaf": true,
+        "title": "Mild-moderate inflammatory acne — first line",
+        "rec": "A fixed-combination topical — typically a retinoid plus benzoyl peroxide — as the starting regimen.",
+        "why": "Combining a comedolytic and an antimicrobial/anti-inflammatory agent targets two separate pathogenic steps at once, which is why combinations outperform either ingredient alone.",
+        "links": [
+          [
+            "acne",
+            null,
+            "See regimen logic"
+          ]
+        ]
+      },
+      "A_mild_escalate": {
+        "leaf": true,
+        "title": "Escalating beyond a retinoid alone",
+        "rec": "Add benzoyl peroxide, or a topical antibiotic always paired with benzoyl peroxide, to the existing retinoid rather than switching retinoids first.",
+        "why": "Most \"retinoid failure\" at this stage is a missing second mechanism, not the wrong retinoid choice.",
+        "links": [
+          [
+            "acne",
+            "benzoyl-peroxide",
+            "See benzoyl peroxide"
+          ]
+        ]
+      },
+      "A_moderate_standard": {
+        "leaf": true,
+        "title": "Moderate-severe inflammatory acne",
+        "rec": "Topical retinoid + benzoyl peroxide as the ongoing backbone, plus a capped course (commonly a few months) of an oral antibiotic as a bridge, with a plan to step back down to topical maintenance once controlled.",
+        "why": "Oral antibiotics are meant to be time-limited — see the maintenance vs. flare framework.",
+        "links": [
+          [
+            "acne",
+            null,
+            "See maintenance vs. flare"
+          ]
+        ]
+      },
+      "A_pregnancy_safe": {
+        "leaf": true,
+        "tone": "caution",
+        "title": "Pregnancy-safe regimen",
+        "rec": "Azelaic acid as a core agent, given its established pregnancy safety profile; avoid oral and topical retinoids, oral tetracyclines, and isotretinoin entirely.",
+        "why": "Retinoids (all forms) and tetracyclines both carry pregnancy contraindications discussed in their individual entries.",
+        "links": [
+          [
+            "acne",
+            "azelaic-acid",
+            "See azelaic acid"
+          ]
+        ]
+      },
+      "A_moderate_pigmentation": {
+        "leaf": true,
+        "title": "Active acne with concurrent pigmentation",
+        "rec": "Azelaic acid or a retinoid alongside standard inflammatory acne therapy — both offer a genuine PIH benefit — rather than treating pigmentation only after acne clears.",
+        "why": "Turnover-based and tyrosinase-based pigment mechanisms can run in parallel with standard inflammatory treatment rather than waiting for it to finish.",
+        "links": [
+          [
+            "derm",
+            "pih",
+            "See the PIH handbook entry"
+          ]
+        ]
+      },
+      "A_severe": {
+        "leaf": true,
+        "tone": "caution",
+        "title": "Severe / scarring-risk acne",
+        "rec": "Refer for consideration of isotretinoin — the only option here aiming for durable remission rather than ongoing management — particularly given scarring risk. Topical and oral bridge therapy are reasonable while awaiting evaluation, not substitutes for it.",
+        "why": "Scarring risk changes the urgency calculus: delay itself carries a cost that milder acne doesn’t.",
+        "links": [
+          [
+            "acne",
+            "isotretinoin",
+            "See isotretinoin"
+          ]
+        ]
+      },
+      "A_marks": {
+        "leaf": true,
+        "title": "Mostly post-inflammatory marks",
+        "rec": "Redirect toward pigment-modulating agents (azelaic acid, niacinamide, or hydroquinone for stubborn marks) and daily sunscreen, rather than escalating antibacterial or anti-inflammatory therapy the current picture doesn’t need.",
+        "why": "Marks and active lesions need different tools — treating a resolved mark like active acne wastes the antimicrobial/anti-inflammatory strategy on a problem it can’t solve.",
+        "links": [
+          [
+            "acne",
+            "hydroquinone",
+            "See hydroquinone"
+          ]
+        ]
+      }
+    }
+  }
+}

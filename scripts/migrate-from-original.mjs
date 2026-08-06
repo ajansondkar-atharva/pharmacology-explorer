@@ -23,32 +23,35 @@ const FILE_DATE = existsSync(join(ROOT, 'reference', 'original.html'))
 mkdirSync(OUT_MONO, { recursive: true });
 mkdirSync(join(OUT_DATA, 'topics'), { recursive: true });
 
-/* ---------- balanced-bracket extractor (string/escape aware) ---------- */
-function extractArray(src, startIdx) {
-  let i = src.indexOf('[', startIdx);
-  if (i < 0) throw new Error('no [ found at ' + startIdx);
+/* ---------- balanced extractor (string/escape aware, [ ] or { }) ---------- */
+function extractBalanced(src, startIdx) {
+  let i = startIdx;
+  while (i < src.length && /\s/.test(src[i])) i++;
+  const open = src[i];
+  const close = open === '{' ? '}' : open === '[' ? ']' : null;
+  if (!close) throw new Error('not an object/array literal at ' + startIdx);
   let depth = 0;
   let inStr = null;
-  for (; i < src.length; i++) {
-    const c = src[i];
+  for (let j = i; j < src.length; j++) {
+    const c = src[j];
     if (inStr) {
-      if (c === '\\') i++;
+      if (c === '\\') j++;
       else if (c === inStr) inStr = null;
     } else if (c === '"' || c === "'") {
       inStr = c;
-    } else if (c === '[') {
+    } else if (c === open) {
       depth++;
-    } else if (c === ']') {
-      if (--depth === 0) return src.slice(startIdx, i + 1);
+    } else if (c === close) {
+      if (--depth === 0) return src.slice(i, j + 1);
     }
   }
-  throw new Error('unbalanced array from ' + startIdx);
+  throw new Error('unbalanced ' + open + ' from ' + startIdx);
 }
 
 function extractAssignment(src, pattern) {
   const m = src.match(pattern);
   if (!m) throw new Error('no match for ' + pattern);
-  return extractArray(src, src.indexOf('=', m.index) + 1);
+  return extractBalanced(src, src.indexOf('=', m.index) + 1);
 }
 
 const evalLit = (code) => Function('"use strict";return (' + code + ');')();
@@ -330,6 +333,14 @@ writeFileSync(join(OUT_DATA, 'topics', 'derm.json'), JSON.stringify(topics, null
 
 /* Mechanisms */
 writeFileSync(join(OUT_DATA, 'mechanisms.json'), JSON.stringify(DATA.mechanisms, null, 2) + '\n');
+
+/* Algorithms (decision trees) */
+const algoAcid = extractAssignment(SRC, /const ALGO_ACID\s*=\s*/);
+const algoAcne = extractAssignment(SRC, /const ALGO_ACNE\s*=\s*/);
+writeFileSync(
+  join(OUT_DATA, 'algorithms.json'),
+  JSON.stringify({ acid: walk(evalLit(algoAcid)), acne: walk(evalLit(algoAcne)) }, null, 2) + '\n'
+);
 
 /* Interactions (entities + pairs) */
 writeFileSync(
