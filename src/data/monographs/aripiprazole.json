@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "aripiprazole",
+  "name": "Aripiprazole",
+  "brandNames": ["Abilify"],
+  "class": "Atypical antipsychotic",
+  "classId": "atypical-antipsychotic",
+  "systems": ["psych"],
+  "summary": "A partial dopamine agonist atypical antipsychotic used in schizophrenia, bipolar disorder, and as an adjunct for major depression.",
+  "identifiers": {
+    "atc": ["N05AX12"],
+    "cas": "129722-12-9",
+    "drugbank": "DB01238"
+  },
+  "mechanism": "Partial agonist at D2 and 5-HT1A receptors and antagonist at 5-HT2A — stabilizes rather than abolishes dopamine tone.",
+  "targets": ["D2 receptor (partial agonist)", "5-HT1A receptor (partial agonist)", "5-HT2A receptor (antagonist)"],
+  "pharmacokinetics": {
+    "bioavailability": "~87% (oral)",
+    "halfLife": "~75 h (range 47–146 h); active metabolite ~94 h",
+    "proteinBinding": ">99%",
+    "onset": "Antipsychotic effect over days–weeks",
+    "duration": "24 h",
+    "metabolism": "Hepatic, CYP2D6 and CYP3A4 (substrate)",
+    "elimination": "Fecal (~55%) and renal (~25%), as metabolites",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Schizophrenia: 10–15 mg once daily; adjunct for depression: 2–5 mg to start",
+    "maxDose": "30 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Limited data; third-trimester antipsychotic exposure can cause neonatal extrapyramidal or withdrawal symptoms.",
+    "lactation": "Present in breast milk; limited data.",
+    "contraindications": ["Hypersensitivity to aripiprazole"],
+    "warnings": ["Boxed warning (antipsychotics): increased mortality in elderly patients with dementia-related psychosis", "Akathisia is common and can mimic agitation or anxiety", "Metabolic effects — weight gain and glucose/lipid changes (less than olanzapine, but present)", "Rare impulse-control disorders (e.g., pathological gambling) — FDA warning"],
+    "monitoring": ["Weight, glucose, lipids", "Movement disorders (AIMS)", "Mood and suicidality when used for depression"],
+    "adverseEffects": [{"effect": "Akathisia", "frequency": "common"}, {"effect": "Nausea", "frequency": "common"}, {"effect": "Insomnia", "frequency": "common"}, {"effect": "Weight gain", "frequency": "uncommon"}],
+    "overdose": "Sedation, tachycardia, and EPS; generally moderate toxicity — supportive care."
+  },
+  "indications": ["Schizophrenia", "Bipolar disorder (mania/mixed and maintenance)", "Adjunctive treatment of major depressive disorder", "Irritability in autistic disorder", "Tourette syndrome"],
+  "clinicalPearls": ["Akathisia is common and can masquerade as worsening anxiety — don't 'increase the dose' until it is excluded.", "Long half-life (~75 h) — several days to steady state; simple once-daily dosing."],
+  "good": "Psychosis or mood disorders where minimizing sedation and metabolic burden matters.",
+  "bad": "Patients bothered by akathisia, or with impulse-control vulnerability (rare gambling warning).",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "alprazolam",
+  "name": "Alprazolam",
+  "brandNames": ["Xanax"],
+  "class": "Benzodiazepine",
+  "classId": "benzodiazepine",
+  "systems": ["psych"],
+  "summary": "A fast-onset, short-acting benzodiazepine for panic and anxiety — effective short-term but with the highest abuse and withdrawal risk of the class.",
+  "identifiers": {
+    "atc": ["N05BA12"],
+    "cas": "28981-97-7",
+    "drugbank": "DB00404"
+  },
+  "mechanism": "Positive allosteric modulation of GABA-A receptors, enhancing inhibitory GABAergic transmission.",
+  "targets": ["GABA-A receptor (positive allosteric modulator)"],
+  "pharmacokinetics": {
+    "bioavailability": "~90% (oral)",
+    "halfLife": "~11–16 h",
+    "proteinBinding": "~80%",
+    "onset": "15–30 min",
+    "duration": "4–6 h (short–intermediate acting)",
+    "metabolism": "Hepatic, CYP3A4 (substrate)",
+    "elimination": "Renal (as metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "0.25–0.5 mg up to three times daily; panic disorder often 0.5–1 mg TID",
+    "maxDose": "4 mg/day (rarely up to 10 mg/day per label)"
+  },
+  "safety": {
+    "pregnancy": "Avoid; late-pregnancy use is linked to floppy infant syndrome and neonatal withdrawal.",
+    "lactation": "Enters breast milk; infant sedation possible.",
+    "contraindications": ["Severe respiratory insufficiency or sleep apnea", "Myasthenia gravis", "Acute narrow-angle glaucoma (per label)", "Concurrent opioids (avoid — FDA boxed warning)"],
+    "warnings": ["Boxed warning: dependence, abuse, and severe withdrawal (including seizures) with abrupt cessation", "Boxed warning: respiratory depression when combined with opioids", "Falls and cognitive impairment, especially in the elderly", "Highest abuse liability among common benzodiazepines (fast onset, short half-life)"],
+    "monitoring": ["Signs of dependence or dose escalation", "Fall risk in the elderly", "Respiratory status if opioids are involved"],
+    "adverseEffects": [{"effect": "Sedation", "frequency": "common"}, {"effect": "Ataxia or incoordination", "frequency": "common"}, {"effect": "Anterograde amnesia", "frequency": "common"}, {"effect": "Dependence", "frequency": "common"}],
+    "overdose": "Sedation and respiratory depression (especially with alcohol or opioids); flumazenil can reverse, with seizure risk."
+  },
+  "indications": ["Panic disorder (with or without agoraphobia)", "Anxiety disorders — short-term relief"],
+  "clinicalPearls": ["Fastest onset and shortest duration of the common benzodiazepines — the hardest to stop; taper very slowly.", "CYP3A4 substrate — azole antifungals and grapefruit can markedly raise levels."],
+  "good": "Short-term panic or anxiety relief when rapid onset is needed — with a clear plan to limit duration.",
+  "bad": "Long-term use, substance-use history, older adults, or concurrent opioids.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

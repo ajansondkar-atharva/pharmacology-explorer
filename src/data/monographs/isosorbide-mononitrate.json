@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "isosorbide-mononitrate",
+  "name": "Isosorbide Mononitrate",
+  "brandNames": ["Imdur"],
+  "class": "Nitrate (organic nitrate)",
+  "classId": "nitrate",
+  "systems": ["cardio"],
+  "summary": "The active metabolite of isosorbide dinitrate with near-complete oral bioavailability, used for long-term angina prophylaxis rather than acute relief.",
+  "identifiers": {
+    "atc": ["C01DA14"],
+    "cas": "16051-77-7",
+    "drugbank": "DB01020"
+  },
+  "mechanism": "Releases nitric oxide, raising vascular smooth muscle cGMP and causing venodilation (reduced preload) and arterial dilation (reduced afterload), decreasing myocardial oxygen demand.",
+  "targets": ["Vascular smooth muscle guanylate cyclase (via NO)"],
+  "pharmacodynamics": "Sustained antianginal effect with once- or twice-daily dosing; no role in acute angina.",
+  "pharmacokinetics": {
+    "bioavailability": "~100% (no first-pass metabolism)",
+    "halfLife": "4–6 h",
+    "proteinBinding": "<5%",
+    "onset": "~30 min (immediate-release)",
+    "duration": "4–6 h (immediate-release); up to 12 h (extended-release)",
+    "metabolism": "Minimal first-pass; denitration to inactive isosorbide",
+    "elimination": "Renal (inactive metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Extended-release: 30–60 mg once daily (range up to 120 mg); immediate-release: 20 mg twice daily with a 7 h interval",
+    "maxDose": "240 mg/day (extended-release)"
+  },
+  "safety": {
+    "pregnancy": "Use only if clearly needed (no adequate data)",
+    "lactation": "Caution (limited data)",
+    "contraindications": ["Concomitant PDE5 inhibitors (sildenafil, tadalafil, vardenafil)", "Concomitant riociguat", "Severe hypotension", "Cardiogenic shock"],
+    "warnings": ["Severe hypotension", "Tolerance with continuous dosing — maintain a nitrate-free interval", "Headache common at initiation"],
+    "monitoring": ["Blood pressure", "Heart rate", "Orthostatic symptoms / headache"],
+    "adverseEffects": [
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Flushing", "frequency": "common"},
+      {"effect": "Hypotension", "frequency": "common"},
+      {"effect": "Reflex tachycardia", "frequency": "uncommon"},
+      {"effect": "Syncope", "frequency": "uncommon"}
+    ],
+    "overdose": "Severe hypotension; supportive care"
+  },
+  "indications": ["Prevention of angina pectoris (long-term prophylaxis)", "Adjunct in chronic stable angina"],
+  "clinicalPearls": [
+    "Not for acute angina relief — onset is too slow; use sublingual nitroglycerin instead.",
+    "Once-daily extended-release dosing provides a built-in nitrate-free interval."
+  ],
+  "good": "Patients needing reliable daily angina prophylaxis with simple dosing.",
+  "bad": "Patients with hypotension or PDE5 inhibitor use; acute chest pain.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

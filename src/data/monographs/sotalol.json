@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sotalol",
+  "name": "Sotalol",
+  "brandNames": ["Betapace", "Sorine"],
+  "class": "Antiarrhythmic (class III with non-selective beta-blockade)",
+  "classId": "antiarrhythmic",
+  "systems": ["cardio"],
+  "summary": "A non-selective beta-blocker with added class III potassium channel blockade, useful for atrial and ventricular arrhythmias but carrying a dose-related torsades risk.",
+  "identifiers": {
+    "atc": ["C07AA07"],
+    "cas": "3930-20-9",
+    "drugbank": "DB00489"
+  },
+  "mechanism": "Non-selective beta-1/beta-2 adrenergic blockade combined with IKr potassium channel blockade, prolonging atrial and ventricular refractoriness.",
+  "targets": ["Beta-1/beta-2 adrenergic receptors", "Cardiac potassium channels (IKr)"],
+  "pharmacodynamics": "Prolongs QT interval and action potential duration; slows heart rate and AV conduction.",
+  "pharmacokinetics": {
+    "bioavailability": "~90–100%",
+    "halfLife": "~12 h",
+    "proteinBinding": "Negligible (0%)",
+    "volumeOfDistribution": "~1.2–2.4 L/kg",
+    "onset": "1–2 h (oral)",
+    "duration": "~12 h",
+    "metabolism": "None — excreted unchanged (no CYP involvement)",
+    "elimination": "Renal (unchanged)",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "80 mg twice daily initially, titrated (usual maintenance 120–160 mg twice daily for VT; up to 160 mg twice daily for AF)",
+    "renalAdjustment": "Extend dosing interval in renal impairment (e.g., once daily if CrCl 40–60 mL/min); avoid if CrCl <40 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Use only if clearly needed (crosses placenta; no adequate data)",
+    "lactation": "Caution (excreted in breast milk)",
+    "contraindications": ["Asthma or bronchospastic disease", "Sinus bradycardia or heart block without pacemaker", "Uncontrolled heart failure", "Long QT syndrome", "CrCl <40 mL/min"],
+    "warnings": ["Torsades de pointes — dose-related, especially with hypokalemia/hypomagnesemia or rapid titration", "Bradycardia and worsening heart failure", "Bronchospasm", "Rebound angina/hypertension on abrupt withdrawal (beta-blocker)"],
+    "monitoring": ["ECG with QTc before and after each dose increase", "Renal function", "Serum potassium and magnesium"],
+    "adverseEffects": [
+      {"effect": "Fatigue", "frequency": "common"},
+      {"effect": "Bradycardia", "frequency": "common"},
+      {"effect": "Dyspnea", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "QT prolongation / torsades de pointes", "frequency": "dose-related"},
+      {"effect": "Heart failure exacerbation", "frequency": "uncommon"}
+    ],
+    "overdose": "Bradycardia and hypotension; supportive care, pacing for severe bradycardia"
+  },
+  "indications": ["Ventricular arrhythmias (sustained VT/VF)", "Atrial fibrillation / flutter (rhythm control)", "Supraventricular tachycardias"],
+  "clinicalPearls": [
+    "Combines class III antiarrhythmic and beta-blocker effects in one drug.",
+    "Renally cleared — QTc monitoring during titration is mandatory, especially in older patients."
+  ],
+  "good": "Patients needing both rate control and rhythm control who can tolerate beta-blockade.",
+  "bad": "Patients with asthma, renal impairment, long QT, or unstable heart failure.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

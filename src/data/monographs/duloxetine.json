@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "duloxetine",
+  "name": "Duloxetine",
+  "brandNames": ["Cymbalta"],
+  "class": "SNRI",
+  "classId": "snri",
+  "systems": ["psych"],
+  "summary": "An SNRI that treats both mood and chronic pain conditions, including neuropathic pain and fibromyalgia.",
+  "identifiers": {
+    "atc": ["N06AX21"],
+    "cas": "116539-59-4",
+    "drugbank": "DB00476"
+  },
+  "mechanism": "Balanced inhibition of serotonin and norepinephrine reuptake; analgesic effects are mediated in part via descending pain pathways.",
+  "targets": ["SERT (serotonin transporter)", "NET (norepinephrine transporter)"],
+  "pharmacokinetics": {
+    "bioavailability": "~50% (variable, 30–80%)",
+    "halfLife": "~12 h (range 8–17 h)",
+    "proteinBinding": ">90%",
+    "onset": "2–6 weeks for antidepressant effect; pain relief may begin within 1–2 weeks",
+    "duration": "24 h",
+    "metabolism": "Hepatic, CYP1A2 and CYP2D6 (substrate)",
+    "elimination": "Renal (as metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "60 mg once daily (depression/GAD); 30 mg/day for the first week in some pain indications",
+    "maxDose": "120 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Limited data; no clear major-malformation signal.",
+    "lactation": "Enters breast milk; limited data — monitor infant.",
+    "contraindications": ["Concurrent MAOI use", "Uncontrolled narrow-angle glaucoma", "Severe hepatic impairment or end-stage renal disease"],
+    "warnings": ["Black-box warning: increased suicidality in children, adolescents, and young adults (≤24 y) early in treatment", "Hepatotoxicity — avoid in hepatic impairment and with heavy alcohol use", "Discontinuation syndrome — taper slowly", "Small dose-dependent blood-pressure rise"],
+    "monitoring": ["Liver enzymes", "Blood pressure", "Mood and suicidality early in treatment"],
+    "adverseEffects": [{"effect": "Nausea", "frequency": "common"}, {"effect": "Dry mouth and constipation", "frequency": "common"}, {"effect": "Somnolence or fatigue", "frequency": "common"}, {"effect": "Hepatotoxicity", "frequency": "rare"}],
+    "overdose": "Overdose causes serotonin syndrome and sedation; generally less dangerous than TCAs."
+  },
+  "indications": ["Major depressive disorder", "Generalized anxiety disorder", "Diabetic peripheral neuropathic pain", "Fibromyalgia", "Chronic musculoskeletal pain"],
+  "clinicalPearls": ["CYP1A2 substrate — smoking induces the enzyme and can meaningfully lower duloxetine levels.", "One drug covers mood plus neuropathic pain — a strong choice when the two co-occur."],
+  "good": "Depression or GAD with comorbid neuropathic pain, fibromyalgia, or chronic pain.",
+  "bad": "Hepatic disease, heavy alcohol use, or uncontrolled narrow-angle glaucoma.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

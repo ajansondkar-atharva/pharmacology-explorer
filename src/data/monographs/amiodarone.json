@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "amiodarone",
+  "name": "Amiodarone",
+  "brandNames": ["Cordarone", "Pacerone"],
+  "class": "Antiarrhythmic (class III with multi-channel and beta-blocking effects)",
+  "classId": "antiarrhythmic",
+  "systems": ["cardio"],
+  "summary": "The most effective antiarrhythmic across atrial and ventricular arrhythmias, at the price of a distinctive, slowly developing multi-organ toxicity profile and an enormous half-life.",
+  "identifiers": {
+    "atc": ["C01BD01"],
+    "cas": "1951-25-3",
+    "drugbank": "DB01118"
+  },
+  "mechanism": "Blocks cardiac potassium (IKr), sodium, and L-type calcium channels plus noncompetitive beta-adrenergic blockade, prolonging action potential duration and refractoriness in all cardiac tissue.",
+  "targets": ["Cardiac potassium channels (IKr)", "Cardiac sodium channels", "Cardiac L-type calcium channels", "Beta-adrenergic receptors"],
+  "pharmacodynamics": "Class III-dominant antiarrhythmic; prolongs QT, slows sinus rate and AV conduction.",
+  "pharmacokinetics": {
+    "bioavailability": "~50% (20–80%)",
+    "halfLife": "26–107 days (mean ~53 days)",
+    "proteinBinding": "~96%",
+    "volumeOfDistribution": "Very large (~60–500 L/kg)",
+    "onset": "IV: minutes to hours; oral: days to weeks",
+    "duration": "Weeks to months after discontinuation (tissue accumulation)",
+    "metabolism": "Hepatic (CYP3A4, CYP2C8) to active metabolite desethylamiodarone",
+    "elimination": "Fecal (major) and renal",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "Ventricular arrhythmias: oral loading 800–1600 mg/day for 1–3 weeks, then maintenance 100–400 mg/day; VF/pulseless VT arrest: IV 300 mg bolus (may repeat 150 mg)",
+    "maxDose": "400 mg/day (oral maintenance)",
+    "renalAdjustment": "No adjustment required (minimal renal elimination)"
+  },
+  "safety": {
+    "pregnancy": "Avoid — crosses placenta; fetal hypothyroidism and goiter (contains iodine)",
+    "lactation": "Avoid during breastfeeding",
+    "contraindications": ["Marked sinus bradycardia or high-grade AV block without pacemaker", "Severe sinus node dysfunction", "Iodine hypersensitivity", "Cardiogenic shock"],
+    "warnings": ["Pulmonary toxicity (pneumonitis/fibrosis) — can be fatal", "Thyroid dysfunction (hypo- or hyperthyroidism)", "Hepatotoxicity", "Corneal microdeposits; rare optic neuropathy", "Photosensitivity and blue-gray skin discoloration", "QT prolongation / proarrhythmia (especially with other QT-prolonging drugs)"],
+    "monitoring": ["Baseline and periodic chest imaging and pulmonary function", "Thyroid function tests (baseline, then every 6 months)", "Liver enzymes", "ECG (QT interval, heart rate)"],
+    "adverseEffects": [
+      {"effect": "Corneal microdeposits", "frequency": "common"},
+      {"effect": "Photosensitivity", "frequency": "common"},
+      {"effect": "Nausea / vomiting", "frequency": "common"},
+      {"effect": "Thyroid dysfunction", "frequency": "common"},
+      {"effect": "Pulmonary toxicity", "frequency": "uncommon"},
+      {"effect": "Hepatotoxicity", "frequency": "uncommon"}
+    ],
+    "overdose": "Supportive care; bradycardia/asystole treated with pacing and inotropes"
+  },
+  "indications": ["Ventricular tachycardia / fibrillation (including ICD storm)", "Atrial fibrillation (rhythm control)", "Supraventricular tachyarrhythmias refractory to other agents"],
+  "clinicalPearls": [
+    "Effects and toxicity persist for months after stopping due to the enormous half-life.",
+    "Screen for pulmonary and thyroid toxicity at baseline and periodically during therapy."
+  ],
+  "good": "Refractory or life-threatening arrhythmias when other agents fail.",
+  "bad": "Young patients, pregnancy, or long-term use without structured toxicity surveillance.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "lorazepam",
+  "name": "Lorazepam",
+  "brandNames": ["Ativan"],
+  "class": "Benzodiazepine",
+  "classId": "benzodiazepine",
+  "systems": ["psych"],
+  "summary": "An intermediate-acting benzodiazepine metabolized by glucuronidation only — the preferred BZD in hepatic impairment and a first-line IV agent for status epilepticus.",
+  "identifiers": {
+    "atc": ["N05BA06"],
+    "cas": "846-49-1",
+    "drugbank": "DB00186"
+  },
+  "mechanism": "Positive allosteric modulation of GABA-A receptors, enhancing inhibitory GABAergic transmission.",
+  "targets": ["GABA-A receptor (positive allosteric modulator)"],
+  "pharmacokinetics": {
+    "bioavailability": "Well absorbed orally; reliable IM absorption",
+    "halfLife": "~12–16 h (range 10–20 h)",
+    "proteinBinding": "~85–91%",
+    "onset": "30–60 min (oral); minutes (IV/IM)",
+    "duration": "6–8 h (intermediate acting)",
+    "metabolism": "Hepatic glucuronidation (no CYP involvement)",
+    "elimination": "Renal (as glucuronide metabolites)",
+    "routes": ["oral", "im", "iv"]
+  },
+  "dosing": {
+    "adult": "1–2 mg two to three times daily (usual 2–6 mg/day); 2–4 mg IV for status epilepticus",
+    "maxDose": "10 mg/day (oral)"
+  },
+  "safety": {
+    "pregnancy": "Avoid if possible; floppy infant syndrome with late-pregnancy use.",
+    "lactation": "Enters breast milk; infant sedation possible.",
+    "contraindications": ["Severe respiratory insufficiency or sleep apnea", "Myasthenia gravis", "Acute narrow-angle glaucoma (per label)", "Concurrent opioids (avoid — FDA boxed warning)"],
+    "warnings": ["Boxed warning: dependence, abuse, and withdrawal with long-term use", "Boxed warning: respiratory depression when combined with opioids", "Respiratory depression risk with IV administration", "Falls and cognitive impairment in the elderly"],
+    "monitoring": ["Fall risk in the elderly", "Dependence with long-term use", "Respiratory status (especially IV)"],
+    "adverseEffects": [{"effect": "Sedation", "frequency": "common"}, {"effect": "Dizziness", "frequency": "common"}, {"effect": "Ataxia", "frequency": "common"}, {"effect": "Amnesia", "frequency": "uncommon"}],
+    "overdose": "Sedation and respiratory depression (especially IV or with opioids); flumazenil reversal."
+  },
+  "indications": ["Anxiety disorders", "Status epilepticus (IV — first-line)", "Alcohol withdrawal", "Procedural premedication (IV/IM)", "Off-label: short-term insomnia"],
+  "clinicalPearls": ["No CYP metabolism — the preferred benzodiazepine in hepatic impairment and the elderly.", "Reliable IM absorption and a first-line IV status-epilepticus agent (with diazepam)."],
+  "good": "Anxiety in liver disease or the elderly; IV status epilepticus and procedural sedation.",
+  "bad": "Patients needing sustained around-the-clock anxiolysis (short duration), or long-term BZD therapy.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

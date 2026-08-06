@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "flecainide",
+  "name": "Flecainide",
+  "brandNames": ["Tambocor"],
+  "class": "Antiarrhythmic (class IC)",
+  "classId": "antiarrhythmic",
+  "systems": ["cardio"],
+  "summary": "A potent sodium channel blocker highly effective for atrial fibrillation and supraventricular tachycardias — strictly limited to patients without structural heart disease.",
+  "identifiers": {
+    "atc": ["C01BC04"],
+    "cas": "54143-55-4",
+    "drugbank": "DB01195"
+  },
+  "mechanism": "Use-dependent blockade of cardiac sodium channels, slowing atrial and ventricular conduction (QRS widening) with little effect on refractoriness; mild potassium channel block.",
+  "targets": ["Cardiac voltage-gated sodium channels (Nav1.5)"],
+  "pharmacodynamics": "Slows conduction velocity; prolongs PR and QRS intervals; mild negative inotropic effect.",
+  "pharmacokinetics": {
+    "bioavailability": "~85–90%",
+    "halfLife": "12–27 h (mean ~20 h)",
+    "proteinBinding": "~40%",
+    "metabolism": "Hepatic (CYP2D6) plus renal excretion of unchanged drug (~30%)",
+    "elimination": "Renal (~30% unchanged) and hepatic metabolites",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "100 mg every 12 h (range 50–150 mg every 12 h); IV 1–2 mg/kg over 10 min for conversion of atrial fibrillation",
+    "maxDose": "400 mg/day",
+    "renalAdjustment": "Start at 50 mg every 12 h if CrCl <35 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Use only if clearly needed (no adequate data)",
+    "lactation": "Caution (excreted in breast milk)",
+    "contraindications": ["Structural heart disease or coronary artery disease (CAST trial — increased mortality post-MI)", "Second- or third-degree AV block or bifascicular block without pacemaker", "Cardiogenic shock"],
+    "warnings": ["Proarrhythmia — never use in structural/ischemic heart disease (CAST)", "Negative inotrope — may worsen heart failure", "QRS widening >25% from baseline — reduce dose", "May aggravate sinus node dysfunction"],
+    "monitoring": ["ECG (QRS duration, PR interval)", "Flecainide trough levels (0.2–1.0 µg/mL) in renal/hepatic disease", "Echocardiogram if structural disease is suspected"],
+    "adverseEffects": [
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Visual disturbances (blurred vision, diplopia)", "frequency": "common"},
+      {"effect": "Dyspnea", "frequency": "common"},
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Proarrhythmia", "frequency": "uncommon"},
+      {"effect": "Worsening heart failure", "frequency": "uncommon"}
+    ],
+    "overdose": "Supportive care; sodium bicarbonate for widened QRS"
+  },
+  "indications": ["Atrial fibrillation (rhythm control, including 'pill-in-the-pocket')", "Paroxysmal supraventricular tachycardias (AVNRT, WPW)", "Sustained ventricular tachycardia only in patients without structural heart disease"],
+  "clinicalPearls": [
+    "The CAST trial showed increased mortality in post-MI patients — verify no structural/ischemic heart disease before use.",
+    "CYP2D6 poor metabolizers and drugs like amiodarone raise flecainide levels."
+  ],
+  "good": "Younger patients with structurally normal hearts and paroxysmal AF/SVT.",
+  "bad": "Any patient with coronary disease, prior MI, or impaired ventricular function.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

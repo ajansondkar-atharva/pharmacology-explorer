@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "diazepam",
+  "name": "Diazepam",
+  "brandNames": ["Valium"],
+  "class": "Benzodiazepine",
+  "classId": "benzodiazepine",
+  "systems": ["psych"],
+  "summary": "A long-acting benzodiazepine with active metabolites, widely used for alcohol withdrawal, seizures, and muscle spasm.",
+  "identifiers": {
+    "atc": ["N05BA01"],
+    "cas": "439-14-5",
+    "drugbank": "DB00829"
+  },
+  "mechanism": "Positive allosteric modulation of GABA-A receptors, enhancing inhibitory GABAergic transmission.",
+  "targets": ["GABA-A receptor (positive allosteric modulator)"],
+  "pharmacokinetics": {
+    "bioavailability": "Well absorbed (~100% oral)",
+    "halfLife": "~20–80 h (parent); active metabolites persist for days",
+    "proteinBinding": "~98%",
+    "onset": "30–60 min (oral); 1–3 min (IV)",
+    "duration": "Long — 24 h+, with cumulative active metabolites",
+    "metabolism": "Hepatic, CYP2C19 and CYP3A4 to active metabolite desmethyldiazepam",
+    "elimination": "Renal (as metabolites)",
+    "routes": ["oral", "iv", "im", "rectal"]
+  },
+  "dosing": {
+    "adult": "2–10 mg two to four times daily (usual 4–40 mg/day); 5–10 mg IV for status epilepticus or alcohol withdrawal",
+    "maxDose": "40 mg/day (oral)"
+  },
+  "safety": {
+    "pregnancy": "Avoid; floppy infant syndrome and neonatal withdrawal with late-pregnancy use.",
+    "lactation": "Enters breast milk; infant sedation possible.",
+    "contraindications": ["Severe respiratory insufficiency or sleep apnea", "Myasthenia gravis", "Severe hepatic impairment", "Concurrent opioids (avoid — FDA boxed warning)"],
+    "warnings": ["Boxed warning: dependence, abuse, and withdrawal with long-term use", "Boxed warning: respiratory depression when combined with opioids", "Accumulation in the elderly (long half-life plus active metabolites) — falls and oversedation", "Respiratory depression with IV use"],
+    "monitoring": ["Sedation and accumulation in the elderly", "Fall risk", "Dependence with long-term use"],
+    "adverseEffects": [{"effect": "Sedation", "frequency": "common"}, {"effect": "Ataxia", "frequency": "common"}, {"effect": "Confusion in the elderly", "frequency": "common"}, {"effect": "Dependence", "frequency": "common"}],
+    "overdose": "Prolonged sedation and respiratory depression; effects can persist for days due to active metabolites; flumazenil reversal."
+  },
+  "indications": ["Anxiety disorders", "Status epilepticus (IV)", "Alcohol withdrawal", "Muscle spasm", "Procedural sedation"],
+  "clinicalPearls": ["Active metabolites give a half-life of days — accumulates quickly in the elderly; use the lowest effective dose.", "Standard agent for alcohol withdrawal and muscle spasm; IM absorption is erratic — prefer oral or IV."],
+  "good": "Alcohol withdrawal, status epilepticus, or muscle spasm where a long-acting BZD is standard.",
+  "bad": "Elderly patients (accumulation), respiratory disease, or long-term daily use.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

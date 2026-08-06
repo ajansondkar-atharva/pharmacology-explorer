@@ -226,10 +226,10 @@
     ],
     "treatmentTiers": [
       { "tier": "Outpatient, healthy", "label": "Amoxicillin 1 g TID or doxycycline 100 mg BID × 5 days", "evidence": "A", "drugIds": ["amoxicillin", "doxycycline"] },
-      { "tier": "Outpatient, comorbidity", "label": "Amox-clav ± macrolide or respiratory fluoroquinolone", "evidence": "A", "drugIds": ["amoxicillin"] },
-      { "tier": "Inpatient", "label": "Beta-lactam + macrolide (preferred) or respiratory fluoroquinolone", "evidence": "A", "drugIds": [] }
+      { "tier": "Outpatient, comorbidity", "label": "Amox-clav ± macrolide or respiratory fluoroquinolone", "evidence": "A", "drugIds": ["amoxicillin", "azithromycin", "clarithromycin", "levofloxacin"] },
+      { "tier": "Inpatient", "label": "Beta-lactam + macrolide (preferred) or respiratory fluoroquinolone", "evidence": "A", "drugIds": ["ceftriaxone", "azithromycin", "levofloxacin"] }
     ],
-    "keyDrugIds": ["amoxicillin", "doxycycline"],
+    "keyDrugIds": ["amoxicillin", "doxycycline", "azithromycin", "clarithromycin", "levofloxacin", "ceftriaxone"],
     "refs": [
       { "label": "IDSA/ATS 2019 Diagnosis and Treatment of Adults with Community-acquired Pneumonia", "type": "guideline", "id": "https://pubmed.ncbi.nlm.nih.gov/31573350/" }
     ],

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "haloperidol",
+  "name": "Haloperidol",
+  "brandNames": ["Haldol"],
+  "class": "Typical antipsychotic",
+  "classId": "typical-antipsychotic",
+  "systems": ["psych"],
+  "summary": "A high-potency typical antipsychotic with powerful D2 antagonism — effective, inexpensive, and fast-acting, but EPS-prone with QT risk, especially IV.",
+  "identifiers": {
+    "atc": ["N05AD01"],
+    "cas": "52-86-8",
+    "drugbank": "DB00502"
+  },
+  "mechanism": "Potent D2 dopamine receptor antagonist (butyrophenone); weak α1 and H1 antagonism.",
+  "targets": ["D2 receptor (antagonist)"],
+  "pharmacokinetics": {
+    "bioavailability": "~60% (oral)",
+    "halfLife": "~12–38 h (oral); depot lasts weeks",
+    "proteinBinding": "~90%",
+    "onset": "IM: minutes–hours for agitation; antipsychotic effect over days–weeks",
+    "duration": "12–24 h (oral); 3–4 weeks (depot)",
+    "metabolism": "Hepatic, CYP3A4 and CYP2D6 (substrate)",
+    "elimination": "Fecal and renal (as metabolites)",
+    "routes": ["oral", "im", "iv"]
+  },
+  "dosing": {
+    "adult": "0.5–5 mg two to three times daily (usual 2–10 mg/day); 2–5 mg IM for acute agitation",
+    "maxDose": "100 mg/day (rarely needed above 10 mg)"
+  },
+  "safety": {
+    "pregnancy": "Long history of use with limited data; generally considered lower-risk among antipsychotics, but unproven.",
+    "lactation": "Enters breast milk; limited data.",
+    "contraindications": ["Coma or severe CNS depression", "Known QT prolongation (relative)"],
+    "warnings": ["Boxed warning (antipsychotics): increased mortality in elderly patients with dementia-related psychosis", "QT prolongation/torsades — highest with IV or high doses; monitor ECG and electrolytes", "Acute dystonia, parkinsonism, and akathisia are common (high-potency)", "Tardive dyskinesia and NMS with long-term use"],
+    "monitoring": ["EPS and movement disorders (AIMS)", "ECG and electrolytes with IV or high-dose use"],
+    "adverseEffects": [{"effect": "EPS", "frequency": "common"}, {"effect": "Akathisia", "frequency": "common"}, {"effect": "Sedation", "frequency": "common"}, {"effect": "QT prolongation", "frequency": "uncommon"}],
+    "overdose": "Severe EPS (dystonia), sedation, and QT prolongation; the IV route carries the highest cardiac risk."
+  },
+  "indications": ["Schizophrenia", "Acute psychosis and agitation", "Tourette syndrome", "Off-label: delirium"],
+  "clinicalPearls": ["Acute dystonia is common at initiation — prophylactic anticholinergics (e.g., benztropine) are often used.", "Avoid IV use when possible — it carries the highest torsades risk."],
+  "good": "Acute agitation, delirium, or psychosis needing a fast, potent, inexpensive typical antipsychotic.",
+  "bad": "QT risk, Parkinson's disease, or patients prone to EPS.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

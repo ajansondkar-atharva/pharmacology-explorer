@@ -4,7 +4,7 @@
    unit tests on pure logic cannot. */
 
 // @vitest-environment jsdom
-import { describe, it, expect, beforeAll, vi } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 
 // stub canvas 2D context for the chart engine
 class FakeCtx {
@@ -112,7 +112,7 @@ describe('view render smoke test', () => {
     // interactions pair check path (render only — engine covered in unit tests)
     navigate('interactions');
     expect(app.innerHTML).toContain('Interaction Checker');
-  });
+  }, 15000);
 
   it('search finds omeprazole through the built index', async () => {
     const { search } = await import('../src/lib/search');

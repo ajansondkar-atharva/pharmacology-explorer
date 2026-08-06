@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "trazodone",
+  "name": "Trazodone",
+  "brandNames": ["Desyrel"],
+  "class": "Atypical antidepressant (SARI)",
+  "classId": "atypical-antidepressant",
+  "systems": ["psych"],
+  "summary": "An atypical antidepressant (SARI) that today is used far more often at low doses as a hypnotic than at full antidepressant doses.",
+  "identifiers": {
+    "atc": ["N06AX05"],
+    "cas": "19794-93-5",
+    "drugbank": "DB00656"
+  },
+  "mechanism": "Antagonizes 5-HT2A receptors and weakly inhibits serotonin reuptake; strong H1 and α1-adrenergic antagonism drives sedation and hypotension.",
+  "targets": ["5-HT2A receptor (antagonist)", "SERT (serotonin transporter, weak inhibitor)", "H1 receptor (antagonist)"],
+  "pharmacokinetics": {
+    "halfLife": "~5–13 h (biphasic)",
+    "proteinBinding": "~89–95%",
+    "onset": "Sedation within 1 h; antidepressant effect 2–6 weeks",
+    "duration": "6–8 h (hypnotic effect)",
+    "metabolism": "Hepatic, CYP3A4 (major substrate)",
+    "elimination": "Renal (as metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Insomnia (off-label): 25–100 mg at bedtime; depression: 150 mg/day in divided doses, up to 400 mg/day",
+    "maxDose": "400 mg/day (outpatient); 600 mg/day inpatient"
+  },
+  "safety": {
+    "pregnancy": "Limited data.",
+    "lactation": "Limited data; present in breast milk.",
+    "contraindications": ["Concurrent MAOI use", "Recent myocardial infarction (per label)"],
+    "warnings": ["Priapism — rare but urgent; emergency care needed", "Orthostatic hypotension and syncope", "Sedation — driving and falls risk", "QT prolongation at higher doses"],
+    "monitoring": ["Signs of priapism (men)", "Orthostatic blood pressure", "Mood and suicidality"],
+    "adverseEffects": [{"effect": "Somnolence", "frequency": "common"}, {"effect": "Dizziness or orthostatic hypotension", "frequency": "common"}, {"effect": "Dry mouth", "frequency": "common"}, {"effect": "Priapism", "frequency": "rare"}],
+    "overdose": "Sedation, hypotension, and QT prolongation; priapism possible — supportive care."
+  },
+  "indications": ["Major depressive disorder", "Off-label: insomnia (low doses), anxiety disorders"],
+  "clinicalPearls": ["At 25–100 mg it behaves mainly as a hypnotic; antidepressant doses are 150 mg and above.", "Strong CYP3A4 substrate — potent CYP3A4 inhibitors can spike levels."],
+  "good": "Insomnia (especially in depression) and depression where sedation is desirable.",
+  "bad": "Men (priapism risk), orthostatic hypotension, or concurrent strong CYP3A4 inhibitors.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

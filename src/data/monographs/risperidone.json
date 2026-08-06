@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "risperidone",
+  "name": "Risperidone",
+  "brandNames": ["Risperdal"],
+  "class": "Atypical antipsychotic",
+  "classId": "atypical-antipsychotic",
+  "systems": ["psych"],
+  "summary": "An atypical antipsychotic with potent D2 blockade; dose-related EPS and prolactin elevation are its main drawbacks.",
+  "identifiers": {
+    "atc": ["N05AX08"],
+    "cas": "106266-06-2",
+    "drugbank": "DB00734"
+  },
+  "mechanism": "Antagonizes D2 and 5-HT2A receptors (plus α1 and H1); high 5-HT2A-to-D2 ratio at low doses.",
+  "targets": ["D2 receptor (antagonist)", "5-HT2A receptor (antagonist)", "α1-adrenergic receptor (antagonist)"],
+  "pharmacokinetics": {
+    "bioavailability": "~70% (oral)",
+    "halfLife": "~3 h (parent); ~20–24 h (active metabolite 9-hydroxyrisperidone)",
+    "proteinBinding": "~90% (parent); ~77% (metabolite)",
+    "onset": "Antipsychotic effect over days–weeks",
+    "duration": "24 h",
+    "metabolism": "Hepatic, CYP2D6 to active metabolite",
+    "elimination": "Renal (~70%, as metabolites)",
+    "routes": ["oral", "im"]
+  },
+  "dosing": {
+    "adult": "1–6 mg/day (start 1–2 mg; usual 2–6 mg for schizophrenia)",
+    "maxDose": "6 mg/day in most practice (label permits up to 16 mg)"
+  },
+  "safety": {
+    "pregnancy": "Limited data; third-trimester exposure can cause neonatal EPS or withdrawal.",
+    "lactation": "Present in breast milk; limited data.",
+    "contraindications": ["Hypersensitivity to risperidone or paliperidone"],
+    "warnings": ["Boxed warning (antipsychotics): increased mortality in elderly patients with dementia-related psychosis", "Hyperprolactinemia — galactorrhea, sexual dysfunction, bone effects", "EPS is dose-related — use the lowest effective dose", "Moderate weight gain and metabolic effects"],
+    "monitoring": ["Weight, glucose, lipids", "Prolactin-related symptoms", "Movement disorders (AIMS)"],
+    "adverseEffects": [{"effect": "EPS", "frequency": "common"}, {"effect": "Hyperprolactinemia", "frequency": "common"}, {"effect": "Weight gain", "frequency": "common"}, {"effect": "Orthostatic hypotension", "frequency": "uncommon"}],
+    "overdose": "Sedation, tachycardia, hypotension, and EPS; QT prolongation at high doses."
+  },
+  "indications": ["Schizophrenia", "Bipolar disorder (mania/mixed)", "Irritability in autistic disorder", "Tourette syndrome"],
+  "clinicalPearls": ["The active metabolite 9-hydroxyrisperidone is renally cleared — reduce the dose in renal impairment.", "EPS and prolactin elevation exceed other atypicals; keep the dose low."],
+  "good": "Psychosis or mania needing potent D2 blockade, with a long-acting injectable available.",
+  "bad": "Patients sensitive to EPS or prolactin-related side effects, or with significant renal impairment.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard psychopharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}
