@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clindamycin",
+  "name": "Clindamycin",
+  "brandNames": ["Cleocin"],
+  "class": "Lincosamide",
+  "classId": "lincosamide",
+  "systems": ["anti"],
+  "summary": "Lincosamide with potent anaerobic coverage and exotoxin suppression; useful for aspiration, dental, and skin infections.",
+  "identifiers": {"atc": ["J01FF01"], "cas": "18323-44-9", "drugbank": "DB01190"},
+  "mechanism": "Binds the 50S ribosomal subunit and inhibits bacterial protein synthesis (overlaps the macrolide binding site).",
+  "targets": ["50S ribosomal subunit"],
+  "pharmacodynamics": "Time-dependent killing with a prolonged post-antibiotic effect.",
+  "pharmacokinetics": {
+    "bioavailability": "~90% (oral)",
+    "halfLife": "~2-3 h",
+    "proteinBinding": "~90%",
+    "metabolism": "Hepatic (active metabolites)",
+    "elimination": "Biliary/fecal (predominantly); minor renal",
+    "routes": ["oral", "iv", "im"]
+  },
+  "dosing": {
+    "adult": "PO: 150-450 mg every 6-8 hours; IV: 600-900 mg every 8 hours",
+    "renalAdjustment": "Not required (predominantly non-renal clearance)"
+  },
+  "safety": {
+    "pregnancy": "Generally safe (category B)",
+    "lactation": "Compatible — monitor infant for GI effects",
+    "contraindications": ["Hypersensitivity to clindamycin/lincomycin"],
+    "warnings": ["C. difficile colitis — among the highest-risk antibiotics", "Poor CNS penetration — do not use for meningitis", "Rash/hypersensitivity (incl. rare SJS)"],
+    "monitoring": ["Diarrhea — prompt C. difficile testing", "LFTs in hepatic disease"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Nausea", "frequency": "common"},
+      {"effect": "C. difficile colitis", "frequency": "uncommon"},
+      {"effect": "Rash", "frequency": "uncommon"}
+    ]
+  },
+  "indications": ["Anaerobic infections (aspiration pneumonia, intra-abdominal, pelvic)", "Dental infections", "Skin and soft-tissue infections (incl. some MRSA)", "Adjunct in streptococcal toxic shock syndrome / necrotizing fasciitis (toxin suppression)"],
+  "clinicalPearls": ["Suppresses exotoxin synthesis — valuable adjunct in invasive group A strep disease", "C. difficile risk is high — avoid unless clearly indicated"],
+  "good": "Potent anaerobic coverage plus toxin suppression in invasive strep disease.",
+  "bad": "C. difficile risk, poor CNS penetration, and no Gram-negative activity.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "digoxin",
+  "name": "Digoxin",
+  "brandNames": ["Lanoxin"],
+  "class": "Cardiac glycoside",
+  "classId": "cardiac-glycoside",
+  "systems": ["cardio"],
+  "summary": "One of the oldest cardiovascular drugs, still used for rate control in atrial fibrillation and for symptom relief in heart failure with reduced ejection fraction despite a narrow therapeutic index.",
+  "identifiers": {"atc": ["C01AA05"], "cas": "20830-75-5", "drugbank": "DB00390"},
+  "mechanism": "Inhibits Na+/K+-ATPase, raising intracellular sodium and driving calcium entry via reverse-mode Na+/Ca2+ exchange, which increases contractility; vagomimetic effects slow AV nodal conduction.",
+  "targets": ["Na+/K+-ATPase (sodium-potassium ATPase)"],
+  "pharmacodynamics": "Positive inotropy with decreased AV nodal conduction and heart-rate slowing at therapeutic doses.",
+  "pharmacokinetics": {
+    "bioavailability": "~60–80% (tablets)",
+    "halfLife": "~36–48 h (normal renal function)",
+    "proteinBinding": "~20–25%",
+    "volumeOfDistribution": "~5–7 L/kg",
+    "onset": "IV: 5–30 min; oral: 1–2 h",
+    "duration": "Days (accumulates in tissue)",
+    "metabolism": "Partial hepatic and gut metabolism (~10–16%)",
+    "elimination": "Renal (mostly unchanged)",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "0.125–0.25 mg once daily (lower doses in elderly, renal impairment, or low body weight)",
+    "maxDose": "0.5 mg/day (maintenance)",
+    "renalAdjustment": "Reduce dose in renal impairment — renal excretion dominates"
+  },
+  "safety": {
+    "pregnancy": "Category C (crosses placenta)",
+    "lactation": "Excreted in milk (low amounts); generally compatible with infant monitoring",
+    "contraindications": ["Ventricular fibrillation", "Ventricular tachycardia (unless digoxin-induced)", "Hypertrophic obstructive cardiomyopathy", "Atrial fibrillation with Wolff-Parkinson-White syndrome", "Second/third-degree AV block"],
+    "warnings": ["Narrow therapeutic index — toxicity presents as GI upset, visual disturbance, and arrhythmias", "Hypokalemia and hypomagnesemia markedly increase toxicity", "Renal impairment accumulates the drug", "Levels rise with amiodarone, verapamil, and quinidine — reduce dose or monitor"],
+    "monitoring": ["Trough digoxin levels (draw ≥6–8 h after dose; HF target ~0.5–0.9 ng/mL)", "Serum potassium and magnesium", "Renal function and heart rate/ECG"],
+    "adverseEffects": [
+      {"effect": "Nausea/anorexia", "frequency": "common"},
+      {"effect": "Visual disturbances (yellow-green halos)", "frequency": "uncommon"},
+      {"effect": "Bradycardia/AV block", "frequency": "uncommon"},
+      {"effect": "Arrhythmias (e.g. bidirectional VT, SVT with block)", "frequency": "uncommon"},
+      {"effect": "Confusion", "frequency": "uncommon"},
+      {"effect": "Gynecomastia", "frequency": "rare"}
+    ],
+    "overdose": "Nausea, confusion, and life-threatening arrhythmias; treat with digoxin-specific Fab antibody fragments, potassium management, and pacing."
+  },
+  "indications": ["Rate control in atrial fibrillation (especially with heart failure)", "Heart failure with reduced ejection fraction with symptoms despite ACE inhibitor, beta blocker, and MRA", "Heart failure with reduced ejection fraction and concomitant atrial fibrillation"],
+  "clinicalPearls": ["In HFrEF the DIG trial supports trough levels of 0.5–0.9 ng/mL — higher adds toxicity without benefit.", "Hypokalemia is the classic precipitant of digoxin toxicity because it sensitizes the myocardium to the drug."],
+  "good": "AF with rapid ventricular response in HFrEF, and symptomatic HFrEF already on guideline-directed therapy.",
+  "bad": "Renal impairment without dose reduction, hypokalemia, WPW with AF, or high-grade AV block.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

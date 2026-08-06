@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ticagrelor",
+  "name": "Ticagrelor",
+  "brandNames": ["Brilinta"],
+  "class": "P2Y12 platelet inhibitor (reversible, cyclopentyltriazolopyrimidine)",
+  "classId": "antiplatelet",
+  "systems": ["heme", "cardio"],
+  "summary": "A directly acting, reversible P2Y12 inhibitor with faster and more potent platelet inhibition than clopidogrel for acute coronary syndromes.",
+  "identifiers": {
+    "atc": ["B01AC24"],
+    "cas": "274693-27-5",
+    "drugbank": "DB08816"
+  },
+  "mechanism": "Directly and reversibly inhibits the platelet P2Y12 ADP receptor (not a prodrug), blocking ADP-mediated platelet activation and aggregation.",
+  "targets": ["P2Y12 receptor"],
+  "pharmacodynamics": "Greater and more consistent platelet inhibition than clopidogrel; reduced CV death, MI, and stroke in ACS (PLATO).",
+  "pharmacokinetics": {
+    "bioavailability": "~36%",
+    "halfLife": "~7 h (parent); ~9 h (active metabolite)",
+    "metabolism": "Hepatic, primarily CYP3A4/3A5 to the active metabolite AR-C124910XX; P-gp substrate",
+    "elimination": "Fecal (~58%) and renal (~26%)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Loading 180 mg, then 90 mg twice daily (60 mg twice daily for extended therapy after 1 year post-MI)",
+    "maxDose": "90 mg twice daily",
+    "renalAdjustment": "No dose adjustment required for renal impairment (including dialysis)"
+  },
+  "safety": {
+    "pregnancy": "Avoid — no adequate human data",
+    "lactation": "Avoid during breastfeeding",
+    "contraindications": ["Active pathological bleeding", "History of intracranial hemorrhage", "Severe hepatic impairment", "Concurrent strong CYP3A4 inhibitors (e.g., ketoconazole, clarithromycin)"],
+    "warnings": ["Major bleeding including fatal intracranial hemorrhage", "Dyspnea (~14%, mechanism unclear, usually benign)", "Bradyarrhythmias — avoid in sick sinus syndrome or high-grade AV block without pacemaker", "Hold ≥5 days before major surgery"],
+    "monitoring": ["Signs of bleeding", "Dyspnea assessment", "Adherence (twice-daily dosing)"],
+    "adverseEffects": [
+      {"effect": "Dyspnea", "frequency": "common"},
+      {"effect": "Bleeding events", "frequency": "common"},
+      {"effect": "Epistaxis", "frequency": "common"},
+      {"effect": "Bradyarrhythmia", "frequency": "uncommon"},
+      {"effect": "Major bleeding / intracranial hemorrhage", "frequency": "uncommon"}
+    ],
+    "overdose": "No specific antidote; supportive care"
+  },
+  "indications": ["Acute coronary syndromes (with aspirin)", "Secondary prevention after MI (with aspirin)", "Reduction of stent thrombosis"],
+  "clinicalPearls": [
+    "Reversible binding means platelet function returns ~3–5 days after stopping.",
+    "Dyspnea is a distinctive side effect; rule out ischemia, but it is often benign."
+  ],
+  "good": "ACS patients needing potent, rapid antiplatelet effect.",
+  "bad": "Patients with prior intracranial hemorrhage, severe hepatic disease, or strong CYP3A4 inhibitor use.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

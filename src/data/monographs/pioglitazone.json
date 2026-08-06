@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "pioglitazone",
+  "name": "Pioglitazone",
+  "brandNames": ["Actos"],
+  "class": "Thiazolidinedione",
+  "classId": "thiazolidinedione",
+  "systems": ["endo"],
+  "summary": "An insulin-sensitizing PPAR-gamma agonist used in type 2 diabetes, notable for durable glycemic control but fluid-retention risk.",
+  "identifiers": {
+    "atc": ["A10BG03"],
+    "cas": "111025-46-8",
+    "drugbank": "DB01132"
+  },
+  "mechanism": "Activates the nuclear receptor PPAR-gamma, altering adipocyte, muscle, and hepatic gene expression to improve insulin sensitivity and reduce hepatic glucose output.",
+  "targets": ["PPAR-gamma (peroxisome proliferator-activated receptor gamma)"],
+  "pharmacodynamics": "Lowers insulin resistance and A1c durably; reduces triglycerides and redistributes fat to subcutaneous depots.",
+  "pharmacokinetics": {
+    "bioavailability": "~80–85%",
+    "halfLife": "3–7 h (parent; active metabolites extend effect)",
+    "proteinBinding": ">99%",
+    "onset": "Full effect over 2–4 weeks",
+    "metabolism": "Hepatic (CYP2C8, CYP2C9)",
+    "elimination": "Fecal (~55%) and renal (~45%)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "15–30 mg once daily; may increase to 45 mg once daily",
+    "maxDose": "45 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Not recommended; insulin is standard during pregnancy",
+    "lactation": "Caution; limited data",
+    "contraindications": ["NYHA class III–IV heart failure", "Active liver disease or ALT >2.5× ULN"],
+    "warnings": ["Fluid retention and edema, risk of new or worsening heart failure", "Weight gain", "Possible increased fracture risk in women", "Bladder cancer signal (uncertain causal link)"],
+    "monitoring": ["Liver enzymes (baseline and periodic)", "Signs of edema or heart failure", "Blood glucose and HbA1c"],
+    "adverseEffects": [
+      {"effect": "Edema / fluid retention", "frequency": "common"},
+      {"effect": "Weight gain", "frequency": "common"},
+      {"effect": "Hypoglycemia (with sulfonylureas/insulin)", "frequency": "uncommon"},
+      {"effect": "Bone fracture (women)", "frequency": "uncommon"},
+      {"effect": "Bladder cancer", "frequency": "rare"}
+    ],
+    "overdose": "Hypoglycemia is unlikely alone; supportive care"
+  },
+  "indications": [
+    "Type 2 diabetes mellitus, alone or in combination",
+    "Type 2 diabetes with significant insulin resistance or NAFLD where other agents are unsuitable"
+  ],
+  "clinicalPearls": [
+    "Full glycemic effect takes weeks — do not judge efficacy early.",
+    "Fluid retention is markedly worse when combined with insulin; watch for heart failure symptoms."
+  ],
+  "good": "Durable insulin sensitizer useful in insulin-resistant phenotypes, with a favorable lipid profile.",
+  "bad": "Heart failure, significant edema, or patients where weight gain is unacceptable.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

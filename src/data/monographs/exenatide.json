@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "exenatide",
+  "name": "Exenatide",
+  "brandNames": ["Byetta", "Bydureon"],
+  "class": "GLP-1 receptor agonist",
+  "classId": "glp1",
+  "systems": ["endo"],
+  "summary": "A GLP-1 receptor agonist derived from exendin-4, available as a twice-daily injection (Byetta) or once-weekly extended release (Bydureon).",
+  "identifiers": {
+    "atc": ["A10BJ01"],
+    "cas": "141758-74-9",
+    "drugbank": "DB01276"
+  },
+  "mechanism": "Activates the GLP-1 receptor, enhancing glucose-dependent insulin secretion, suppressing glucagon, and slowing gastric emptying.",
+  "targets": ["GLP-1 receptor"],
+  "pharmacodynamics": "Lowers A1c and weight; the immediate-release form has a particularly strong gastric-emptying (postprandial glucose) effect.",
+  "pharmacokinetics": {
+    "bioavailability": "~100% (SC)",
+    "halfLife": "~2.4 h (immediate release)",
+    "onset": "Rapid (SC absorption); peak effect ~2 h",
+    "duration": "~6 h per dose (IR twice daily); ER once weekly",
+    "metabolism": "Renal degradation (glomerular filtration and proteolysis)",
+    "elimination": "Renal",
+    "routes": ["sc"]
+  },
+  "dosing": {
+    "adult": "Immediate release: 5 mcg SC twice daily within 60 min before meals, may increase to 10 mcg; ER: 2 mg SC once weekly",
+    "maxDose": "10 mcg BID (IR); 2 mg weekly (ER)"
+  },
+  "safety": {
+    "pregnancy": "Not recommended; insufficient safety data",
+    "lactation": "Not recommended; limited data",
+    "contraindications": ["Personal or family history of medullary thyroid carcinoma", "MEN2", "Severe renal impairment (CrCl <30 mL/min) for the IR formulation"],
+    "warnings": ["Nausea during titration", "Pancreatitis (discontinue if suspected)", "Acute kidney injury reported with IR form, especially with renal impairment", "Anti-exenatide antibodies can reduce efficacy", "Injection-site nodules with ER microspheres"],
+    "monitoring": ["Blood glucose and HbA1c", "GI tolerance", "Renal function"],
+    "adverseEffects": [
+      {"effect": "Nausea", "frequency": "very common"},
+      {"effect": "Vomiting / diarrhea", "frequency": "common"},
+      {"effect": "Hypoglycemia (with sulfonylureas/insulin)", "frequency": "common"},
+      {"effect": "Injection-site reactions", "frequency": "common"},
+      {"effect": "Pancreatitis", "frequency": "rare"}
+    ],
+    "overdose": "Severe nausea, vomiting; supportive care. Hypoglycemia unlikely alone"
+  },
+  "indications": [
+    "Type 2 diabetes mellitus, as add-on therapy",
+    "Obesity management in some settings (off-label weight use is common)"
+  ],
+  "clinicalPearls": [
+    "The twice-daily IR form is dosed before meals, so its postprandial effect is very consistent.",
+    "Antibody formation is more common than with other GLP-1s and can blunt response over time."
+  ],
+  "good": "Flexible meal-linked BID dosing or a once-weekly option; weight loss.",
+  "bad": "Renal impairment (IR), severe GI intolerance, or patients needing a once-daily simple regimen.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "valproate",
+  "name": "Valproate",
+  "brandNames": ["Depakote"],
+  "class": "Anticonvulsant",
+  "classId": "anticonvulsant",
+  "systems": ["neuro"],
+  "summary": "A broad-spectrum anticonvulsant and mood stabilizer that is first-line for generalized (absence, myoclonic) epilepsies but carries major hepatotoxicity and teratogenicity risks.",
+  "identifiers": {
+      "atc": ["N03AG01"],
+      "cas": "99-66-1",
+      "drugbank": "DB00313"
+  },
+  "mechanism": "Enhances GABAergic transmission and blocks voltage-gated sodium channels; at higher doses inhibits histone deacetylase.",
+  "targets": ["GABAergic transmission", "Voltage-gated sodium channels"],
+  "pharmacokinetics": {
+      "bioavailability": "~100%",
+      "halfLife": "9–18 h (dose-dependent)",
+      "proteinBinding": "85–90% (concentration-dependent; free fraction rises at high doses)",
+      "metabolism": "Extensive hepatic metabolism (glucuronidation, β-oxidation, CYP)",
+      "routes": ["oral", "iv"]},
+  "dosing": {
+      "adult": "Start 250–500 mg BID (divalproex); usual maintenance 1000–2000 mg/day divided",
+      "maxDose": "60 mg/kg/day",
+      "renalAdjustment": "No routine adjustment (hepatically cleared)"},
+  "safety": {
+      "pregnancy": "Contraindicated — major teratogen (neural tube defects, reduced IQ, fetal valproate syndrome); avoid in women of childbearing age",
+      "contraindications": ["Hepatic disease or significant hepatic dysfunction", "Known mitochondrial disorders (POLG mutations)", "Urea cycle disorders", "Pregnancy (strongly avoid — teratogenic)"],
+      "warnings": ["Hepatotoxicity — fatal hepatic failure, highest risk in children <2 years and with polytherapy", "Teratogenicity (black-box warning) — neural tube defects and reduced IQ; avoid in women of childbearing age", "Pancreatitis — can be fatal; stop drug if abdominal pain with nausea/vomiting", "Hyperammonemic encephalopathy — especially with topiramate or urea cycle defects", "Thrombocytopenia and coagulopathy at higher doses"],
+      "monitoring": ["LFTs (baseline and periodic)", "CBC and platelets", "Valproate trough levels (target 50–100 mg/L)", "Ammonia if encephalopathy suspected"],
+      "adverseEffects": [{"effect": "Tremor", "frequency": "common"}, {"effect": "Weight gain", "frequency": "common"}, {"effect": "Alopecia", "frequency": "common"}, {"effect": "Thrombocytopenia", "frequency": "uncommon"}, {"effect": "Hepatotoxicity", "frequency": "rare"}, {"effect": "Pancreatitis", "frequency": "rare"}],
+      "overdose": "CNS depression, coma, cerebral edema, hyperammonemia; L-carnitine and hemodialysis in severe cases"},
+  "indications": ["Generalized seizures — absence, myoclonic, tonic-clonic", "Focal seizures", "Bipolar mania", "Migraine prophylaxis", "Status epilepticus (IV)"],
+  "clinicalPearls": ["First-line for idiopathic generalized epilepsies (absence, myoclonic) — but avoid in women of childbearing age", "Free fraction rises at high doses (saturable protein binding) — monitor free levels when albumin is low"],
+  "good": "Idiopathic generalized epilepsy (absence, myoclonic) where it remains class-leading.",
+  "bad": "Women of childbearing age, liver disease, or anyone on topiramate (hyperammonemia risk).",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

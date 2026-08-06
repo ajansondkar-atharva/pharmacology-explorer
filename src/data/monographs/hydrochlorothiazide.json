@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "hydrochlorothiazide",
+  "name": "Hydrochlorothiazide",
+  "brandNames": ["HydroDIURIL"],
+  "class": "Thiazide diuretic",
+  "classId": "thiazide",
+  "systems": ["cardio", "renal"],
+  "summary": "The workhorse thiazide diuretic and first-line antihypertensive; blocks sodium reabsorption in the distal convoluted tubule and lowers blood pressure both acutely and chronically.",
+  "identifiers": {"atc": ["C03AA03"], "cas": "58-93-5", "drugbank": "DB00999"},
+  "mechanism": "Inhibits the Na+-Cl− cotransporter (NCC) in the distal convoluted tubule, causing natriuresis; with chronic use, peripheral resistance falls, sustaining the antihypertensive effect.",
+  "targets": ["Na-Cl cotransporter (NCC, SLC12A3)"],
+  "pharmacokinetics": {
+    "bioavailability": "~65–75%",
+    "halfLife": "~6–15 h",
+    "proteinBinding": "~40–68%",
+    "metabolism": "Minimal (not metabolized)",
+    "elimination": "Renal (unchanged)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Hypertension: 12.5–25 mg once daily",
+    "maxDose": "50 mg/day (higher doses add toxicity, not efficacy)"
+  },
+  "safety": {
+    "pregnancy": "Not first-line for hypertension in pregnancy (fetal/neonatal risks)",
+    "lactation": "Excreted in milk (small amounts); may suppress lactation",
+    "contraindications": ["Anuria", "Sulfonamide allergy (cross-reactivity — caution)"],
+    "warnings": ["Hypokalemia and hyponatremia — the dose-limiting metabolic effects", "Hyperuricemia and gout flares", "Hyperglycemia and worsening diabetes control", "Hypercalcemia (decreased urinary calcium excretion)", "Photosensitivity", "Acute angle-closure glaucoma (rare idiosyncratic reaction)"],
+    "monitoring": ["Serum potassium and sodium", "Blood glucose and uric acid", "Blood pressure"],
+    "adverseEffects": [
+      {"effect": "Hypokalemia", "frequency": "common"},
+      {"effect": "Hyperuricemia", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Hyponatremia", "frequency": "uncommon"},
+      {"effect": "Hyperglycemia", "frequency": "uncommon"},
+      {"effect": "Photosensitivity", "frequency": "uncommon"}
+    ],
+    "overdose": "Electrolyte depletion and dehydration; replace volume and electrolytes."
+  },
+  "indications": ["Hypertension (first-line)", "Mild to moderate edema in heart failure and hepatic disease", "Nephrolithiasis prevention (reduces urinary calcium)", "Nephrogenic diabetes insipidus"],
+  "clinicalPearls": ["The antihypertensive dose-response plateaus at 25 mg — pushing higher doses mainly adds metabolic side effects.", "Combines naturally with ACE inhibitors/ARBs, counteracting their hyperkalemia while they blunt its potassium loss."],
+  "good": "Uncomplicated hypertension, including elderly and Black patients, where thiazides are proven first-line.",
+  "bad": "Gout, hypokalemia, sulfonamide allergy, or pregnancy.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "eplerenone",
+  "name": "Eplerenone",
+  "brandNames": ["Inspra"],
+  "class": "Selective mineralocorticoid (aldosterone) receptor antagonist",
+  "classId": "mra",
+  "systems": ["cardio", "renal"],
+  "summary": "A selective aldosterone receptor antagonist with proven mortality benefit in heart failure with reduced ejection fraction (EMPHASIS-HF) and post-MI left ventricular dysfunction (EPHESUS), with fewer hormonal side effects than spironolactone.",
+  "identifiers": {"atc": ["C03DA04"], "cas": "107724-20-9", "drugbank": "DB00700"},
+  "mechanism": "Selectively blocks the mineralocorticoid (aldosterone) receptor in the distal nephron, increasing sodium and water excretion while retaining potassium; also attenuates aldosterone-driven cardiac fibrosis.",
+  "targets": ["Mineralocorticoid receptor"],
+  "pharmacokinetics": {
+    "bioavailability": "~69%",
+    "halfLife": "~4–6 h",
+    "proteinBinding": "~50%",
+    "metabolism": "Hepatic, CYP3A4 (major)",
+    "elimination": "Fecal ~67%, renal ~32% (metabolites; <5% unchanged)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Heart failure: 25 mg once daily, increased to 50 mg once daily if potassium allows; hypertension: 50 mg once daily",
+    "maxDose": "100 mg/day (hypertension, divided)",
+    "renalAdjustment": "Contraindicated when CrCl <30 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Category B (no teratogenicity in animal studies)",
+    "lactation": "Unknown excretion; caution",
+    "contraindications": ["Hyperkalemia (serum K+ >5.5 mEq/L at initiation)", "CrCl <30 mL/min", "Concomitant strong CYP3A4 inhibitors (ketoconazole, itraconazole)"],
+    "warnings": ["Hyperkalemia is the key risk — highest with ACE inhibitors/ARBs, potassium supplements, and NSAIDs", "Hypotension", "Avoid as add-on to ACE inhibitor plus ARB in type 2 diabetes with microalbuminuria"],
+    "monitoring": ["Serum potassium and creatinine at baseline, 1 week, 1 month, then periodically", "Blood pressure"],
+    "adverseEffects": [
+      {"effect": "Hyperkalemia", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Hypotension", "frequency": "uncommon"},
+      {"effect": "Diarrhea", "frequency": "uncommon"},
+      {"effect": "Gynecomastia", "frequency": "rare"}
+    ],
+    "overdose": "Hyperkalemia; treat with insulin/glucose, potassium binders, and dialysis if severe."
+  },
+  "indications": ["Heart failure with reduced ejection fraction (NYHA II–IV)", "Left ventricular dysfunction after myocardial infarction", "Hypertension", "Resistant hypertension"],
+  "clinicalPearls": ["Selectivity for the mineralocorticoid receptor means far less gynecomastia and mastalgia than spironolactone.", "The classic mistake is starting it with K+ >5.0 mEq/L — check potassium before and during therapy."],
+  "good": "HFrEF and resistant hypertension when hormonal side effects of spironolactone are a problem.",
+  "bad": "Hyperkalemia, CrCl <30 mL/min, or strong CYP3A4 inhibitors.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

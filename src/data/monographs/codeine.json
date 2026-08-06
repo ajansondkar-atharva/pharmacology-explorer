@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "codeine",
+  "name": "Codeine",
+  "brandNames": ["Tylenol #3 (codeine/paracetamol combination)"],
+  "class": "Opioid analgesic",
+  "classId": "opioid",
+  "systems": ["neuro", "musc"],
+  "summary": "A weak mu-opioid agonist that is essentially a prodrug: analgesia depends on CYP2D6 conversion to morphine, making its effect highly variable and now contraindicated in children.",
+  "identifiers": {
+      "atc": ["N02AA59"],
+      "cas": "76-57-3",
+      "drugbank": "DB00318"
+  },
+  "mechanism": "Prodrug — O-demethylated by CYP2D6 to morphine, the main active analgesic; codeine itself is a weak mu-opioid agonist.",
+  "targets": ["Mu-opioid receptor (via morphine metabolite)"],
+  "pharmacokinetics": {
+      "bioavailability": "~60% (oral)",
+      "halfLife": "~3 h",
+      "proteinBinding": "~7%",
+      "onset": "30–60 min (oral)",
+      "duration": "4–6 h",
+      "metabolism": "Hepatic (CYP2D6 to morphine; CYP3A4 to norcodeine); ~10% of dose converted to morphine",
+      "routes": ["oral"]},
+  "dosing": {
+      "adult": "30–60 mg PO q4–6h PRN; combination products are limited by the paracetamol co-ingredient",
+      "maxDose": "360 mg/day",
+      "renalAdjustment": "Reduce dose in severe renal impairment"},
+  "safety": {
+      "pregnancy": "Avoid for analgesia where alternatives exist; chronic use causes neonatal opioid withdrawal syndrome",
+      "contraindications": ["Significant respiratory depression", "Children under 12 years", "Tonsillectomy/adenoidectomy in children under 18 (postoperative)", "Concomitant MAOIs (within 14 days)"],
+      "warnings": ["Black box: addiction, abuse, and misuse — risk of opioid use disorder", "Black box: life-threatening respiratory depression", "Black box: accidental ingestion (especially by children) can be fatal", "Black box: neonatal opioid withdrawal syndrome with prolonged use during pregnancy", "CYP2D6 ultrarapid metabolizers rapidly convert codeine to morphine — fatal respiratory depression reported; ultrarapid and poor metabolizers make analgesia unpredictable", "Contraindicated in children <12 years and after pediatric tonsillectomy/adenoidectomy"],
+      "monitoring": ["Respiratory status — especially in children (contraindicated) and ultrarapid metabolizers", "Paracetamol co-ingestion limits in combination products", "Pain response — poor response may signal poor CYP2D6 metabolism"],
+      "adverseEffects": [{"effect": "Constipation", "frequency": "common"}, {"effect": "Nausea", "frequency": "common"}, {"effect": "Dizziness", "frequency": "common"}, {"effect": "Pruritus", "frequency": "common"}, {"effect": "Respiratory depression", "frequency": "uncommon"}],
+      "overdose": "Respiratory depression, coma, miosis; naloxone reverses opioid effects"},
+  "indications": ["Mild to moderate pain (usually in combination with paracetamol)", "Cough suppression (in some countries)"],
+  "clinicalPearls": ["A prodrug — without CYP2D6 activity there is essentially no analgesia; this genetic variability is why codeine is now contraindicated in children", "The ~10% morphine conversion creates an analgesic ceiling — combination products are the usual vehicle"],
+  "good": "Mild pain and cough in adults when simple analgesics fail (where available).",
+  "bad": "Children under 12, breastfeeding mothers, poor or ultrarapid CYP2D6 metabolizers, and anyone needing reliable opioid analgesia.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

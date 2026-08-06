@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "ceftriaxone",
+  "name": "Ceftriaxone",
+  "brandNames": ["Rocephin"],
+  "class": "Cephalosporin (3rd generation)",
+  "classId": "cephalosporin",
+  "systems": ["anti"],
+  "summary": "Once-daily third-generation cephalosporin with broad Gram-negative coverage and excellent CSF penetration; a hospital workhorse.",
+  "identifiers": {"atc": ["J01DD04"], "cas": "73384-59-5", "drugbank": "DB01212"},
+  "mechanism": "Beta-lactam inhibition of penicillin-binding proteins (PBPs) blocks cell-wall synthesis; enhanced activity against Gram-negative organisms vs earlier generations.",
+  "targets": ["Penicillin-binding proteins (PBPs)"],
+  "pharmacodynamics": "Time-dependent killing; long half-life permits once-daily dosing.",
+  "pharmacokinetics": {
+    "halfLife": "~6-9 h",
+    "proteinBinding": "85-95%",
+    "metabolism": "Not metabolized (minimal)",
+    "elimination": "Dual — biliary (~40%) and renal (~40-60%)",
+    "routes": ["iv", "im"]
+  },
+  "dosing": {
+    "adult": "1-2 g IV/IM once daily (meningitis: 2 g every 12 hours)",
+    "renalAdjustment": "Not usually required (dual biliary/renal clearance)"
+  },
+  "safety": {
+    "pregnancy": "Generally safe (category B)",
+    "lactation": "Compatible — minimal excretion in breast milk",
+    "contraindications": ["Hypersensitivity to cephalosporins", "Neonates (<28 days) with hyperbilirubinemia (bilirubin displacement)", "Concurrent IV calcium in neonates (precipitation risk)"],
+    "warnings": ["Biliary sludging/pseudolithiasis with prolonged courses", "C. difficile colitis", "Increasing Enterobacterales resistance"],
+    "monitoring": ["Signs of biliary sludging on prolonged therapy", "CBC with prolonged use (rare hemolytic anemia)"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Injection-site pain", "frequency": "common"},
+      {"effect": "Rash", "frequency": "uncommon"},
+      {"effect": "Biliary sludging (prolonged use)", "frequency": "uncommon"},
+      {"effect": "Hemolytic anemia", "frequency": "rare"}
+    ]
+  },
+  "indications": ["Community-acquired pneumonia (inpatient)", "Bacterial meningitis", "Gonorrhea (single dose)", "Pyelonephritis / urosepsis", "Lyme disease"],
+  "clinicalPearls": ["Long half-life allows once-daily dosing", "Excellent CSF penetration — standard empiric meningitis therapy (with vancomycin)"],
+  "good": "Once-daily broad-spectrum IV agent with CNS and gonococcal coverage.",
+  "bad": "No MRSA or Listeria activity (add vancomycin/ampicillin when relevant); avoid in jaundiced neonates.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

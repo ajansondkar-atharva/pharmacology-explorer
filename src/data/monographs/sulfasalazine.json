@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "sulfasalazine",
+  "name": "Sulfasalazine",
+  "brandNames": ["Azulfidine", "Salazopyrin"],
+  "class": "Aminosalicylate (5-ASA prodrug); DMARD",
+  "classId": "sulfasalazine",
+  "systems": ["gi"],
+  "summary": "Azo-prodrug split by colonic bacteria into 5-ASA (topical anti-inflammatory) and sulfapyridine (absorbed, and the source of most toxicity) — used in ulcerative colitis and rheumatoid arthritis.",
+  "identifiers": {
+    "atc": ["A07EC01"],
+    "cas": "599-79-1",
+    "drugbank": "DB00795"
+  },
+  "mechanism": "Colonic bacteria cleave the azo bond, releasing sulfapyridine (absorbed) and 5-ASA, which acts topically on the gut mucosa; also anti-inflammatory/DMARD effects in rheumatoid arthritis.",
+  "targets": ["Intestinal mucosa (5-ASA)", "Sulfapyridine moiety (systemic effects/toxicity)"],
+  "pharmacokinetics": {
+    "bioavailability": "~10–15% absorbed intact; 5-ASA released locally by colonic bacteria",
+    "halfLife": "Sulfapyridine ~6–17 h (acetylator phenotype dependent)",
+    "onset": "Days to weeks",
+    "duration": "Dosed 2–4 times daily",
+    "metabolism": "Colonic azo-reduction; sulfapyridine hepatic acetylation/hydroxylation",
+    "elimination": "Renal (metabolites) and fecal",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "IBD: 1 g 3–4 times daily; RA: titrate over weeks to 2–3 g daily in divided doses",
+    "maxDose": "IBD acute: up to 4 g/day; RA: max 3 g/day",
+    "renalAdjustment": "Use with caution in renal impairment; monitor"
+  },
+  "safety": {
+    "pregnancy": "Generally considered safe in IBD/RA; folate supplementation is essential",
+    "lactation": "Excreted in breast milk; caution in premature or jaundiced infants",
+    "contraindications": ["Sulfonamide or salicylate hypersensitivity", "Porphyria", "Severe G6PD deficiency (relative)"],
+    "warnings": ["Blood dyscrasias (agranulocytosis) — baseline and periodic CBC", "Hepatotoxicity — monitor LFTs", "Sulfa hypersensitivity — serious skin reactions possible", "Reversible oligospermia — relevant in men planning children"],
+    "monitoring": ["CBC, LFTs, renal function (baseline + periodic)", "Clinical response at 8–12 weeks (RA)"],
+    "adverseEffects": [
+      {"effect": "Nausea / dyspepsia", "frequency": "common"},
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Rash", "frequency": "common"},
+      {"effect": "Reversible oligospermia", "frequency": "common"},
+      {"effect": "Hepatotoxicity", "frequency": "rare"},
+      {"effect": "Agranulocytosis", "frequency": "rare"}
+    ],
+    "overdose": "Nausea, vomiting; hemolysis in G6PD deficiency — supportive care"
+  },
+  "indications": ["Ulcerative colitis — induction and maintenance", "Rheumatoid arthritis (DMARD)", "Crohn's disease (mild-to-moderate)"],
+  "clinicalPearls": ["Turns urine, sweat, and tears orange-yellow — warn patients", "Slow acetylators accumulate sulfapyridine and get more toxicity; folate supplementation is standard"],
+  "good": "Effective and inexpensive for both ulcerative colitis and rheumatoid arthritis",
+  "bad": "Sulfa allergy, G6PD deficiency, renal/hepatic impairment; men planning a family (reversible oligospermia)",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

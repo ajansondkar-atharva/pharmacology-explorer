@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "heparin",
+  "name": "Heparin",
+  "brandNames": [],
+  "class": "Unfractionated heparin",
+  "classId": "unfractionated-heparin",
+  "systems": ["heme"],
+  "summary": "A rapidly acting parenteral anticoagulant that potentiates antithrombin III; fully reversible with protamine, making it the default when anticoagulation must be controllable.",
+  "identifiers": {
+    "atc": ["B01AB01"],
+    "cas": "9005-49-6",
+    "drugbank": "DB01109"
+  },
+  "mechanism": "Binds antithrombin III via a unique pentasaccharide sequence, accelerating its inhibition of thrombin and factor Xa with roughly equal anti-IIa and anti-Xa activity.",
+  "targets": ["Antithrombin III", "Thrombin (factor IIa)", "Factor Xa"],
+  "pharmacodynamics": "Dose-dependent anticoagulation monitored by aPTT (goal typically 1.5–2.5× control).",
+  "pharmacokinetics": {
+    "bioavailability": "IV: 100%; SC: variable (~30%)",
+    "halfLife": "30–90 min (dose-dependent)",
+    "proteinBinding": "High, nonspecific",
+    "metabolism": "Hepatic and reticuloendothelial desulfation/depolymerization; no CYP",
+    "elimination": "Renal (saturable cellular uptake and clearance)",
+    "routes": ["iv", "sc"]
+  },
+  "dosing": {
+    "adult": "ACS: IV bolus 80 units/kg then 18 units/kg/h continuous infusion, titrated to aPTT; VTE: IV bolus 80 units/kg then 18 units/kg/h",
+    "renalAdjustment": "Reduce dose in renal impairment; monitor aPTT"
+  },
+  "safety": {
+    "pregnancy": "May be used in pregnancy (does not cross the placenta)",
+    "lactation": "Generally compatible with breastfeeding",
+    "contraindications": ["Active major bleeding", "History of heparin-induced thrombocytopenia", "Severe thrombocytopenia"],
+    "warnings": ["Heparin-induced thrombocytopenia (type II) with paradoxical thrombosis — monitor platelets", "Bleeding — fully reversed by protamine sulfate", "Hyperkalemia with prolonged use (aldosterone suppression)", "Osteoporosis with prolonged high-dose use"],
+    "monitoring": ["aPTT (1.5–2.5× control for most indications)", "Platelet count every 2–3 days (HIT screening)", "Signs of bleeding"],
+    "adverseEffects": [
+      {"effect": "Bleeding events", "frequency": "common"},
+      {"effect": "Injection-site pain / hematoma", "frequency": "common"},
+      {"effect": "Thrombocytopenia", "frequency": "uncommon"},
+      {"effect": "Hyperkalemia", "frequency": "uncommon"},
+      {"effect": "Heparin-induced thrombocytopenia", "frequency": "rare"}
+    ],
+    "overdose": "Protamine sulfate (1 mg per ~100 units of heparin)"
+  },
+  "indications": ["Acute coronary syndromes (with aspirin)", "Treatment of DVT/PE", "VTE prophylaxis in hospitalized patients", "Anticoagulation for surgery, hemodialysis, and ECMO"],
+  "clinicalPearls": [
+    "Rapid onset and offset make it ideal when anticoagulation must be started or stopped quickly.",
+    "Protamine fully reverses unfractionated heparin, unlike LMWH."
+  ],
+  "good": "Acute settings needing titratable, fully reversible anticoagulation.",
+  "bad": "Patients with HIT history or needing long-term outpatient anticoagulation.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

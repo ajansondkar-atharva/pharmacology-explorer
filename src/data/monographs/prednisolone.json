@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "prednisolone",
+  "name": "Prednisolone",
+  "brandNames": ["Prelone"],
+  "class": "Corticosteroid",
+  "classId": "corticosteroid",
+  "systems": ["endo"],
+  "summary": "An intermediate-acting systemic glucocorticoid with potent anti-inflammatory and immunosuppressive effects across many conditions.",
+  "identifiers": {
+    "atc": ["H02AB06"],
+    "cas": "50-24-8",
+    "drugbank": "DB00860"
+  },
+  "mechanism": "Agonist at the glucocorticoid receptor, modulating gene transcription to suppress inflammation, immune responses, and cytokine production.",
+  "targets": ["Glucocorticoid receptor (NR3C1)"],
+  "pharmacodynamics": "Broad anti-inflammatory, immunosuppressive, and metabolic effects; essentially no mineralocorticoid activity at usual doses.",
+  "pharmacokinetics": {
+    "bioavailability": "~80% (well absorbed)",
+    "halfLife": "2–3 h (plasma); biologic effects ~18–36 h",
+    "proteinBinding": "~70–90% (transcortin, albumin)",
+    "onset": "Hours (anti-inflammatory)",
+    "metabolism": "Hepatic",
+    "elimination": "Renal (metabolites)",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "5–60 mg/day depending on indication and disease activity; taper after prolonged use"
+  },
+  "safety": {
+    "pregnancy": "Use if clearly indicated; prednisolone is relatively favored among systemic corticosteroids in pregnancy",
+    "lactation": "Generally safe at low–moderate doses; high-dose courses warrant caution",
+    "contraindications": ["Systemic fungal infection", "Live or attenuated vaccines while on immunosuppressive doses"],
+    "warnings": ["HPA-axis suppression with >2–3 weeks of supraphysiologic dosing — taper, never stop abruptly", "Hyperglycemia and new-onset diabetes", "Osteoporosis with long-term use", "Infection risk and impaired wound healing"],
+    "monitoring": ["Blood glucose", "Blood pressure", "Bone density with long-term therapy"],
+    "adverseEffects": [
+      {"effect": "Hyperglycemia", "frequency": "common"},
+      {"effect": "Insomnia / mood changes", "frequency": "common"},
+      {"effect": "Weight gain / fluid retention", "frequency": "common"},
+      {"effect": "Osteoporosis (long-term)", "frequency": "common"},
+      {"effect": "Adrenal suppression (long-term)", "frequency": "common"},
+      {"effect": "Avascular necrosis", "frequency": "rare"}
+    ],
+    "overdose": "Short-term excess: hypertension, hyperglycemia, psychiatric symptoms; supportive care, no antidote"
+  },
+  "indications": [
+    "Asthma and COPD exacerbations",
+    "Rheumatoid arthritis and other autoimmune diseases",
+    "Inflammatory bowel disease",
+    "Allergic reactions and nephrotic syndrome"
+  ],
+  "clinicalPearls": [
+    "5 mg prednisolone ≈ 20 mg hydrocortisone ≈ 0.75 mg dexamethasone — know your equivalence table.",
+    "Any course beyond 2–3 weeks requires a taper to avoid adrenal crisis."
+  ],
+  "good": "Rapid, potent anti-inflammatory control across a huge range of conditions.",
+  "bad": "Long-term use, active infection, uncontrolled diabetes, or osteoporosis.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

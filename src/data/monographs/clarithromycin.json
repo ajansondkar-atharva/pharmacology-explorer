@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "clarithromycin",
+  "name": "Clarithromycin",
+  "brandNames": ["Biaxin"],
+  "class": "Macrolide",
+  "classId": "macrolide",
+  "systems": ["anti"],
+  "summary": "Macrolide used in H. pylori and MAC regimens and for respiratory infections; notable for potent CYP3A4 inhibition.",
+  "identifiers": {"atc": ["J01FA09"], "cas": "81103-11-9", "drugbank": "DB01211"},
+  "mechanism": "Binds the 50S ribosomal subunit and inhibits bacterial protein synthesis; active metabolite 14-hydroxyclarithromycin adds activity.",
+  "targets": ["50S ribosomal subunit"],
+  "pharmacodynamics": "Time-dependent killing with a post-antibiotic effect.",
+  "pharmacokinetics": {
+    "bioavailability": "~50% (oral)",
+    "halfLife": "3-4 h (active metabolite 5-7 h)",
+    "proteinBinding": "~70%",
+    "metabolism": "Hepatic (CYP3A4) — potent CYP3A4 inhibitor",
+    "elimination": "Renal (mostly)",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "250-500 mg PO every 12 hours (respiratory/skin infections; H. pylori regimens)",
+    "renalAdjustment": "Reduce dose if CrCl < 30 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Avoid — not preferred in pregnancy (animal embryotoxicity)",
+    "contraindications": ["Hypersensitivity to macrolides", "Concurrent QT-prolonging CYP3A4 substrates (e.g. pimozide) or ergot alkaloids"],
+    "warnings": ["Potent CYP3A4 inhibition — many drug interactions (statins, colchicine, warfarin)", "QT prolongation", "Hepatotoxicity (rare)"],
+    "monitoring": ["Drug-interaction review", "ECG if QT-prolongation risk"],
+    "adverseEffects": [
+      {"effect": "Dysgeusia (metallic taste)", "frequency": "common"},
+      {"effect": "GI upset", "frequency": "common"},
+      {"effect": "QT prolongation", "frequency": "uncommon"},
+      {"effect": "Hepatotoxicity", "frequency": "rare"}
+    ]
+  },
+  "indications": ["H. pylori eradication (triple therapy)", "Mycobacterium avium complex (MAC)", "Community-acquired pneumonia", "Pertussis", "Sinusitis / acute exacerbation of chronic bronchitis"],
+  "clinicalPearls": ["Always check CYP3A4 interactions (statins, colchicine, etc.)", "Metallic taste is a frequent, benign side effect"],
+  "good": "Reliable oral macrolide for H. pylori and MAC regimens.",
+  "bad": "CYP3A4 interactions and QT risk; macrolide resistance limits empiric pneumococcal use.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

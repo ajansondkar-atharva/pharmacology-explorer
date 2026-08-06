@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "liraglutide",
+  "name": "Liraglutide",
+  "brandNames": ["Victoza", "Saxenda"],
+  "class": "GLP-1 receptor agonist",
+  "classId": "glp1",
+  "systems": ["endo"],
+  "summary": "A once-daily GLP-1 receptor agonist used for type 2 diabetes and obesity that lowers glucose and weight with a demonstrated cardiovascular benefit.",
+  "identifiers": {
+    "atc": ["A10BJ02"],
+    "cas": "204656-20-2",
+    "drugbank": "DB06655"
+  },
+  "mechanism": "Activates the GLP-1 receptor, increasing glucose-dependent insulin secretion, suppressing glucagon, slowing gastric emptying, and reducing appetite.",
+  "targets": ["GLP-1 receptor"],
+  "pharmacodynamics": "Lowers A1c and body weight; reduces major adverse cardiovascular events in high-risk type 2 diabetes (LEADER).",
+  "pharmacokinetics": {
+    "halfLife": "~13 h",
+    "proteinBinding": ">98% (albumin)",
+    "duration": "Once-daily dosing",
+    "metabolism": "Degraded by endogenous peptidases",
+    "elimination": "Proteolytic degradation; no single organ of elimination",
+    "routes": ["sc"]
+  },
+  "dosing": {
+    "adult": "Diabetes: 0.6 mg SC daily for 1 week, then 1.2 mg daily, may increase to 1.8 mg; obesity (Saxenda): titrate to 3.0 mg daily",
+    "maxDose": "1.8 mg/day (diabetes); 3.0 mg/day (obesity)"
+  },
+  "safety": {
+    "pregnancy": "Not recommended; insufficient safety data",
+    "lactation": "Not recommended; limited data",
+    "contraindications": ["Personal or family history of medullary thyroid carcinoma", "Multiple endocrine neoplasia type 2 (MEN2)"],
+    "warnings": ["Nausea and GI intolerance, especially during titration", "Pancreatitis (discontinue if suspected)", "Gallbladder disease", "Renal function can worsen with dehydration from GI losses"],
+    "monitoring": ["Blood glucose and HbA1c", "GI tolerance during dose escalation", "Renal function if vomiting/dehydration"],
+    "adverseEffects": [
+      {"effect": "Nausea", "frequency": "common"},
+      {"effect": "Vomiting / diarrhea", "frequency": "common"},
+      {"effect": "Hypoglycemia (with sulfonylureas/insulin)", "frequency": "common"},
+      {"effect": "Gallbladder disease", "frequency": "uncommon"},
+      {"effect": "Pancreatitis", "frequency": "rare"}
+    ],
+    "overdose": "Severe nausea, vomiting; supportive care. Hypoglycemia unlikely alone"
+  },
+  "indications": [
+    "Type 2 diabetes mellitus, with cardiovascular risk reduction in high-risk patients",
+    "Obesity or overweight with comorbidities (Saxenda 3.0 mg)"
+  ],
+  "clinicalPearls": [
+    "Titration is tolerability engineering — escalate weekly per label to limit nausea.",
+    "Daily injection distinguishes it from weekly GLP-1s; the 3.0 mg dose is the weight-management regimen."
+  ],
+  "good": "Daily GLP-1 with CV benefit and meaningful weight loss; flexible dosing.",
+  "bad": "Significant GI intolerance, history of pancreatitis, or personal/family history of MTC.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

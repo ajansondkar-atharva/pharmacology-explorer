@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "levothyroxine",
+  "name": "Levothyroxine",
+  "brandNames": ["Synthroid", "Euthyrox", "Levoxyl"],
+  "class": "Thyroid hormone",
+  "classId": "thyroid-hormone",
+  "systems": ["endo"],
+  "summary": "Synthetic thyroxine (T4), the standard replacement for hypothyroidism, titrated against TSH with a long half-life that permits once-daily dosing.",
+  "identifiers": {
+    "atc": ["H03AA01"],
+    "cas": "51-48-9",
+    "drugbank": "DB00451"
+  },
+  "mechanism": "Provides exogenous T4 that is peripherally converted to active T3; both hormones act through nuclear thyroid hormone receptors to regulate gene expression.",
+  "targets": ["Thyroid hormone receptors (TR-alpha, TR-beta)"],
+  "pharmacodynamics": "Restores euthyroidism; at suppressive doses reduces TSH, used to prevent growth of TSH-dependent thyroid cancer.",
+  "pharmacokinetics": {
+    "bioavailability": "~60–80% (formulation-dependent)",
+    "halfLife": "~7 days",
+    "proteinBinding": ">99% (TBG and other binding proteins)",
+    "onset": "Days to weeks for full effect",
+    "metabolism": "Hepatic (deiodination to T3 and inactive metabolites)",
+    "elimination": "Fecal (biliary) with minor renal excretion",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "~1.6 mcg/kg/day (typically 75–150 mcg daily); start at 25–50 mcg in the elderly or with cardiac disease, titrate by TSH every 6–8 weeks"
+  },
+  "safety": {
+    "pregnancy": "Continue treatment; requirements typically increase in pregnancy — monitor TSH",
+    "lactation": "Safe at replacement doses; minimal transfer in breast milk",
+    "contraindications": ["Untreated thyrotoxicosis", "Untreated adrenal insufficiency", "Acute myocardial infarction (relative)"],
+    "warnings": ["Over-replacement causes cardiac effects (palpitations, atrial fibrillation) and bone loss", "Absorption reduced by iron, calcium, PPIs, and soy", "Consistent brand and timing matter for stable dosing"],
+    "monitoring": ["TSH 6–8 weeks after each dose change, then periodically", "Free T4 if TSH suppressed or pituitary disease"],
+    "adverseEffects": [
+      {"effect": "Palpitations / tachycardia (if overtreated)", "frequency": "common"},
+      {"effect": "Insomnia / tremor (if overtreated)", "frequency": "common"},
+      {"effect": "Weight loss / heat intolerance (if overtreated)", "frequency": "common"},
+      {"effect": "Osteoporosis (long-term over-suppression)", "frequency": "uncommon"}
+    ],
+    "overdose": "Thyrotoxic symptoms; supportive care, beta-blockers for adrenergic symptoms"
+  },
+  "indications": [
+    "Hypothyroidism (primary and central)",
+    "TSH suppression in thyroid cancer",
+    "Myxedema coma (IV, with adjunctive care)"
+  ],
+  "clinicalPearls": [
+    "Take on an empty stomach 30–60 minutes before breakfast; separate from iron, calcium, and PPIs by at least 4 hours.",
+    "TSH is the titration guide — recheck 6–8 weeks after any dose change."
+  ],
+  "good": "Inexpensive, safe, once-daily standard replacement with reliable monitoring.",
+  "bad": "Absorption variability and interactions; over-replacement in cardiac patients or postmenopausal bone loss.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

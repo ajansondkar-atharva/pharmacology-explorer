@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "dabigatran",
+  "name": "Dabigatran",
+  "brandNames": ["Pradaxa"],
+  "class": "Direct thrombin inhibitor (DOAC)",
+  "classId": "direct-thrombin-inhibitor",
+  "systems": ["heme", "cardio"],
+  "summary": "The only oral direct thrombin inhibitor, with a specific reversal antibody (idarucizumab) and a twice-daily dosing schedule.",
+  "identifiers": {
+    "atc": ["B01AE07"],
+    "cas": "211915-06-9",
+    "drugbank": "DB06695"
+  },
+  "mechanism": "Prodrug (dabigatran etexilate) converted by esterases to dabigatran, a reversible direct inhibitor of free and clot-bound thrombin.",
+  "targets": ["Thrombin (factor IIa)"],
+  "pharmacodynamics": "Reversible, dose-dependent prolongation of thrombin time and aPTT.",
+  "pharmacokinetics": {
+    "bioavailability": "~6.5% (after oral prodrug)",
+    "halfLife": "12–17 h",
+    "proteinBinding": "~35%",
+    "metabolism": "Esterase hydrolysis to active dabigatran; no CYP involvement; P-gp substrate",
+    "elimination": "Renal (~80% unchanged)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Nonvalvular AF: 150 mg twice daily (110 mg twice daily in EU for age ≥80 years); VTE treatment: 150 mg twice daily after 5–10 days of parenteral anticoagulation",
+    "maxDose": "150 mg twice daily",
+    "renalAdjustment": "US: 75 mg twice daily if CrCl 15–30 mL/min; avoid if CrCl <15 mL/min; avoid strong P-gp inhibitors in renal impairment"
+  },
+  "safety": {
+    "pregnancy": "Avoid — no adequate data; bleeding risk",
+    "lactation": "Avoid during breastfeeding",
+    "contraindications": ["Active pathological bleeding", "CrCl <15 mL/min (US)", "Mechanical prosthetic heart valve", "Concurrent strong P-gp inducers (e.g., rifampin)"],
+    "warnings": ["Major bleeding — reversal agent idarucizumab", "Spinal/epidural hematoma with neuraxial procedures", "Dyspepsia and GI bleeding (capsule contains tartaric acid)", "Store in original container (moisture degrades the drug)"],
+    "monitoring": ["Renal function at least annually", "Signs/symptoms of bleeding", "Adherence (twice-daily dosing)"],
+    "adverseEffects": [
+      {"effect": "Dyspepsia / GI upset", "frequency": "common"},
+      {"effect": "Bleeding events", "frequency": "common"},
+      {"effect": "Anemia", "frequency": "common"},
+      {"effect": "GI bleeding", "frequency": "uncommon"},
+      {"effect": "Major bleeding", "frequency": "uncommon"}
+    ],
+    "overdose": "Idarucizumab for life-threatening bleeding; dialysis removes dabigatran"
+  },
+  "indications": ["Stroke prevention in nonvalvular atrial fibrillation", "Treatment of DVT/PE and prevention of recurrence", "VTE prophylaxis after hip or knee replacement"],
+  "clinicalPearls": [
+    "The only DOAC with a specific reversal antibody (idarucizumab).",
+    "GI intolerance is the most common reason for discontinuation among DOACs."
+  ],
+  "good": "Patients needing oral anticoagulation with a fully reversible agent.",
+  "bad": "Patients with GI sensitivity, severe renal impairment, or mechanical heart valves.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

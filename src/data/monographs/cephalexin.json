@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "cephalexin",
+  "name": "Cephalexin",
+  "brandNames": ["Keflex"],
+  "class": "Cephalosporin (1st generation)",
+  "classId": "cephalosporin",
+  "systems": ["anti"],
+  "summary": "First-generation oral cephalosporin; first-line for uncomplicated skin and soft-tissue infections and uncomplicated UTI.",
+  "identifiers": {"atc": ["J01DB01"], "cas": "15686-71-2", "drugbank": "DB00567"},
+  "mechanism": "Beta-lactam inhibition of penicillin-binding proteins (PBPs) blocks peptidoglycan cross-linking during cell-wall synthesis.",
+  "targets": ["Penicillin-binding proteins (PBPs)"],
+  "pharmacodynamics": "Time-dependent killing.",
+  "pharmacokinetics": {
+    "bioavailability": "~90% (oral)",
+    "halfLife": "~1 h",
+    "proteinBinding": "~10-15%",
+    "metabolism": "Hepatic (minimal)",
+    "elimination": "Renal (>90% unchanged)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "250-500 mg PO every 6 hours (e.g. 500 mg q6h for cellulitis; 250 mg q6h for uncomplicated UTI)",
+    "renalAdjustment": "Reduce dose/frequency if CrCl < 50 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Generally safe (category B)",
+    "contraindications": ["Hypersensitivity to cephalosporins (caution with penicillin allergy)"],
+    "warnings": ["Cross-reactivity with penicillin allergy (low but real)", "C. difficile colitis", "Inactive against MRSA, Enterococcus, and atypicals"],
+    "monitoring": ["Renal function with high doses"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Nausea", "frequency": "common"},
+      {"effect": "Hypersensitivity (rash)", "frequency": "uncommon"},
+      {"effect": "C. difficile colitis", "frequency": "uncommon"}
+    ]
+  },
+  "indications": ["Skin and soft-tissue infections (cellulitis)", "Uncomplicated UTI", "Streptococcal pharyngitis", "Bone/joint infections (oral step-down)"],
+  "clinicalPearls": ["First-line for uncomplicated cellulitis — cheap, well tolerated", "No MRSA, Enterococcus, or atypical coverage — culture and resistance data matter"],
+  "good": "Simple, well-tolerated oral therapy for skin and urinary infections.",
+  "bad": "Not for MRSA, Enterococcus, or pyelonephritis; E. coli resistance limits empiric UTI use in many regions.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

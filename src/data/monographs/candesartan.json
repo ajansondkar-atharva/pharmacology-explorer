@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "candesartan",
+  "name": "Candesartan",
+  "brandNames": ["Atacand"],
+  "class": "Angiotensin II receptor blocker (ARB)",
+  "classId": "arb",
+  "systems": ["cardio"],
+  "summary": "A potent ARB prodrug (candesartan cilexetil) with strong, dose-dependent blood-pressure lowering and heart-failure morbidity/mortality evidence from the CHARM program.",
+  "identifiers": {"atc": ["C09CA06"], "cas": "139481-59-7", "drugbank": "DB00796"},
+  "mechanism": "Prodrug converted to candesartan during absorption; selectively blocks the AT1 angiotensin II receptor, reducing vasoconstriction and aldosterone release.",
+  "targets": ["Angiotensin II receptor type 1 (AT1)"],
+  "pharmacokinetics": {
+    "bioavailability": "~15% (as candesartan)",
+    "halfLife": "~9 h",
+    "proteinBinding": ">99%",
+    "volumeOfDistribution": "~0.13 L/kg",
+    "metabolism": "Minimal (O-deethylation to an inactive metabolite; minor CYP2C9)",
+    "elimination": "Fecal ~67%, renal ~33%",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Hypertension: 16 mg once daily (range 8–32 mg); heart failure: start 4 mg once daily, double every 2 weeks to 32 mg once daily",
+    "maxDose": "32 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Contraindicated in second and third trimesters (fetotoxic)",
+    "lactation": "Unknown excretion; avoid",
+    "contraindications": ["Pregnancy", "Bilateral renal artery stenosis"],
+    "warnings": ["Hyperkalemia, especially with ACE inhibitors or potassium-sparing agents", "Hypotension in volume-depleted patients", "Rise in creatinine with renal impairment", "Rare angioedema"],
+    "monitoring": ["Blood pressure", "Serum potassium", "Renal function"],
+    "adverseEffects": [
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Headache", "frequency": "uncommon"},
+      {"effect": "Hyperkalemia", "frequency": "uncommon"},
+      {"effect": "Hypotension", "frequency": "uncommon"}
+    ],
+    "overdose": "Hypotension; supportive care with fluids."
+  },
+  "indications": ["Hypertension", "Heart failure with reduced ejection fraction (CHARM program)", "Diabetic nephropathy with albuminuria"],
+  "clinicalPearls": ["CHARM showed reduced cardiovascular death and heart-failure hospitalization in HFrEF — an indication many ARBs lack.", "Once-daily dosing with a smooth 24-hour profile; among the more potent ARBs per milligram."],
+  "good": "Hypertension and HFrEF where a once-daily ARB with hard-outcome evidence is wanted.",
+  "bad": "Pregnancy or hyperkalemia.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

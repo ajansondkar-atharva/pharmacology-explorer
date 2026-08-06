@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "gabapentin",
+  "name": "Gabapentin",
+  "brandNames": ["Neurontin"],
+  "class": "Gabapentinoid",
+  "classId": "gabapentinoid",
+  "systems": ["neuro", "musc"],
+  "summary": "An anticonvulsant that binds the α2δ subunit of voltage-gated calcium channels, used mainly for neuropathic pain, postherpetic neuralgia, and focal seizures.",
+  "identifiers": {
+      "atc": ["N03AX12"],
+      "cas": "60142-96-3",
+      "drugbank": "DB00996"
+  },
+  "mechanism": "Binds the α2δ subunit of presynaptic voltage-gated calcium channels, reducing calcium influx and excitatory neurotransmitter release.",
+  "targets": ["Voltage-gated calcium channel (α2δ subunit)"],
+  "pharmacokinetics": {
+      "bioavailability": "Dose-dependent (~60% at 300 mg, declining as dose rises due to saturable absorption)",
+      "halfLife": "5–7 h (normal renal function)",
+      "proteinBinding": "<3%",
+      "onset": "Days to weeks for neuropathic pain effect",
+      "metabolism": "Minimal; largely renal excretion of unchanged drug",
+      "elimination": "Renal (unchanged)",
+      "routes": ["oral"]},
+  "dosing": {
+      "adult": "Start 300 mg once daily, titrate to 300 mg TID; epilepsy typically 900–1800 mg/day in 3 divided doses",
+      "maxDose": "3600 mg/day",
+      "renalAdjustment": "Required — reduce dose proportionally to CrCl (e.g., CrCl <60 mL/min)"},
+  "safety": {
+      "pregnancy": "Limited data; not clearly teratogenic — use only if clearly needed",
+      "contraindications": ["Hypersensitivity to gabapentin"],
+      "warnings": ["Dizziness and somnolence — falls risk, especially in the elderly", "Abrupt discontinuation can precipitate withdrawal seizures — taper", "Respiratory depression when combined with opioids or other CNS depressants, especially with renal impairment, COPD, or in the elderly", "Class warning: suicidal thoughts and behavior"],
+      "monitoring": ["Renal function for dose adjustment", "Fall risk and sedation in elderly patients"],
+      "adverseEffects": [{"effect": "Somnolence", "frequency": "common"}, {"effect": "Dizziness", "frequency": "common"}, {"effect": "Peripheral edema", "frequency": "common"}, {"effect": "Ataxia", "frequency": "uncommon"}, {"effect": "Weight gain", "frequency": "uncommon"}],
+      "overdose": "Drowsiness, dizziness, ataxia; supportive care; hemodialysis can remove the drug"},
+  "indications": ["Adjunctive therapy for focal (partial) seizures", "Postherpetic neuralgia", "Neuropathic pain (e.g., diabetic peripheral neuropathy — off-label)", "Restless legs syndrome (off-label)"],
+  "clinicalPearls": ["Absorption is saturable — doubling the dose does not proportionally raise plasma levels; keep TID dosing", "Not metabolized and virtually free of CYP interactions — a clean add-on in polypharmacy, but always dose for renal function"],
+  "good": "Neuropathic pain or focal seizures when a non-metabolized, interaction-free add-on is needed in a patient on many drugs.",
+  "bad": "Renal impairment without dose adjustment, or when rapid onset matters — effect builds slowly over weeks.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

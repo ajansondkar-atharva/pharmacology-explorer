@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "prednisone",
+  "name": "Prednisone",
+  "brandNames": ["Deltasone", "Rayos"],
+  "class": "Systemic corticosteroid",
+  "classId": "corticosteroid",
+  "systems": ["endo", "immune"],
+  "summary": "Oral prodrug corticosteroid converted to prednisolone; the workhorse systemic anti-inflammatory for allergic, autoimmune, and respiratory flares.",
+  "identifiers": {
+    "atc": ["H02AB07"],
+    "cas": "53-03-2",
+    "drugbank": "DB00635"
+  },
+  "mechanism": "Prodrug converted to prednisolone, a glucocorticoid receptor agonist that suppresses inflammation and immune responses at the transcriptional level.",
+  "targets": ["Glucocorticoid receptor (via prednisolone)"],
+  "pharmacokinetics": {
+    "bioavailability": "~70–80% oral",
+    "halfLife": "Plasma ~2–3 h (prednisolone ~2–3.5 h); clinical effect persists longer",
+    "proteinBinding": "~70% (prednisolone, dose-dependent)",
+    "onset": "Oral: hours; clinical effect over 1–2 days",
+    "duration": "HPA suppression can outlast plasma levels with repeated dosing",
+    "metabolism": "Hepatic: prednisone → active prednisolone (11β-HSD)",
+    "elimination": "Renal (metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Indication-dependent; e.g., asthma/COPD exacerbation 40–60 mg daily for 5–7 days then taper; autoimmune flares often 0.5–1 mg/kg/day",
+    "renalAdjustment": "None required"
+  },
+  "safety": {
+    "pregnancy": "Crosses the placenta (partially inactivated by placental 11β-HSD2); use the lowest effective dose",
+    "lactation": "Low levels in breast milk; considered compatible at moderate doses — wait ~4 h after a dose",
+    "contraindications": ["Untreated systemic fungal infection", "Hypersensitivity to corticosteroids"],
+    "warnings": ["Adrenal suppression with prolonged use — taper to prevent adrenal crisis", "Hyperglycemia, weight gain, mood changes, insomnia", "Osteoporosis with long-term use — calcium/vitamin D and consider bisphosphonates", "Avoid live vaccines during high-dose therapy"],
+    "monitoring": ["Blood glucose in diabetics", "Blood pressure and fluid status", "Bone density with long-term use"],
+    "adverseEffects": [
+      {"effect": "Hyperglycemia", "frequency": "common"},
+      {"effect": "Insomnia", "frequency": "common"},
+      {"effect": "Weight gain / fluid retention", "frequency": "common"},
+      {"effect": "Mood changes", "frequency": "common"},
+      {"effect": "Osteoporosis (long-term)", "frequency": "common"},
+      {"effect": "Avascular necrosis", "frequency": "rare"}
+    ],
+    "overdose": "Short-term overdose is rarely life-threatening; prolonged high dose causes cushingoid features and hyperglycemia — supportive care and gradual withdrawal"
+  },
+  "indications": ["Asthma and COPD exacerbations", "Systemic allergic reactions", "Autoimmune disease flares (e.g., lupus, vasculitis, IBD)", "Immunosuppression after transplant (long-term)"],
+  "clinicalPearls": ["Converted to prednisolone in the liver — consider prednisolone directly in severe hepatic impairment", "Courses beyond 2–3 weeks require gradual taper to avoid adrenal insufficiency; take with food to reduce GI upset"],
+  "good": "Potent, inexpensive oral anti-inflammatory for moderate-to-severe flares",
+  "bad": "Prolonged use without taper or bone protection; uncontrolled infection; live vaccines at high doses",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

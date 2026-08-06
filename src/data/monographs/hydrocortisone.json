@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "hydrocortisone",
+  "name": "Hydrocortisone",
+  "brandNames": ["Cortef", "Solu-Cortef"],
+  "class": "Corticosteroid",
+  "classId": "corticosteroid",
+  "systems": ["endo"],
+  "summary": "The physiologic glucocorticoid, used at replacement doses for adrenal insufficiency and at higher doses for its anti-inflammatory actions.",
+  "identifiers": {
+    "atc": ["H02AB09"],
+    "cas": "50-23-7",
+    "drugbank": "DB00741"
+  },
+  "mechanism": "Agonist at the glucocorticoid receptor with added mineralocorticoid activity, reproducing endogenous cortisol's metabolic and stress responses.",
+  "targets": ["Glucocorticoid receptor (NR3C1)", "Mineralocorticoid receptor (partial)"],
+  "pharmacodynamics": "At replacement doses restores cortisol physiology; at pharmacologic doses provides anti-inflammatory and immunosuppressive effects plus sodium retention.",
+  "pharmacokinetics": {
+    "bioavailability": "~95% (oral, well absorbed)",
+    "halfLife": "1.5–2 h (plasma); biologic effects ~8–12 h",
+    "proteinBinding": ">90% (transcortin, albumin)",
+    "onset": "Rapid (IV); hours (oral)",
+    "metabolism": "Hepatic",
+    "elimination": "Renal (metabolites)",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "Replacement: 15–25 mg/day in divided doses (e.g., 10 mg morning, 5 mg evening); adrenal crisis: IV 100 mg bolus then 50–100 mg every 6–8 h with stress dosing"
+  },
+  "safety": {
+    "pregnancy": "Physiologic replacement is generally considered safe in pregnancy",
+    "lactation": "Replacement doses are safe",
+    "contraindications": ["Systemic fungal infection (pharmacologic doses)"],
+    "warnings": ["Mineralocorticoid effects (fluid retention, hypertension) more prominent than with prednisolone at high doses", "HPA-axis suppression with prolonged supraphysiologic dosing — taper", "Hyperglycemia, infection risk, osteoporosis with long-term use"],
+    "monitoring": ["Blood glucose", "Blood pressure and fluid status", "Adrenal crisis features during stress/illness"],
+    "adverseEffects": [
+      {"effect": "Fluid retention / hypertension", "frequency": "common"},
+      {"effect": "Hyperglycemia", "frequency": "common"},
+      {"effect": "Insomnia / mood changes", "frequency": "common"},
+      {"effect": "Osteoporosis (long-term)", "frequency": "common"},
+      {"effect": "Adrenal suppression (long-term)", "frequency": "common"}
+    ],
+    "overdose": "Hypertension, hyperglycemia, psychiatric symptoms; supportive care, no antidote"
+  },
+  "indications": [
+    "Primary and secondary adrenal insufficiency (replacement)",
+    "Adrenal crisis (IV)",
+    "Congenital adrenal hyperplasia",
+    "Inflammatory and allergic conditions (pharmacologic doses)"
+  ],
+  "clinicalPearls": [
+    "In adrenal insufficiency, double or triple the dose (stress dosing) during febrile illness — patients need education on this.",
+    "It provides partial mineralocorticoid activity; primary adrenal insufficiency may still need added fludrocortisone."
+  ],
+  "good": "Physiologic replacement that covers both glucocorticoid and some mineralocorticoid needs.",
+  "bad": "Short half-life requires multiple daily doses; mineralocorticoid effects at high doses.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

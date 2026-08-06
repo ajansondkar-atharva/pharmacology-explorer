@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "cefuroxime",
+  "name": "Cefuroxime",
+  "brandNames": ["Zinacef", "Ceftin"],
+  "class": "Cephalosporin (2nd generation)",
+  "classId": "cephalosporin",
+  "systems": ["anti"],
+  "summary": "Second-generation cephalosporin (oral + IV) with improved coverage of H. influenzae and Moraxella; common for respiratory tract infections.",
+  "identifiers": {"atc": ["J01DC02"], "cas": "55268-75-2", "drugbank": "DB01112"},
+  "mechanism": "Beta-lactam inhibition of penicillin-binding proteins (PBPs) blocks cell-wall synthesis; broader Gram-negative activity than first-generation agents.",
+  "targets": ["Penicillin-binding proteins (PBPs)"],
+  "pharmacodynamics": "Time-dependent killing.",
+  "pharmacokinetics": {
+    "bioavailability": "Oral (axetil): ~30-50%, improved with food",
+    "halfLife": "~1.5 h",
+    "proteinBinding": "~33-50%",
+    "metabolism": "Hepatic (minimal)",
+    "elimination": "Renal (unchanged)",
+    "routes": ["oral", "iv", "im"]
+  },
+  "dosing": {
+    "adult": "Oral: 250-500 mg PO every 12 hours; IV: 750 mg-1.5 g every 8 hours",
+    "renalAdjustment": "Reduce dose/frequency in significant renal impairment"
+  },
+  "safety": {
+    "pregnancy": "Generally safe (category B)",
+    "contraindications": ["Hypersensitivity to cephalosporins"],
+    "warnings": ["Cross-allergy with penicillins (low)", "C. difficile colitis", "No Pseudomonas, MRSA, or reliable anaerobic coverage"],
+    "monitoring": ["Renal function"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Nausea", "frequency": "common"},
+      {"effect": "Rash", "frequency": "uncommon"}
+    ]
+  },
+  "indications": ["Acute bacterial sinusitis", "Acute otitis media", "Community-acquired pneumonia (mild-moderate)", "Skin and soft-tissue infections", "Early Lyme disease"],
+  "clinicalPearls": ["Take oral cefuroxime axetil with food — absorption is significantly better", "Covers H. influenzae and Moraxella catarrhalis — a step up from first-generation agents for respiratory use"],
+  "good": "Oral/IV second-generation cephalosporin well suited to respiratory tract infections.",
+  "bad": "Not for Pseudomonas, MRSA, or meningitis; oral form has variable absorption.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

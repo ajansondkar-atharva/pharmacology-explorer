@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "rizatriptan",
+  "name": "Rizatriptan",
+  "brandNames": ["Maxalt"],
+  "class": "Triptan",
+  "classId": "triptan",
+  "systems": ["neuro"],
+  "summary": "An orally fast-acting triptan with roughly three times the oral bioavailability of sumatriptan, widely used for acute migraine attacks.",
+  "identifiers": {
+      "atc": ["N02CC04"],
+      "cas": "144034-80-0",
+      "drugbank": "DB00953"
+  },
+  "mechanism": "Selective 5-HT1B/1D receptor agonist — constricts dilated cranial vessels and inhibits trigeminal nociceptive signaling.",
+  "targets": ["5-HT1B/1D receptors"],
+  "pharmacokinetics": {
+      "bioavailability": "~40–45% (oral)",
+      "halfLife": "2–3 h",
+      "proteinBinding": "~14%",
+      "onset": "~30 min (oral)",
+      "metabolism": "Hepatic (MAO-A)",
+      "routes": ["oral"]},
+  "dosing": {
+      "adult": "10 mg PO at onset (5 mg if taking propranolol); may repeat after 2 h",
+      "maxDose": "30 mg/24 h"},
+  "safety": {
+      "pregnancy": "Limited data; no clear major teratogenicity — use the lowest effective frequency",
+      "contraindications": ["Ischemic heart disease or coronary vasospasm (including Prinzmetal angina)", "Uncontrolled hypertension", "Hemiplegic or basilar migraine", "Concomitant MAOIs (within 14 days)", "Ergotamines or other triptans within 24 h"],
+      "warnings": ["Coronary vasospasm/ischemia — assess cardiovascular risk before first use", "Serotonin syndrome when combined with SSRIs/SNRIs/MAOIs", "Propranolol increases rizatriptan levels — halve the dose", "Medication-overuse headache if used more than ~2 days/week"],
+      "monitoring": ["Cardiovascular risk assessment before first dose", "Headache frequency — overuse headache"],
+      "adverseEffects": [{"effect": "Dizziness", "frequency": "common"}, {"effect": "Somnolence", "frequency": "common"}, {"effect": "Asthenia", "frequency": "common"}, {"effect": "Nausea", "frequency": "common"}, {"effect": "Chest pressure/pain", "frequency": "uncommon"}],
+      "overdose": "Hypertension, chest symptoms; mostly benign, supportive care"},
+  "indications": ["Acute migraine with or without aura"],
+  "clinicalPearls": ["Fastest oral onset of the common triptans (~30 min) with higher bioavailability than sumatriptan tablets", "Halve to 5 mg whenever the patient is on propranolol — levels rise substantially"],
+  "good": "Rapid oral migraine relief with better bioavailability than sumatriptan tablets.",
+  "bad": "Same cardiovascular exclusions as all triptans; needs dose reduction with propranolol.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

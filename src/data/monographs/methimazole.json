@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "methimazole",
+  "name": "Methimazole",
+  "brandNames": ["Tapazole"],
+  "class": "Thionamide",
+  "classId": "thionamide",
+  "systems": ["endo"],
+  "summary": "A thionamide that blocks thyroid hormone synthesis and is first-line medical therapy for Graves disease, with rare but serious toxicity.",
+  "identifiers": {
+    "atc": ["H03BB02"],
+    "cas": "60-56-0",
+    "drugbank": "DB00763"
+  },
+  "mechanism": "Inhibits thyroid peroxidase, blocking iodination and coupling of thyroglobulin tyrosines and therefore de novo thyroid hormone synthesis.",
+  "targets": ["Thyroid peroxidase (TPO)"],
+  "pharmacodynamics": "Lowers circulating thyroid hormone only as stored colloid depletes; also has immunomodulatory effects in Graves disease.",
+  "pharmacokinetics": {
+    "bioavailability": "~80–90%",
+    "halfLife": "~5–6 h",
+    "onset": "Clinical euthyroidism in 2–4 weeks (blocks synthesis, not release)",
+    "metabolism": "Hepatic",
+    "elimination": "Renal",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Graves disease: 15–30 mg/day once daily initially, then maintenance 5–15 mg/day",
+    "maxDose": "60 mg/day (severe thyrotoxicosis)"
+  },
+  "safety": {
+    "pregnancy": "Avoid in the first trimester when possible — PTU is preferred; methimazole is associated with aplasia cutis and embryopathy",
+    "lactation": "Use lowest effective dose; monitor infant thyroid function",
+    "contraindications": ["History of agranulocytosis or severe hypersensitivity to thionamides", "Severe hepatic disease (relative)"],
+    "warnings": ["Agranulocytosis — stop and check CBC for fever or sore throat", "Hepatotoxicity (cholestatic pattern)", "Rash and arthralgia can be dose-limiting", "Teratogenic; use PTU in early pregnancy"],
+    "monitoring": ["Thyroid function tests", "CBC if fever/sore throat develops", "Liver enzymes if symptoms"],
+    "adverseEffects": [
+      {"effect": "Rash / pruritus", "frequency": "common"},
+      {"effect": "Arthralgia", "frequency": "uncommon"},
+      {"effect": "Agranulocytosis", "frequency": "rare"},
+      {"effect": "Hepatotoxicity / cholestatic jaundice", "frequency": "rare"}
+    ],
+    "overdose": "No specific antidote; supportive care; may worsen myelosuppression"
+  },
+  "indications": [
+    "Graves disease (first-line medical therapy)",
+    "Toxic adenoma and toxic multinodular goiter",
+    "Preparation for radioactive iodine or surgery"
+  ],
+  "clinicalPearls": [
+    "Effect is delayed 2–4 weeks because existing stored hormone must be depleted — add beta-blockers for symptom control meanwhile.",
+    "Educate patients: unexplained fever or sore throat means stop the drug and check a blood count."
+  ],
+  "good": "Once-daily oral therapy with high remission rates in Graves disease.",
+  "bad": "First trimester of pregnancy (use PTU), agranulocytosis history, or hepatic disease.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "levetiracetam",
+  "name": "Levetiracetam",
+  "brandNames": ["Keppra"],
+  "class": "Anticonvulsant",
+  "classId": "anticonvulsant",
+  "systems": ["neuro"],
+  "summary": "A broad-spectrum anticonvulsant acting at the synaptic vesicle protein SV2A, notable for rapid onset, IV availability, and absence of CYP-mediated interactions.",
+  "identifiers": {
+      "atc": ["N03AX14"],
+      "cas": "102767-28-2",
+      "drugbank": "DB01202"
+  },
+  "mechanism": "Binds synaptic vesicle protein 2A (SV2A), modulating vesicle fusion and neurotransmitter release; exact anticonvulsant mechanism not fully defined.",
+  "targets": ["Synaptic vesicle protein 2A (SV2A)"],
+  "pharmacokinetics": {
+      "bioavailability": "~100%",
+      "halfLife": "6–8 h",
+      "proteinBinding": "<10%",
+      "metabolism": "Minimal hepatic metabolism (enzymatic hydrolysis); ~66% excreted unchanged in urine",
+      "elimination": "Renal (largely unchanged)",
+      "routes": ["oral", "iv"]},
+  "dosing": {
+      "adult": "Start 250–500 mg BID; usual maintenance 1000–1500 mg BID; IV dose equals oral dose",
+      "maxDose": "3000 mg/day",
+      "renalAdjustment": "Required — reduce dose when CrCl <80 mL/min"},
+  "safety": {
+      "pregnancy": "Limited data; not clearly teratogenic and appears relatively favorable among AEDs — do not stop abruptly in epilepsy",
+      "contraindications": ["Hypersensitivity to levetiracetam"],
+      "warnings": ["Behavioral/psychiatric effects — agitation, aggression, psychosis (more common in children)", "Somnolence and asthenia — caution with driving", "Class warning: suicidal thoughts and behavior", "Rare serious skin reactions (DRESS/SJS) — stop for unexplained rash"],
+      "monitoring": ["Behavioral and psychiatric symptoms", "Renal function for dose adjustment"],
+      "adverseEffects": [{"effect": "Somnolence", "frequency": "common"}, {"effect": "Dizziness", "frequency": "common"}, {"effect": "Asthenia", "frequency": "common"}, {"effect": "Irritability/behavioral changes", "frequency": "common"}, {"effect": "Coordination difficulties", "frequency": "uncommon"}],
+      "overdose": "Somnolence, agitation, rarely respiratory depression; supportive care"},
+  "indications": ["Focal (partial) seizures — adjunctive and monotherapy", "Myoclonic seizures (juvenile myoclonic epilepsy)", "Primary generalized tonic-clonic seizures", "Status epilepticus (IV)"],
+  "clinicalPearls": ["Zero CYP interactions — the easiest AED to add to polypharmacy", "Behavioral side effects (irritability, mood change) are common, especially in children, and are often the dose-limiting factor"],
+  "good": "A fast, well-tolerated add-on with no drug interactions — ideal in polypharmacy and acute settings (IV).",
+  "bad": "Patients with psychiatric comorbidity — behavioral activation can be dose-limiting.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "insulin-detemir",
+  "name": "Insulin detemir",
+  "brandNames": ["Levemir"],
+  "class": "Long-acting insulin",
+  "classId": "insulin-long",
+  "systems": ["endo"],
+  "summary": "A long-acting basal insulin whose action is prolonged by albumin binding; duration is dose-dependent and often requires twice-daily dosing.",
+  "identifiers": {
+    "atc": ["A10AE05"],
+    "cas": "169148-63-4",
+    "drugbank": "DB01307"
+  },
+  "mechanism": "Acylation of insulin with myristic acid promotes reversible albumin binding, slowing absorption and prolonging action to give basal coverage.",
+  "targets": ["Insulin receptor"],
+  "pharmacodynamics": "Provides relatively flat background insulin with less between-patient variability than NPH; weight gain signal may be lower than NPH.",
+  "pharmacokinetics": {
+    "halfLife": "5–7 h (action prolonged by albumin binding)",
+    "proteinBinding": "~98% (albumin)",
+    "onset": "1–2 h (SC)",
+    "duration": "Up to ~18–24 h, dose-dependent",
+    "metabolism": "Enzymatic degradation; hepatic and renal clearance",
+    "elimination": "Renal and hepatic",
+    "routes": ["sc"]
+  },
+  "dosing": {
+    "adult": "Individualized; once or twice daily SC (often BID in type 1 diabetes), typically about 30–50% of total daily insulin as basal"
+  },
+  "safety": {
+    "pregnancy": "Safe and standard; insulin is the preferred glucose-lowering treatment in pregnancy",
+    "lactation": "Generally safe; insulin does not cross into breast milk in significant amounts",
+    "contraindications": ["Hypoglycemia", "Hypersensitivity to the product"],
+    "warnings": ["Hypoglycemia, especially with missed meals or exercise", "Dose-dependent duration means coverage may wane before 24 h", "Injection-site reactions", "Weight gain"],
+    "monitoring": ["Blood glucose (including fasting and pre-dinner if BID)", "HbA1c", "Injection sites"],
+    "adverseEffects": [
+      {"effect": "Hypoglycemia", "frequency": "common"},
+      {"effect": "Weight gain", "frequency": "common"},
+      {"effect": "Injection-site reactions", "frequency": "uncommon"},
+      {"effect": "Lipohypertrophy", "frequency": "uncommon"}
+    ],
+    "overdose": "Hypoglycemia; treat with oral or IV glucose and close monitoring"
+  },
+  "indications": [
+    "Type 1 diabetes (basal coverage)",
+    "Type 2 diabetes requiring basal insulin"
+  ],
+  "clinicalPearls": [
+    "Its duration is dose-dependent — at lower doses it may not last a full 24 h, so T1DM patients are often dosed twice daily.",
+    "Some trials suggest less weight gain with detemir than NPH insulin."
+  ],
+  "good": "Relatively flat basal profile with a lower weight-gain signal than NPH.",
+  "bad": "Coverage may not span 24 h at low doses; BID dosing is common in type 1 diabetes.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

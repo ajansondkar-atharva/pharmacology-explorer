@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "morphine",
+  "name": "Morphine",
+  "brandNames": ["MS Contin"],
+  "class": "Opioid analgesic",
+  "classId": "opioid",
+  "systems": ["neuro", "musc"],
+  "summary": "The reference full mu-opioid agonist for severe acute and cancer pain, available in multiple routes; its active metabolite M6G accumulates in renal failure.",
+  "identifiers": {
+      "atc": ["N02AA01"],
+      "cas": "57-27-2",
+      "drugbank": "DB00295"
+  },
+  "mechanism": "Full agonist at mu-opioid receptors (weaker action at kappa and delta), inhibiting ascending pain transmission and activating descending inhibitory pathways.",
+  "targets": ["Mu-opioid receptor"],
+  "pharmacokinetics": {
+      "bioavailability": "~30–40% (oral, first-pass effect)",
+      "halfLife": "2–4 h",
+      "proteinBinding": "~30–35%",
+      "onset": "IV ~5 min; PO 30–60 min",
+      "duration": "3–6 h (IR)",
+      "metabolism": "Hepatic glucuronidation (UGT2B7) to morphine-3-glucuronide (inactive) and morphine-6-glucuronide (M6G, active)",
+      "routes": ["oral", "iv", "sc", "im"]},
+  "dosing": {
+      "adult": "2.5–10 mg IV/SC q4h PRN; 10–30 mg PO q4h PRN (IR); extended-release for around-the-clock chronic pain",
+      "renalAdjustment": "Reduce dose in renal impairment — M6G accumulates and causes toxicity"},
+  "safety": {
+      "pregnancy": "Chronic use causes neonatal opioid withdrawal syndrome; use near delivery can depress neonatal respiration",
+      "contraindications": ["Significant respiratory depression", "Acute or severe asthma", "GI obstruction or paralytic ileus", "Concomitant MAOIs (within 14 days)"],
+      "warnings": ["Black box: addiction, abuse, and misuse — risk of opioid use disorder", "Black box: life-threatening respiratory depression — especially in opioid-naive patients and with CNS depressants", "Black box: accidental ingestion (especially by children) can be fatal", "Black box: neonatal opioid withdrawal syndrome with prolonged use during pregnancy", "M6G accumulation in renal failure causes sedation, myoclonus, and respiratory depression", "Concurrent benzodiazepines or alcohol markedly increase respiratory depression"],
+      "monitoring": ["Respiratory rate and sedation score", "Bowel regimen — constipation is near-universal", "Renal function — metabolite accumulation"],
+      "adverseEffects": [{"effect": "Constipation", "frequency": "common"}, {"effect": "Nausea/vomiting", "frequency": "common"}, {"effect": "Somnolence", "frequency": "common"}, {"effect": "Pruritus", "frequency": "common"}, {"effect": "Urinary retention", "frequency": "uncommon"}, {"effect": "Respiratory depression", "frequency": "uncommon"}],
+      "overdose": "Respiratory depression, miosis, coma; naloxone reverses opioid effects (may require repeat doses due to naloxone's short half-life)"},
+  "indications": ["Moderate to severe acute pain", "Cancer pain and severe chronic pain (extended-release)", "Dyspnea in palliative care", "Acute coronary syndrome pain (IV)"],
+  "clinicalPearls": ["Oral bioavailability ~30% — use roughly a 3:1 oral-to-IV ratio when converting routes", "M6G is active and accumulates in renal failure — new sedation or myoclonus signals metabolite toxicity"],
+  "good": "Severe acute and cancer pain — the reference opioid with multiple routes.",
+  "bad": "Renal impairment (M6G accumulation), sleep apnea, or when constipation would be dangerous (e.g., postoperative ileus).",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

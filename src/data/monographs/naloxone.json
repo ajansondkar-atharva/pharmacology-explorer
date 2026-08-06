@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "naloxone",
+  "name": "Naloxone",
+  "brandNames": ["Narcan"],
+  "class": "Opioid antagonist",
+  "classId": "opioid-antagonist",
+  "systems": ["neuro"],
+  "summary": "A competitive mu-opioid receptor antagonist that rapidly reverses opioid-induced respiratory depression — the essential antidote for opioid overdose.",
+  "identifiers": {
+      "atc": ["V03AB15"],
+      "cas": "465-65-6",
+      "drugbank": "DB01183"
+  },
+  "mechanism": "Competitive antagonist at mu-opioid receptors, displacing opioids and reversing respiratory depression, sedation, and miosis; no intrinsic agonist activity.",
+  "targets": ["Mu-opioid receptor (competitive antagonist)"],
+  "pharmacokinetics": {
+      "bioavailability": "Negligible orally (extensive first-pass metabolism)",
+      "halfLife": "30–90 min",
+      "proteinBinding": "~45–50%",
+      "onset": "IV ~1–2 min; IM/SC/IN ~2–5 min",
+      "duration": "20–90 min (dose-dependent)",
+      "metabolism": "Hepatic glucuronidation",
+      "routes": ["iv", "im", "sc", "intranasal"]},
+  "dosing": {
+      "adult": "0.4–2 mg IV/IM/SC, repeat every 2–3 min as needed; intranasal 2–4 mg; continuous infusion for long-acting opioids"},
+  "safety": {
+      "pregnancy": "Use in overdose — reversal of maternal respiratory depression outweighs risk; may precipitate acute withdrawal in mother and fetus",
+      "contraindications": ["Known hypersensitivity (rare)"],
+      "warnings": ["Precipitated acute opioid withdrawal in dependent patients — agitation, vomiting, and autonomic storm can be severe", "Half-life (20–90 min) is shorter than most opioids — renarcotization risk; observe and repeat doses", "Rare pulmonary edema and cardiac arrhythmias, particularly with rapid reversal", "High-potency opioids (fentanyl, buprenorphine) may need higher or repeated doses"],
+      "monitoring": ["Respiratory status for at least 2 h after the last dose (longer for methadone/ER opioids)", "Repeat dosing readiness and patient education on carry-narcan kits"],
+      "adverseEffects": [{"effect": "Precipitated withdrawal (in dependent patients)", "frequency": "common"}, {"effect": "Nausea/vomiting", "frequency": "common"}, {"effect": "Tachycardia/hypertension (withdrawal)", "frequency": "common"}, {"effect": "Pulmonary edema", "frequency": "rare"}, {"effect": "Seizures", "frequency": "rare"}],
+      "overdose": "Essentially no intrinsic toxicity in the absence of opioids; effects wear off in 20–90 min, so repeated doses may be needed"},
+  "indications": ["Opioid overdose reversal (respiratory depression)", "Opioid-induced respiratory depression", "Postoperative opioid reversal (low doses)"],
+  "clinicalPearls": ["Half-life (20–90 min) is shorter than most opioids — patients can renarcotize hours later; observe ≥2 h, longer after methadone or ER opioids", "IV onset ~1–2 min vs ~2–5 min for IM/IN — community intranasal kits work with minimal training and save lives"],
+  "good": "Rapid reversal of opioid-induced respiratory depression — the antidote that belongs in every overdose kit.",
+  "bad": "As a diagnostic tool or beyond overdose reversal — its short duration invites renarcotization, and opioid-tolerant patients get precipitated withdrawal.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

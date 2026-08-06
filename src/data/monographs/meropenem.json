@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "meropenem",
+  "name": "Meropenem",
+  "brandNames": ["Merrem"],
+  "class": "Carbapenem",
+  "classId": "carbapenem",
+  "systems": ["anti"],
+  "summary": "Broadest-spectrum beta-lactam; stable to most beta-lactamases including ESBLs and AmpC — definitive therapy for severe resistant infections.",
+  "identifiers": {"atc": ["J01DH02"], "cas": "96036-03-2", "drugbank": "DB00760"},
+  "mechanism": "Carbapenem beta-lactam that inhibits penicillin-binding proteins (PBPs); stable to most beta-lactamases, including ESBLs and AmpC cephalosporinases.",
+  "targets": ["Penicillin-binding proteins (PBPs)"],
+  "pharmacodynamics": "Time-dependent killing.",
+  "pharmacokinetics": {
+    "halfLife": "~1 h",
+    "proteinBinding": "~2%",
+    "metabolism": "Hepatic (minimal)",
+    "elimination": "Renal (~70% unchanged)",
+    "routes": ["iv"]
+  },
+  "dosing": {
+    "adult": "1 g IV every 8 hours (500 mg-2 g every 8 hours depending on indication)",
+    "renalAdjustment": "Reduce dose if CrCl < 50 mL/min"
+  },
+  "safety": {
+    "pregnancy": "Generally safe (category B)",
+    "lactation": "Compatible — minimal excretion in breast milk",
+    "contraindications": ["Hypersensitivity to carbapenems/beta-lactams"],
+    "warnings": ["Seizures (higher risk with renal impairment/CNS disease — though lower than imipenem)", "C. difficile colitis", "Cross-reactivity with penicillin allergy", "Thrombocytopenia (rare)"],
+    "monitoring": ["Renal function", "Seizure risk in renal/CNS disease"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Nausea", "frequency": "common"},
+      {"effect": "Rash", "frequency": "uncommon"},
+      {"effect": "Seizures (renal/CNS disease)", "frequency": "uncommon"},
+      {"effect": "C. difficile colitis", "frequency": "uncommon"}
+    ]
+  },
+  "indications": ["Severe nosocomial infections (ESBL-producing Enterobacterales)", "Bacterial meningitis (excellent CSF penetration)", "Febrile neutropenia", "Complicated intra-abdominal infections"],
+  "clinicalPearls": ["Carbapenem of choice when ESBLs are suspected; lower seizure risk than imipenem", "No activity against MRSA, VRE, or Stenotrophomonas — not a monotherapy panacea"],
+  "good": "The broadest beta-lactam — definitive therapy for ESBL and severe mixed infections.",
+  "bad": "Carbapenem resistance pressure — reserve appropriately; C. difficile and seizure risk.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

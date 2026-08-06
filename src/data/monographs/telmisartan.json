@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "telmisartan",
+  "name": "Telmisartan",
+  "brandNames": ["Micardis"],
+  "class": "Angiotensin II receptor blocker (ARB)",
+  "classId": "arb",
+  "systems": ["cardio"],
+  "summary": "An ARB with the longest half-life of the class (~24 h), giving smooth, true once-daily blood-pressure coverage; also shown to reduce cardiovascular events in high-risk patients (ONTARGET).",
+  "identifiers": {"atc": ["C09CA07"], "cas": "144701-48-4", "drugbank": "DB00966"},
+  "mechanism": "Selectively blocks the AT1 angiotensin II receptor, preventing angiotensin II-mediated vasoconstriction, aldosterone release, and sodium retention.",
+  "targets": ["Angiotensin II receptor type 1 (AT1)"],
+  "pharmacokinetics": {
+    "bioavailability": "~40–60%",
+    "halfLife": "~24 h",
+    "proteinBinding": ">99%",
+    "volumeOfDistribution": "~500 L",
+    "metabolism": "Minimal (glucuronidation; not CYP-dependent)",
+    "elimination": "Fecal ~97% (biliary), renal <1%",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "40 mg once daily (range 20–80 mg)",
+    "maxDose": "80 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Contraindicated in second and third trimesters (fetotoxic)",
+    "lactation": "Unknown excretion; avoid",
+    "contraindications": ["Pregnancy", "Bilateral renal artery stenosis", "Co-administration with aliskiren in diabetes"],
+    "warnings": ["Hyperkalemia, especially with ACE inhibitors, potassium-sparing diuretics, or potassium supplements", "Hypotension in volume-depleted patients", "Rise in serum creatinine with renal impairment", "Rare angioedema"],
+    "monitoring": ["Blood pressure", "Serum potassium", "Renal function"],
+    "adverseEffects": [
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Diarrhea", "frequency": "uncommon"},
+      {"effect": "Hypotension", "frequency": "uncommon"},
+      {"effect": "Hyperkalemia", "frequency": "uncommon"},
+      {"effect": "Headache", "frequency": "uncommon"}
+    ],
+    "overdose": "Hypotension; supportive care with fluids."
+  },
+  "indications": ["Hypertension", "Cardiovascular risk reduction (MI, stroke, CV death) in high-risk patients", "Diabetic nephropathy with albuminuria"],
+  "clinicalPearls": ["Longest-acting ARB — an excellent choice when 24-hour trough coverage matters.", "It is a partial PPAR-gamma agonist with modest metabolic effects, but this is not an FDA-labeled indication."],
+  "good": "Hypertension needing robust 24-h coverage; CV risk reduction.",
+  "bad": "Pregnancy, hyperkalemia, or bilateral renal artery stenosis.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

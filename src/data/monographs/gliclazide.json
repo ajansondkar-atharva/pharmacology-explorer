@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "gliclazide",
+  "name": "Gliclazide",
+  "brandNames": ["Diamicron"],
+  "class": "Sulfonylurea",
+  "classId": "sulfonylurea",
+  "systems": ["endo"],
+  "summary": "A second-generation sulfonylurea widely used for type 2 diabetes, available as a once-daily modified-release formulation.",
+  "identifiers": {
+    "atc": ["A10BB09"],
+    "cas": "21187-98-4",
+    "drugbank": "DB01120"
+  },
+  "mechanism": "Binds the sulfonylurea receptor (SUR1) on pancreatic beta cells, closing ATP-sensitive potassium channels and stimulating calcium-dependent insulin release.",
+  "targets": ["SUR1/Kir6.2 ATP-sensitive potassium channel (pancreatic beta cells)"],
+  "pharmacodynamics": "Improves prandial insulin secretion; may have mild antiplatelet and antioxidant effects (clinical significance uncertain).",
+  "pharmacokinetics": {
+    "bioavailability": "~100% (well absorbed)",
+    "halfLife": "~10–12 h (up to ~16 h for modified release)",
+    "proteinBinding": "85–94%",
+    "onset": "~1 h",
+    "duration": "~12–24 h (MR once daily)",
+    "metabolism": "Hepatic (CYP2C9)",
+    "elimination": "Renal (metabolites)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Modified release: 30 mg once daily with breakfast, titrate to 60–120 mg once daily; standard release: 80–160 mg/day in divided doses",
+    "maxDose": "120 mg/day (MR)"
+  },
+  "safety": {
+    "pregnancy": "Not preferred; insulin is standard during pregnancy",
+    "lactation": "Caution; monitor infant for hypoglycemia",
+    "contraindications": ["Type 1 diabetes", "Diabetic ketoacidosis", "Severe renal or hepatic impairment (relative)"],
+    "warnings": ["Hypoglycemia, especially with missed meals, alcohol, or renal impairment", "Weight gain", "Rare hematologic reactions"],
+    "monitoring": ["Blood glucose", "HbA1c", "Renal function"],
+    "adverseEffects": [
+      {"effect": "Hypoglycemia", "frequency": "common"},
+      {"effect": "Weight gain", "frequency": "common"},
+      {"effect": "GI upset", "frequency": "uncommon"},
+      {"effect": "Rash", "frequency": "uncommon"}
+    ],
+    "overdose": "Hypoglycemia; treat with oral or IV glucose and close monitoring"
+  },
+  "indications": [
+    "Type 2 diabetes mellitus as adjunct to diet and exercise",
+    "Combination therapy with metformin or other agents"
+  ],
+  "clinicalPearls": [
+    "In the ADVANCE trial it showed microvascular benefit with a low hypoglycemia signal relative to other sulfonylureas.",
+    "The MR formulation is dosed once daily, improving adherence."
+  ],
+  "good": "Well-tolerated sulfonylurea with a convenient once-daily MR option and a favorable trial record.",
+  "bad": "High hypoglycemia risk in the elderly or renally impaired; weight gain.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

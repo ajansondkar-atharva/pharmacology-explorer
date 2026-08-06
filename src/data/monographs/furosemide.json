@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "furosemide",
+  "name": "Furosemide",
+  "brandNames": ["Lasix"],
+  "class": "Loop diuretic",
+  "classId": "loop-diuretic",
+  "systems": ["cardio", "renal"],
+  "summary": "A high-ceiling loop diuretic that blocks sodium reabsorption in the thick ascending limb; first-line for acute pulmonary edema and symptomatic congestion in heart failure.",
+  "identifiers": {"atc": ["C03CA01"], "cas": "54-31-9", "drugbank": "DB00695"},
+  "mechanism": "Inhibits the Na+-K+-2Cl− cotransporter (NKCC2) in the thick ascending limb of the loop of Henle, producing potent natriuresis and diuresis.",
+  "targets": ["Na-K-2Cl cotransporter (NKCC2, SLC12A1)"],
+  "pharmacokinetics": {
+    "bioavailability": "~50–60% (oral, variable)",
+    "halfLife": "~1.5–2 h (healthy); prolonged in renal impairment and heart failure",
+    "proteinBinding": "~95–98%",
+    "metabolism": "Minimal hepatic metabolism (minor glucuronide)",
+    "elimination": "Renal ~60–70% (mostly unchanged), remainder fecal",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "Edema/heart failure: 20–40 mg once daily oral or IV, titrated to effect; acute pulmonary edema: 40 mg IV (repeat as needed)",
+    "maxDose": "600 mg/day (oral, severe refractory cases)"
+  },
+  "safety": {
+    "pregnancy": "Category C; used when benefit outweighs risk",
+    "lactation": "Small amounts in milk; may suppress lactation",
+    "contraindications": ["Anuria"],
+    "warnings": ["Hypokalemia, hyponatremia, and hypovolemia — the classic triad of loop-diuretic excess", "Ototoxicity with rapid IV push or with aminoglycosides", "Sulfonamide cross-reactivity — caution in sulfa allergy", "Hyperuricemia and gout flares", "Hyperglycemia and hypomagnesemia"],
+    "monitoring": ["Daily weight and urine output", "Serum potassium, sodium, magnesium", "Renal function and blood pressure"],
+    "adverseEffects": [
+      {"effect": "Hypokalemia", "frequency": "common"},
+      {"effect": "Hypotension/dehydration", "frequency": "common"},
+      {"effect": "Hyponatremia", "frequency": "common"},
+      {"effect": "Hyperuricemia", "frequency": "common"},
+      {"effect": "Hypomagnesemia", "frequency": "uncommon"},
+      {"effect": "Ototoxicity", "frequency": "rare"}
+    ],
+    "overdose": "Dehydration, electrolyte depletion, and hypotension; replace volume and electrolytes."
+  },
+  "indications": ["Acute pulmonary edema", "Congestion in heart failure", "Edema of hepatic or renal origin", "Hypertension, especially with renal impairment"],
+  "clinicalPearls": ["Loop diuretics have a threshold effect — the dose must exceed the diuretic threshold to work, so escalation is stepwise.", "Oral bioavailability is ~50%, so IV dose is roughly half the oral dose for equivalent effect."],
+  "good": "Acute congestion and diuresis in renal-impaired patients who do not respond to thiazides.",
+  "bad": "Anuria, significant electrolyte depletion, or concurrent aminoglycosides (ototoxicity).",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

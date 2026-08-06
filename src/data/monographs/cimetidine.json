@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "cimetidine",
+  "name": "Cimetidine",
+  "brandNames": ["Tagamet"],
+  "class": "H2-receptor antagonist",
+  "classId": "h2-blocker",
+  "systems": ["gi"],
+  "summary": "The first H2 blocker — effective acid suppression but a potent CYP enzyme inhibitor and a major source of drug interactions.",
+  "identifiers": {
+    "atc": ["A02BA01"],
+    "cas": "51481-61-9",
+    "drugbank": "DB00501"
+  },
+  "mechanism": "Competitive antagonist at parietal-cell H2 receptors, reducing basal and stimulated gastric acid secretion.",
+  "targets": ["H2 histamine receptor (parietal cells)"],
+  "pharmacokinetics": {
+    "bioavailability": "~60–70% oral",
+    "halfLife": "~2 h (prolonged in renal impairment)",
+    "proteinBinding": "~20%",
+    "onset": "30–60 min",
+    "duration": "4–8 h",
+    "metabolism": "Hepatic (also inhibits CYP1A2, CYP2D6, CYP3A4)",
+    "elimination": "Renal, largely unchanged",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "Peptic ulcer: 400 mg twice daily or 800 mg at bedtime; OTC heartburn: 200 mg as needed",
+    "maxDose": "800 mg/day usual (higher in Zollinger-Ellison syndrome)",
+    "renalAdjustment": "CrCl < 30 mL/min: 300 mg every 12 h or a longer interval"
+  },
+  "safety": {
+    "pregnancy": "Extensive historical use; no major teratogenicity demonstrated",
+    "lactation": "Excreted in breast milk; considered compatible (famotidine often preferred)",
+    "contraindications": ["Hypersensitivity to cimetidine or other H2 blockers"],
+    "warnings": ["Potent CYP inhibitor (1A2/2D6/3A4) — check warfarin, phenytoin, theophylline, clozapine levels", "Antiandrogenic effects at high doses (gynecomastia, impotence)", "Confusion in elderly or renal impairment"],
+    "monitoring": ["Renal function (dosing)", "Levels of co-administered CYP substrates", "Response and warning symptoms (GI bleeding, dysphagia, weight loss)"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Gynecomastia (high dose)", "frequency": "uncommon"},
+      {"effect": "Confusion (elderly/renal impairment)", "frequency": "uncommon"},
+      {"effect": "Thrombocytopenia", "frequency": "rare"}
+    ],
+    "overdose": "Generally benign — supportive care"
+  },
+  "indications": ["Peptic ulcer disease (treatment and maintenance)", "GERD and heartburn", "Hypersecretory states (Zollinger-Ellison syndrome)", "Stress ulcer prophylaxis in ICU"],
+  "clinicalPearls": ["The classic drug-interaction poster child — its CYP inhibition affects warfarin, phenytoin, theophylline, and many others", "High-dose or long-term use can cause reversible gynecomastia via antiandrogen effects"],
+  "good": "Effective, inexpensive acid suppression",
+  "bad": "Polypharmacy (CYP interactions); high-dose long-term use; renal impairment without dose adjustment",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "topiramate",
+  "name": "Topiramate",
+  "brandNames": ["Topamax"],
+  "class": "Anticonvulsant",
+  "classId": "anticonvulsant",
+  "systems": ["neuro"],
+  "summary": "A broad-spectrum anticonvulsant with multiple mechanisms that also prevents migraine and causes weight loss, at the cost of cognitive and renal side effects.",
+  "identifiers": {
+      "atc": ["N03AX11"],
+      "cas": "97240-79-4",
+      "drugbank": "DB00273"
+  },
+  "mechanism": "Multiple actions: use-dependent sodium channel block, GABA-A potentiation, AMPA/kainate glutamate antagonism, and weak carbonic anhydrase inhibition.",
+  "targets": ["Voltage-gated sodium channels", "GABA-A receptors", "AMPA/kainate glutamate receptors", "Carbonic anhydrase"],
+  "pharmacokinetics": {
+      "bioavailability": "~80%",
+      "halfLife": "19–25 h",
+      "proteinBinding": "~15%",
+      "metabolism": "Partial hepatic metabolism (hydroxylation, hydrolysis, glucuronidation); ~70% excreted unchanged in urine",
+      "routes": ["oral"]},
+  "dosing": {
+      "adult": "Start 25 mg/day, titrate weekly; usual maintenance 100–200 mg BID (epilepsy) or 50–100 mg BID (migraine prophylaxis)",
+      "maxDose": "400 mg/day",
+      "renalAdjustment": "Halve the dose when CrCl <70 mL/min"},
+  "safety": {
+      "pregnancy": "Teratogenic — increased risk of oral clefts; avoid in pregnancy and counsel women of childbearing age",
+      "contraindications": ["Hypersensitivity to topiramate"],
+      "warnings": ["Acute angle-closure glaucoma (rare, idiosyncratic) — urgent if eye pain or sudden vision loss", "Nephrolithiasis and hyperchloremic metabolic acidosis from carbonic anhydrase inhibition", "Teratogenic — oral cleft risk; pregnancy prevention counseling needed", "Cognitive impairment — word-finding difficulty and concentration problems (dose-limiting)", "Hyperammonemia with or without encephalopathy when combined with valproate"],
+      "monitoring": ["Serum bicarbonate (metabolic acidosis)", "Renal function", "Visual symptoms — acute glaucoma"],
+      "adverseEffects": [{"effect": "Paresthesias", "frequency": "common"}, {"effect": "Weight loss", "frequency": "common"}, {"effect": "Cognitive slowing/word-finding difficulty", "frequency": "common"}, {"effect": "Nephrolithiasis", "frequency": "uncommon"}, {"effect": "Metabolic acidosis", "frequency": "uncommon"}],
+      "overdose": "Metabolic acidosis, seizures, CNS depression; supportive care"},
+  "indications": ["Focal and generalized seizures", "Lennox-Gastaut syndrome", "Migraine prophylaxis", "Weight management (in combination with phentermine)"],
+  "clinicalPearls": ["Weight loss plus migraine prophylaxis in one drug — attractive in migraineurs with obesity", "Carbonic anhydrase inhibition explains both kidney stones and metabolic acidosis — counsel hydration"],
+  "good": "Epilepsy complicated by migraine or obesity — two birds with one stone.",
+  "bad": "Patients needing sharp cognition, or those with kidney stones or acidosis risk.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}

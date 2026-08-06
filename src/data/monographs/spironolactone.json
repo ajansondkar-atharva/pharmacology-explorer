@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "spironolactone",
+  "name": "Spironolactone",
+  "brandNames": ["Aldactone"],
+  "class": "Aldosterone (mineralocorticoid) receptor antagonist, potassium-sparing diuretic",
+  "classId": "mra",
+  "systems": ["cardio", "renal"],
+  "summary": "The prototype mineralocorticoid receptor antagonist, with a 30% mortality reduction in HFrEF (RALES); also a cornerstone of resistant-hypertension, cirrhosis-ascites, and primary hyperaldosteronism therapy.",
+  "identifiers": {"atc": ["C03DA01"], "cas": "52-01-7", "drugbank": "DB00421"},
+  "mechanism": "Competitive aldosterone receptor antagonism in the distal nephron promotes sodium and water excretion while retaining potassium and hydrogen; the active metabolite is canrenone.",
+  "targets": ["Mineralocorticoid receptor"],
+  "pharmacokinetics": {
+    "bioavailability": "~90%",
+    "halfLife": "~1.4 h (parent); active metabolites ~13–24 h",
+    "proteinBinding": "~90% (parent and canrenone)",
+    "metabolism": "Hepatic, to active metabolites (canrenone, 7-alpha-thiomethylspironolactone)",
+    "elimination": "Renal ~50% (metabolites), remainder fecal",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "Heart failure: 25 mg once daily (12.5 mg if at risk of hyperkalemia), max 50 mg/day; hypertension: 25–50 mg once daily (up to 100 mg/day divided)",
+    "maxDose": "100 mg/day (hypertension); 50 mg/day (heart failure)",
+    "renalAdjustment": "Avoid in significant renal impairment (CrCl <30 mL/min)"
+  },
+  "safety": {
+    "pregnancy": "Not recommended — antiandrogenic effects on the male fetus",
+    "lactation": "Active metabolite canrenone excreted in breast milk",
+    "contraindications": ["Hyperkalemia", "Addison disease", "Acute or significant renal insufficiency", "Concomitant eplerenone"],
+    "warnings": ["Hyperkalemia — highest risk with ACE inhibitors/ARBs, potassium supplements, and NSAIDs", "Gynecomastia and breast tenderness are dose-related", "Menstrual irregularities", "Hypotension and dehydration"],
+    "monitoring": ["Serum potassium and creatinine", "Blood pressure", "Breast symptoms in men"],
+    "adverseEffects": [
+      {"effect": "Hyperkalemia", "frequency": "common"},
+      {"effect": "Gynecomastia", "frequency": "common"},
+      {"effect": "Menstrual irregularities", "frequency": "common"},
+      {"effect": "Breast tenderness", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "uncommon"},
+      {"effect": "GI upset", "frequency": "uncommon"}
+    ],
+    "overdose": "Hyperkalemia and arrhythmias; treat with insulin/glucose, potassium binders, and dialysis if severe."
+  },
+  "indications": ["Heart failure with reduced ejection fraction", "Resistant hypertension", "Primary hyperaldosteronism", "Ascites and edema in cirrhosis and nephrotic syndrome", "Hypokalemia prevention"],
+  "clinicalPearls": ["RALES made low-dose spironolactone standard in HFrEF — a 30% relative mortality reduction.", "Gynecomastia is dose-related and the most common reason patients switch to eplerenone."],
+  "good": "HFrEF, resistant hypertension, and cirrhosis ascites at low doses.",
+  "bad": "Hyperkalemia, significant renal impairment, or gynecomastia-prone patients.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

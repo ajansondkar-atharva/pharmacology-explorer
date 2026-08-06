@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ezetimibe",
+  "name": "Ezetimibe",
+  "brandNames": ["Zetia"],
+  "class": "Cholesterol absorption inhibitor",
+  "classId": "cholesterol-absorption-inhibitor",
+  "systems": ["cardio"],
+  "summary": "Selectively blocks intestinal cholesterol absorption, providing additive LDL lowering on top of statins with a distinct mechanism.",
+  "identifiers": {
+    "atc": ["C10AX09"],
+    "cas": "163222-33-1",
+    "drugbank": "DB00973"
+  },
+  "mechanism": "Inhibits the NPC1L1 transporter at the intestinal brush border, reducing absorption of dietary and biliary cholesterol and lowering hepatic cholesterol delivery.",
+  "targets": ["NPC1L1 (Niemann-Pick C1-like 1)"],
+  "pharmacodynamics": "Adds approximately 15–20% LDL lowering when combined with a statin.",
+  "pharmacokinetics": {
+    "halfLife": "~22 h",
+    "proteinBinding": ">90%",
+    "metabolism": "Hepatic glucuronidation (UGT1A1, UGT1A3, UGT2B15); enterohepatic recirculation",
+    "elimination": "Fecal (~78%) and renal (~11%)",
+    "routes": ["oral"]
+  },
+  "dosing": {
+    "adult": "10 mg once daily",
+    "maxDose": "10 mg/day"
+  },
+  "safety": {
+    "pregnancy": "Limited human data; use only if clearly needed",
+    "lactation": "Caution (excreted in rat milk; human data lacking)",
+    "contraindications": ["Known hypersensitivity", "With a statin: active liver disease (combination use)"],
+    "warnings": ["Rare myopathy/rhabdomyolysis, mainly with statin combinations", "Caution with fibrates (gallbladder disease)"],
+    "monitoring": ["Lipid panel", "Liver enzymes if used with a statin", "Muscle symptoms"],
+    "adverseEffects": [
+      {"effect": "Diarrhea", "frequency": "common"},
+      {"effect": "Abdominal pain", "frequency": "common"},
+      {"effect": "Upper respiratory infection", "frequency": "common"},
+      {"effect": "Myalgia", "frequency": "uncommon"},
+      {"effect": "Elevated transaminases", "frequency": "uncommon"}
+    ],
+    "overdose": "No specific treatment; supportive care"
+  },
+  "indications": ["Primary hyperlipidemia (alone or with a statin)", "Homozygous familial hypercholesterolemia (with a statin)", "Homozygous sitosterolemia"],
+  "clinicalPearls": [
+    "Dosing is fixed at 10 mg — no titration; works synergistically with statins.",
+    "Often combined with simvastatin or rosuvastatin in single-pill products."
+  ],
+  "good": "Add-on LDL reduction in patients already on a statin or statin-intolerant.",
+  "bad": "Modest efficacy as monotherapy; not a substitute for a potent statin.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "ipratropium",
+  "name": "Ipratropium",
+  "brandNames": ["Atrovent", "Combivent (with salbutamol)"],
+  "class": "Antimuscarinic bronchodilator",
+  "classId": "antimuscarinic",
+  "systems": ["resp"],
+  "summary": "Short-acting inhaled antimuscarinic that blocks vagally mediated bronchoconstriction; a standard bronchodilator for COPD and an add-on in acute asthma.",
+  "identifiers": {
+    "atc": ["R03BB01"],
+    "cas": "60205-81-4",
+    "drugbank": "DB00332"
+  },
+  "mechanism": "Competitive antagonist at muscarinic acetylcholine receptors (M1–M3), reducing cholinergic bronchomotor tone and mucus hypersecretion.",
+  "targets": ["Muscarinic acetylcholine receptors (M1–M3)"],
+  "pharmacokinetics": {
+    "bioavailability": "Low systemic absorption after inhalation (~7–28% of delivered dose)",
+    "halfLife": "~2 h",
+    "onset": "15–30 min inhaled",
+    "duration": "3–6 h (dosed 4 times daily)",
+    "metabolism": "Minimal — largely excreted unchanged",
+    "elimination": "Renal (unchanged) and biliary",
+    "routes": ["inhaled", "intranasal"]
+  },
+  "dosing": {
+    "adult": "MDI: 2–4 puffs (17–21 mcg/puff) 4 times daily; nebulized: 500 mcg every 6–8 h; intranasal: 2 sprays per nostril 2–3 times daily",
+    "maxDose": "MDI up to 12 puffs/day; nebulized up to 2 mg/day",
+    "renalAdjustment": "None required"
+  },
+  "safety": {
+    "pregnancy": "Inhaled use gives minimal systemic exposure; generally considered low risk",
+    "lactation": "Minimal systemic absorption; considered compatible",
+    "contraindications": ["Hypersensitivity to atropine or antimuscarinics", "Soy or peanut allergy (Atrovent HFA contains soy lecithin)"],
+    "warnings": ["Narrow-angle glaucoma — avoid eye contact (can precipitate angle closure)", "Urinary retention, especially with prostatic hyperplasia", "Paradoxical bronchospasm — discontinue if it occurs"],
+    "monitoring": ["Response (peak flow / FEV1)", "Anticholinergic symptoms (dry mouth, blurred vision, urinary hesitancy)"],
+    "adverseEffects": [
+      {"effect": "Dry mouth", "frequency": "common"},
+      {"effect": "Cough / throat irritation", "frequency": "common"},
+      {"effect": "Paradoxical bronchospasm", "frequency": "rare"},
+      {"effect": "Urinary retention", "frequency": "rare"},
+      {"effect": "Blurred vision / glaucoma exacerbation", "frequency": "rare"}
+    ],
+    "overdose": "Anticholinergic effects (dry mouth, tachycardia, blurred vision) — supportive care"
+  },
+  "indications": ["COPD maintenance bronchodilation", "Add-on to a SABA in acute severe asthma", "Rhinorrhea of allergic rhinitis or the common cold (intranasal)"],
+  "clinicalPearls": ["Quaternary ammonium compound — does not cross the blood-brain barrier, so central anticholinergic effects are minimal", "Nebulized ipratropium added to salbutamol is standard for acute severe asthma"],
+  "good": "Bronchodilation with negligible systemic anticholinergic toxicity",
+  "bad": "Acute asthma as monotherapy (use with a SABA); narrow-angle glaucoma or significant urinary retention",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "insulin-aspart",
+  "name": "Insulin aspart",
+  "brandNames": ["NovoLog", "NovoRapid"],
+  "class": "Rapid-acting insulin",
+  "classId": "insulin-rapid",
+  "systems": ["endo"],
+  "summary": "A rapid-acting insulin analog for mealtime glucose coverage with fast subcutaneous absorption, available in pump-compatible and faster-acting formulations.",
+  "identifiers": {
+    "atc": ["A10AB05"],
+    "cas": "116094-23-6",
+    "drugbank": "DB01306"
+  },
+  "mechanism": "Substituting proline with aspartic acid at position B28 reduces hexamer self-association, accelerating absorption after subcutaneous injection.",
+  "targets": ["Insulin receptor"],
+  "pharmacodynamics": "Provides a rapid prandial insulin peak; used in basal-bolus regimens, pumps, and mixed with basal insulins in fixed-ratio products.",
+  "pharmacokinetics": {
+    "halfLife": "~1 h",
+    "onset": "10–20 min (SC)",
+    "duration": "3–5 h",
+    "metabolism": "Enzymatic degradation (insulin-degrading enzymes); hepatic and renal clearance",
+    "elimination": "Renal and hepatic",
+    "routes": ["sc"]
+  },
+  "dosing": {
+    "adult": "Individualized; typically given immediately before or within 20 minutes of starting a meal, as part of a basal-bolus or pump regimen"
+  },
+  "safety": {
+    "pregnancy": "Safe and standard; insulin is the preferred glucose-lowering treatment in pregnancy",
+    "lactation": "Generally safe; insulin does not cross into breast milk in significant amounts",
+    "contraindications": ["Hypoglycemia", "Hypersensitivity to the product"],
+    "warnings": ["Hypoglycemia, especially with delayed meals", "Weight gain", "Lipohypertrophy with poor site rotation"],
+    "monitoring": ["Blood glucose", "HbA1c", "Injection sites"],
+    "adverseEffects": [
+      {"effect": "Hypoglycemia", "frequency": "common"},
+      {"effect": "Weight gain", "frequency": "common"},
+      {"effect": "Injection-site reactions", "frequency": "uncommon"},
+      {"effect": "Lipohypertrophy", "frequency": "uncommon"}
+    ],
+    "overdose": "Hypoglycemia; treat with oral or IV glucose and close monitoring"
+  },
+  "indications": [
+    "Type 1 diabetes (prandial coverage)",
+    "Type 2 diabetes requiring mealtime insulin",
+    "Insulin pump therapy"
+  ],
+  "clinicalPearls": [
+    "Fiasp (faster aspart with niacinamide) has an even earlier onset for those needing quicker coverage.",
+    "Fixed-ratio combinations (e.g., aspart + degludec) simplify basal-bolus regimens."
+  ],
+  "good": "Rapid, reliable prandial coverage with pump compatibility.",
+  "bad": "Requires basal coverage; hypoglycemia if meals are delayed after injection.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard endocrinology/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "famotidine",
+  "name": "Famotidine",
+  "brandNames": ["Pepcid"],
+  "class": "H2-receptor antagonist",
+  "classId": "h2-blocker",
+  "systems": ["gi"],
+  "summary": "H2-receptor antagonist providing rapid acid suppression with minimal drug interactions — a common choice for GERD and ulcer disease.",
+  "identifiers": {
+    "atc": ["A02BA03"],
+    "cas": "76824-35-6",
+    "drugbank": "DB00663"
+  },
+  "mechanism": "Competitive antagonist at parietal-cell H2 receptors, reducing basal and stimulated gastric acid secretion.",
+  "targets": ["H2 histamine receptor (parietal cells)"],
+  "pharmacokinetics": {
+    "bioavailability": "~40–45% oral",
+    "halfLife": "2.5–3.5 h (prolonged in renal impairment)",
+    "proteinBinding": "~15–20%",
+    "onset": "30–60 min",
+    "duration": "10–12 h",
+    "metabolism": "Minimal hepatic metabolism",
+    "elimination": "Renal, ~25–30% unchanged",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "GERD: 20 mg twice daily or 40 mg once daily; maintenance: 20 mg once daily",
+    "maxDose": "80 mg/day (higher in Zollinger-Ellison syndrome)",
+    "renalAdjustment": "CrCl < 50 mL/min: reduce dose or lengthen the dosing interval"
+  },
+  "safety": {
+    "pregnancy": "Widely used in pregnancy; no major teratogenicity demonstrated",
+    "lactation": "Excreted in breast milk; considered compatible",
+    "contraindications": ["Hypersensitivity to famotidine or other H2 blockers"],
+    "warnings": ["Reduce dose in renal impairment", "Rare confusion, especially in elderly or ICU patients", "Long-term acid suppression may increase B12 deficiency and fracture risk", "Investigate alarm symptoms (bleeding, weight loss, dysphagia) before treating"],
+    "monitoring": ["Renal function for dosing", "Response and warning symptoms"],
+    "adverseEffects": [
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "uncommon"},
+      {"effect": "Constipation or diarrhea", "frequency": "uncommon"},
+      {"effect": "Confusion (elderly/renal impairment)", "frequency": "uncommon"},
+      {"effect": "Thrombocytopenia", "frequency": "rare"}
+    ],
+    "overdose": "Generally benign — supportive care"
+  },
+  "indications": ["GERD and heartburn", "Peptic ulcer disease (treatment and maintenance)", "Stress ulcer prophylaxis in ICU", "Zollinger-Ellison syndrome (high dose)"],
+  "clinicalPearls": ["Least CYP-interacting H2 blocker — preferred over cimetidine in polypharmacy", "Fast onset makes it useful for breakthrough heartburn"],
+  "good": "Fast, effective acid suppression with minimal drug interactions",
+  "bad": "Renal impairment without dose adjustment; long-term use without a clear indication",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

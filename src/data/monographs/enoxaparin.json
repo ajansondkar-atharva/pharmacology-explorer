@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "enoxaparin",
+  "name": "Enoxaparin",
+  "brandNames": ["Lovenox"],
+  "class": "Low-molecular-weight heparin (LMWH)",
+  "classId": "lmwh",
+  "systems": ["heme"],
+  "summary": "A low-molecular-weight heparin with predictable subcutaneous absorption and fixed weight-based dosing, used for VTE prophylaxis and treatment.",
+  "identifiers": {
+    "atc": ["B01AB05"],
+    "drugbank": "DB01225"
+  },
+  "mechanism": "Binds and potentiates antithrombin III, whose complex then inhibits factor Xa and, to a lesser extent, thrombin; higher anti-Xa to anti-IIa ratio than unfractionated heparin.",
+  "targets": ["Antithrombin III", "Factor Xa", "Thrombin (factor IIa)"],
+  "pharmacodynamics": "Predictable anti-Xa activity; less protein and cell binding than unfractionated heparin, giving more consistent effect.",
+  "pharmacokinetics": {
+    "bioavailability": "~100% after subcutaneous injection",
+    "halfLife": "~4.5 h (anti-Xa activity)",
+    "metabolism": "Hepatic depolymerization and renal clearance; no CYP involvement",
+    "elimination": "Renal (unchanged drug and metabolites)",
+    "routes": ["sc", "iv"]
+  },
+  "dosing": {
+    "adult": "VTE prophylaxis: 40 mg SC once daily; VTE treatment: 1 mg/kg SC every 12 h (or 1.5 mg/kg once daily)",
+    "renalAdjustment": "Reduce dose if CrCl <30 mL/min (e.g., 1 mg/kg once daily for treatment); consider anti-Xa monitoring"
+  },
+  "safety": {
+    "pregnancy": "May be used when anticoagulation is required (does not cross the placenta)",
+    "lactation": "Generally compatible with breastfeeding",
+    "contraindications": ["Active major bleeding", "History of heparin-induced thrombocytopenia", "Severe hypersensitivity to heparin or pork products"],
+    "warnings": ["Spinal/epidural hematoma with neuraxial anesthesia", "Heparin-induced thrombocytopenia (less common than with UFH)", "Protamine sulfate only partially reverses LMWH"],
+    "monitoring": ["Platelet count (HIT surveillance)", "Signs of bleeding", "Anti-Xa activity in renal impairment, extremes of weight, or pregnancy"],
+    "adverseEffects": [
+      {"effect": "Injection-site hematoma / pain", "frequency": "common"},
+      {"effect": "Bleeding events", "frequency": "common"},
+      {"effect": "Thrombocytopenia", "frequency": "uncommon"},
+      {"effect": "Heparin-induced thrombocytopenia", "frequency": "rare"},
+      {"effect": "Major bleeding", "frequency": "uncommon"}
+    ],
+    "overdose": "Protamine sulfate provides partial reversal"
+  },
+  "indications": ["VTE prophylaxis (surgery, acute medical illness, immobility)", "Treatment of DVT/PE", "Unstable angina / NSTEMI (with aspirin)", "Anticoagulation in pregnancy"],
+  "clinicalPearls": [
+    "Predictable SC absorption allows fixed weight-based dosing without routine monitoring.",
+    "Preferred over unfractionated heparin in pregnancy because it does not cross the placenta."
+  ],
+  "good": "Outpatient-compatible anticoagulation with predictable dosing.",
+  "bad": "Patients with severe renal impairment or prior HIT; neuraxial anesthesia timing must be respected.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

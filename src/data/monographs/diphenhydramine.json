@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "diphenhydramine",
+  "name": "Diphenhydramine",
+  "brandNames": ["Benadryl"],
+  "class": "Antihistamine (first-generation)",
+  "classId": "antihistamine",
+  "systems": ["resp", "immune"],
+  "summary": "Sedating first-generation antihistamine with potent anticholinergic effects — used for allergies, motion sickness, insomnia, and acute dystonia.",
+  "identifiers": {
+    "atc": ["R06AA02"],
+    "cas": "58-73-1",
+    "drugbank": "DB01075"
+  },
+  "mechanism": "Competitive H1 antagonist that crosses the blood-brain barrier, producing sedation; also antimuscarinic.",
+  "targets": ["H1 histamine receptor", "Muscarinic receptors (anticholinergic)"],
+  "pharmacokinetics": {
+    "halfLife": "~2.4–9.3 h",
+    "proteinBinding": "~78–98%",
+    "onset": "15–30 min oral; immediate IV",
+    "duration": "4–6 h",
+    "metabolism": "Hepatic (CYP2D6)",
+    "elimination": "Renal, mostly as metabolites",
+    "routes": ["oral", "iv", "im"]
+  },
+  "dosing": {
+    "adult": "25–50 mg every 4–6 h",
+    "maxDose": "300 mg/day (OTC oral); up to 400 mg/day parenteral",
+    "renalAdjustment": "No standard adjustment; caution in renal impairment"
+  },
+  "safety": {
+    "pregnancy": "Widely used; no major teratogenicity demonstrated, but avoid routine use near term",
+    "lactation": "Excreted in breast milk; may sedate the infant — avoid routine use",
+    "contraindications": ["Hypersensitivity", "Neonates and premature infants"],
+    "warnings": ["Marked sedation — avoid driving and machinery", "Anticholinergic burden — avoid in elderly (falls, confusion), narrow-angle glaucoma, prostatic hyperplasia", "Do not use as a sleep aid in children under 2 years (FDA warning)", "Paradoxical excitation in children"],
+    "monitoring": ["Impact of sedation on function", "Anticholinergic symptoms (dry mouth, urinary retention, confusion)"],
+    "adverseEffects": [
+      {"effect": "Sedation", "frequency": "common"},
+      {"effect": "Dry mouth", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Confusion (elderly)", "frequency": "common"},
+      {"effect": "Urinary retention", "frequency": "uncommon"},
+      {"effect": "Paradoxical excitation (children)", "frequency": "uncommon"}
+    ],
+    "overdose": "Anticholinergic toxidrome — agitation, delirium, seizures, hyperthermia, arrhythmias; can be life-threatening; supportive care (physostigmine in severe cases, specialist setting)"
+  },
+  "indications": ["Allergic rhinitis and urticaria", "Insomnia (short-term OTC use)", "Motion sickness", "Acute dystonia / extrapyramidal reactions (parenteral)", "Adjunct in anaphylaxis (parenteral)"],
+  "clinicalPearls": ["Sedation and anticholinergic action are therapeutic in motion sickness and insomnia but are liabilities in the elderly (Beers criteria)", "IV diphenhydramine is the classic antidote for acute dystonic reactions"],
+  "good": "Strong sedation and anticholinergic action — night pruritus, motion sickness, dystonia",
+  "bad": "Elderly, glaucoma, prostatic hyperplasia, drivers, and children under 2",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

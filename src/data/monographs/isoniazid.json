@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "isoniazid",
+  "name": "Isoniazid",
+  "brandNames": [],
+  "class": "Anti-TB agent",
+  "classId": "anti-tb",
+  "systems": ["anti"],
+  "summary": "Cornerstone bactericidal anti-TB drug for active and latent tuberculosis; inhibits mycolic acid synthesis.",
+  "identifiers": {"atc": ["J04AC01"], "cas": "54-85-3", "drugbank": "DB00951"},
+  "mechanism": "Inhibits mycolic acid synthesis (via InhA), disrupting the mycobacterial cell wall — bactericidal against actively dividing tubercle bacilli.",
+  "targets": ["InhA (enoyl-acyl carrier protein reductase) in mycolic acid synthesis"],
+  "pharmacodynamics": "Concentration-dependent killing with a post-antibiotic effect against M. tuberculosis.",
+  "pharmacokinetics": {
+    "bioavailability": "~90% (oral)",
+    "halfLife": "~1-4 h (fast vs slow NAT2 acetylators)",
+    "proteinBinding": "Minimal (~0-10%)",
+    "metabolism": "Hepatic — NAT2 acetylation (also a CYP2E1 inhibitor)",
+    "elimination": "Renal (metabolites)",
+    "routes": ["oral", "iv", "im"]
+  },
+  "dosing": {
+    "adult": "5 mg/kg (max 300 mg) PO once daily; latent TB: 300 mg daily (or 900 mg twice-weekly under DOT)",
+    "maxDose": "300 mg/day",
+    "renalAdjustment": "Caution/reduce in severe renal impairment"
+  },
+  "safety": {
+    "pregnancy": "Use when TB treatment is indicated (standard of care, with pyridoxine)",
+    "lactation": "Compatible — small amounts in milk; give pyridoxine to the infant",
+    "contraindications": ["Hypersensitivity to isoniazid", "Acute/severe liver disease"],
+    "warnings": ["Hepatotoxicity — risk increased by age > 35, alcohol, and rifampin co-administration", "Peripheral neuropathy — prevent with pyridoxine (vitamin B6)", "CYP2E1 inhibition — interactions (e.g. phenytoin, carbamazepine)", "Lupus-like syndrome (rare)"],
+    "monitoring": ["Baseline and periodic LFTs", "Neuropathy symptoms", "Drug-interaction review (phenytoin, carbamazepine, alcohol)"],
+    "adverseEffects": [
+      {"effect": "GI upset", "frequency": "common"},
+      {"effect": "Peripheral neuropathy (without pyridoxine)", "frequency": "common"},
+      {"effect": "Hepatitis", "frequency": "uncommon"},
+      {"effect": "Rash", "frequency": "uncommon"},
+      {"effect": "Lupus-like syndrome", "frequency": "rare"}
+    ]
+  },
+  "indications": ["Active tuberculosis (always in combination therapy)", "Latent TB infection (LTBI)"],
+  "clinicalPearls": ["Always co-administer pyridoxine (25-50 mg/day) to prevent neuropathy", "Hepatotoxicity is the main serious toxicity — alcohol and age > 35 raise the risk"],
+  "good": "Cornerstone bactericidal drug for active and latent TB.",
+  "bad": "Hepatotoxicity, neuropathy without B6, and significant drug interactions.",
+  "provenance": {
+    "source": "curated",
+    "confidence": "high",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Curated from standard infectious-disease/pharmacology references. Values omitted where not confidently known — nothing invented."
+  }
+}

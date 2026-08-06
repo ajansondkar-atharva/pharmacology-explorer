@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "diltiazem",
+  "name": "Diltiazem",
+  "brandNames": ["Cardizem"],
+  "class": "Non-dihydropyridine calcium channel blocker",
+  "classId": "ccb-nondihydropyridine",
+  "systems": ["cardio"],
+  "summary": "A non-dihydropyridine calcium channel blocker that slows AV nodal conduction, making it a mainstay for rate control in atrial fibrillation and for angina and hypertension.",
+  "identifiers": {"atc": ["C08DB01"], "cas": "42399-41-7", "drugbank": "DB00343"},
+  "mechanism": "Blocks L-type calcium channels in cardiac tissue and vascular smooth muscle, depressing SA/AV nodal automaticity and conduction while dilating arterioles.",
+  "targets": ["L-type calcium channel (Cav1.2)"],
+  "pharmacokinetics": {
+    "bioavailability": "~40% (extensive first-pass)",
+    "halfLife": "~3–5 h (immediate release)",
+    "proteinBinding": "~70–80%",
+    "metabolism": "Hepatic, CYP3A4 substrate and inhibitor",
+    "elimination": "Fecal ~65%, renal ~35%",
+    "routes": ["oral", "iv"]
+  },
+  "dosing": {
+    "adult": "Hypertension/angina: extended-release 120–240 mg once daily; atrial fibrillation rate control: IV bolus 0.25 mg/kg then infusion, or oral ER 120–360 mg/day",
+    "maxDose": "360 mg/day (extended release)",
+    "hepaticAdjustment": "Reduce dose in hepatic impairment"
+  },
+  "safety": {
+    "pregnancy": "Category C",
+    "lactation": "Excreted in breast milk; caution",
+    "contraindications": ["Sick sinus syndrome without pacemaker", "Second/third-degree AV block", "Severe hypotension", "Cardiogenic shock", "Heart failure with reduced ejection fraction", "Atrial fibrillation with Wolff-Parkinson-White syndrome"],
+    "warnings": ["Negative inotrope — can worsen HFrEF", "Avoid IV combination with beta blockers (stacked bradycardia/conduction block)", "CYP3A4 inhibition raises levels of simvastatin, cyclosporine, and others", "Bradycardia and AV block, especially in elderly"],
+    "monitoring": ["Heart rate", "Blood pressure", "ECG in high-risk patients"],
+    "adverseEffects": [
+      {"effect": "Bradycardia", "frequency": "common"},
+      {"effect": "Peripheral edema", "frequency": "common"},
+      {"effect": "Headache", "frequency": "common"},
+      {"effect": "Dizziness", "frequency": "common"},
+      {"effect": "Constipation", "frequency": "common"},
+      {"effect": "AV block", "frequency": "uncommon"}
+    ],
+    "overdose": "Bradycardia, AV block, hypotension; treat with calcium gluconate, atropine, and supportive care."
+  },
+  "indications": ["Rate control in atrial fibrillation", "Paroxysmal supraventricular tachycardia", "Chronic stable angina", "Hypertension"],
+  "clinicalPearls": ["Vascular-selective relative to verapamil but still negatively inotropic — the reflex is to avoid it in HFrEF.", "Its CYP3A4 inhibition matters clinically: limit simvastatin doses and monitor cyclosporine when co-prescribed."],
+  "good": "AF rate control and angina in patients with preserved ejection fraction.",
+  "bad": "HFrEF, high-grade AV block, or combination with IV beta blockers.",
+  "provenance": {"source": "curated", "confidence": "high", "lastUpdated": "2026-08-06", "revision": 1, "notes": "Curated from standard pharmacology references (Goodman & Gilman, Katzung, Lexicomp-level standard facts). Values omitted where not confidently known — nothing invented."}
+}

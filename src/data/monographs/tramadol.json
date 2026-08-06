@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "tramadol",
+  "name": "Tramadol",
+  "brandNames": ["Ultram"],
+  "class": "Opioid analgesic",
+  "classId": "opioid",
+  "systems": ["neuro", "musc"],
+  "summary": "A weak mu-opioid agonist with additional SNRI-like effects on norepinephrine and serotonin reuptake, used for moderate pain but with genuine opioid risks and a seizure risk.",
+  "identifiers": {
+      "atc": ["N02AX02"],
+      "cas": "27203-92-5",
+      "drugbank": "DB00193"
+  },
+  "mechanism": "Weak mu-opioid receptor agonist plus inhibition of norepinephrine and serotonin reuptake; the CYP2D6-derived M1 metabolite (O-desmethyltramadol) is a more potent mu agonist.",
+  "targets": ["Mu-opioid receptor", "Norepinephrine transporter", "Serotonin transporter"],
+  "pharmacokinetics": {
+      "bioavailability": "~70–75% (oral)",
+      "halfLife": "6–7 h (M1 metabolite ~7–9 h)",
+      "proteinBinding": "~20%",
+      "onset": "30–60 min (oral IR)",
+      "duration": "4–6 h",
+      "metabolism": "Hepatic (CYP2D6 to active M1 metabolite; CYP3A4 to inactive metabolites)",
+      "routes": ["oral"]},
+  "dosing": {
+      "adult": "50–100 mg PO q4–6h PRN; start low (50 mg) in opioid-naive patients",
+      "maxDose": "400 mg/day (300 mg/day in patients >75 years)",
+      "renalAdjustment": "Reduce dose or extend interval in renal impairment"},
+  "safety": {
+      "pregnancy": "Avoid chronic use — neonatal opioid withdrawal syndrome and possible respiratory depression at delivery",
+      "contraindications": ["Significant respiratory depression", "Acute or severe asthma", "Concomitant MAOIs (within 14 days)"],
+      "warnings": ["Black box: addiction, abuse, and misuse — risk of opioid use disorder", "Black box: life-threatening respiratory depression — especially in opioid-naive or elderly patients and with CNS depressants", "Black box: accidental ingestion (especially by children) can be fatal", "Black box: neonatal opioid withdrawal syndrome with prolonged use during pregnancy", "CYP2D6 ultrarapid metabolizers can rapidly generate M1 and suffer fatal respiratory depression", "Lowers the seizure threshold; serotonin syndrome risk with SSRIs/SNRIs/TCAs"],
+      "monitoring": ["Respiratory status, especially in opioid-naive or elderly patients", "Pain control and signs of misuse", "Review serotonergic co-medications"],
+      "adverseEffects": [{"effect": "Nausea", "frequency": "common"}, {"effect": "Dizziness", "frequency": "common"}, {"effect": "Constipation", "frequency": "common"}, {"effect": "Somnolence", "frequency": "common"}, {"effect": "Seizures", "frequency": "uncommon"}, {"effect": "Serotonin syndrome", "frequency": "rare"}],
+      "overdose": "Respiratory depression, seizures, serotonin syndrome, coma; naloxone partially reverses respiratory depression but not the seizures"},
+  "indications": ["Moderate to moderately severe acute pain", "Chronic pain (where conventional opioids are undesirable)"],
+  "clinicalPearls": ["Analgesia depends on CYP2D6-mediated conversion to M1 — poor metabolizers get little effect, ultrarapid metabolizers risk opioid toxicity", "Lowers the seizure threshold — caution in epilepsy and with SSRIs, SNRIs, or TCAs"],
+  "good": "Moderate pain when a conventional opioid is undesirable — but it is still an opioid with real risks.",
+  "bad": "Seizure-prone patients, serotonergic polypharmacy, CYP2D6 ultrarapid metabolizers, or anyone needing predictable analgesia.",
+  "provenance": {
+      "source": "curated",
+      "confidence": "high",
+      "lastUpdated": "2026-08-06",
+      "revision": 1,
+      "notes": "Curated from standard neurology/pharmacology references. Values omitted where not confidently known — nothing invented."}
+}
