@@ -145,198 +145,226 @@
     {
       "a": "omeprazole",
       "b": "clopidogrel",
-      "sev": "caution",
-      "mech": "Omeprazole/esomeprazole inhibit CYP2C19, the enzyme that activates clopidogrel to its active metabolite.",
-      "advice": "Reduced antiplatelet effect is possible. Pantoprazole (lower CYP2C19 affinity) is generally preferred if acid suppression is needed alongside clopidogrel."
+      "severity": "moderate",
+      "summary": "Omeprazole/esomeprazole inhibit CYP2C19, the enzyme that activates clopidogrel to its active metabolite.",
+      "mechanism": "Omeprazole/esomeprazole inhibit CYP2C19, the enzyme that activates clopidogrel to its active metabolite.",
+      "management": "Reduced antiplatelet effect is possible. Pantoprazole (lower CYP2C19 affinity) is generally preferred if acid suppression is needed alongside clopidogrel."
     },
     {
       "a": "pantoprazole",
       "b": "clopidogrel",
-      "sev": "note",
-      "mech": "Pantoprazole has much lower affinity for CYP2C19 than omeprazole/esomeprazole.",
-      "advice": "Generally considered the safer PPI choice alongside clopidogrel."
+      "severity": "minor",
+      "summary": "Pantoprazole has much lower affinity for CYP2C19 than omeprazole/esomeprazole.",
+      "mechanism": "Pantoprazole has much lower affinity for CYP2C19 than omeprazole/esomeprazole.",
+      "management": "Generally considered the safer PPI choice alongside clopidogrel."
     },
     {
       "a": "doxycycline",
       "b": "cations",
-      "sev": "caution",
-      "mech": "Divalent/trivalent cations (Ca²⁺, Fe²⁺/Fe³⁺, Mg²⁺, Al³⁺) chelate tetracyclines in the gut, forming an unabsorbable complex.",
-      "advice": "Separate dosing by at least 2–3 hours from dairy, antacids, or iron supplements."
+      "severity": "moderate",
+      "summary": "Divalent/trivalent cations (Ca²⁺, Fe²⁺/Fe³⁺, Mg²⁺, Al³⁺) chelate tetracyclines in the gut, forming an unabsorbable complex.",
+      "mechanism": "Divalent/trivalent cations (Ca²⁺, Fe²⁺/Fe³⁺, Mg²⁺, Al³⁺) chelate tetracyclines in the gut, forming an unabsorbable complex.",
+      "management": "Separate dosing by at least 2–3 hours from dairy, antacids, or iron supplements."
     },
     {
       "a": "ciprofloxacin",
       "b": "cations",
-      "sev": "caution",
-      "mech": "Same chelation mechanism as tetracyclines — divalent/trivalent cations bind fluoroquinolones and block absorption.",
-      "advice": "Take fluoroquinolones at least 2 hours before or 6 hours after cation-containing products."
+      "severity": "moderate",
+      "summary": "Same chelation mechanism as tetracyclines — divalent/trivalent cations bind fluoroquinolones and block absorption.",
+      "mechanism": "Same chelation mechanism as tetracyclines — divalent/trivalent cations bind fluoroquinolones and block absorption.",
+      "management": "Take fluoroquinolones at least 2 hours before or 6 hours after cation-containing products."
     },
     {
       "a": "omeprazole",
       "b": "cations",
-      "sev": "note",
-      "mech": "Reduced gastric acidity can lower the absorption of iron, which relies on an acidic environment to be reduced to its absorbable form.",
-      "advice": "Consider iron level monitoring with long-term PPI use, particularly with existing iron deficiency."
+      "severity": "minor",
+      "summary": "Reduced gastric acidity can lower the absorption of iron, which relies on an acidic environment to be reduced to its absorbable form.",
+      "mechanism": "Reduced gastric acidity can lower the absorption of iron, which relies on an acidic environment to be reduced to its absorbable form.",
+      "management": "Consider iron level monitoring with long-term PPI use, particularly with existing iron deficiency."
     },
     {
       "a": "doxycycline",
       "b": "isotretinoin",
-      "sev": "contraindicated",
-      "mech": "Both independently raise intracranial pressure; the effect is considered additive.",
-      "advice": "Do not combine tetracyclines with isotretinoin — this is a standard contraindication, not just a caution."
+      "severity": "contraindicated",
+      "summary": "Both independently raise intracranial pressure; the effect is considered additive.",
+      "mechanism": "Both independently raise intracranial pressure; the effect is considered additive.",
+      "management": "Do not combine tetracyclines with isotretinoin — this is a standard contraindication, not just a caution."
     },
     {
       "a": "clarithromycin",
       "b": "statin",
-      "sev": "contraindicated",
-      "mech": "Clarithromycin and erythromycin are potent CYP3A4 inhibitors, sharply raising levels of CYP3A4-metabolized statins.",
-      "advice": "Risk of myopathy/rhabdomyolysis. Hold the statin during the antibiotic course, or use azithromycin, which has minimal CYP3A4 interaction."
+      "severity": "contraindicated",
+      "summary": "Clarithromycin and erythromycin are potent CYP3A4 inhibitors, sharply raising levels of CYP3A4-metabolized statins.",
+      "mechanism": "Clarithromycin and erythromycin are potent CYP3A4 inhibitors, sharply raising levels of CYP3A4-metabolized statins.",
+      "management": "Risk of myopathy/rhabdomyolysis. Hold the statin during the antibiotic course, or use azithromycin, which has minimal CYP3A4 interaction."
     },
     {
       "a": "metronidazole",
       "b": "alcohol",
-      "sev": "contraindicated",
-      "mech": "Metronidazole inhibits acetaldehyde dehydrogenase, causing acetaldehyde accumulation — a disulfiram-like reaction.",
-      "advice": "Avoid alcohol during treatment and for at least 24–48 hours after the last dose."
+      "severity": "contraindicated",
+      "summary": "Metronidazole inhibits acetaldehyde dehydrogenase, causing acetaldehyde accumulation — a disulfiram-like reaction.",
+      "mechanism": "Metronidazole inhibits acetaldehyde dehydrogenase, causing acetaldehyde accumulation — a disulfiram-like reaction.",
+      "management": "Avoid alcohol during treatment and for at least 24–48 hours after the last dose."
     },
     {
       "a": "metronidazole",
       "b": "warfarin",
-      "sev": "caution",
-      "mech": "Metronidazole inhibits CYP2C9, slowing warfarin metabolism and potentiating its anticoagulant effect.",
-      "advice": "Monitor INR closely if the combination is necessary."
+      "severity": "moderate",
+      "summary": "Metronidazole inhibits CYP2C9, slowing warfarin metabolism and potentiating its anticoagulant effect.",
+      "mechanism": "Metronidazole inhibits CYP2C9, slowing warfarin metabolism and potentiating its anticoagulant effect.",
+      "management": "Monitor INR closely if the combination is necessary."
     },
     {
       "a": "bactrim",
       "b": "warfarin",
-      "sev": "caution",
-      "mech": "Trimethoprim-sulfamethoxazole potentiates warfarin via protein-binding displacement and CYP inhibition.",
-      "advice": "Significant INR elevation is common — monitor closely or choose an alternative antibiotic."
+      "severity": "moderate",
+      "summary": "Trimethoprim-sulfamethoxazole potentiates warfarin via protein-binding displacement and CYP inhibition.",
+      "mechanism": "Trimethoprim-sulfamethoxazole potentiates warfarin via protein-binding displacement and CYP inhibition.",
+      "management": "Significant INR elevation is common — monitor closely or choose an alternative antibiotic."
     },
     {
       "a": "bactrim",
       "b": "methotrexate",
-      "sev": "contraindicated",
-      "mech": "Both drugs are antifolates acting by different mechanisms — the toxicity is additive/synergistic.",
-      "advice": "Avoid combining, or use only with close hematologic monitoring under specialist guidance."
+      "severity": "contraindicated",
+      "summary": "Both drugs are antifolates acting by different mechanisms — the toxicity is additive/synergistic.",
+      "mechanism": "Both drugs are antifolates acting by different mechanisms — the toxicity is additive/synergistic.",
+      "management": "Avoid combining, or use only with close hematologic monitoring under specialist guidance."
     },
     {
       "a": "bactrim",
       "b": "ace-diuretic",
-      "sev": "caution",
-      "mech": "Trimethoprim behaves like a potassium-sparing diuretic on the distal renal tubule.",
-      "advice": "Additive hyperkalemia risk — monitor potassium, especially in renal impairment."
+      "severity": "moderate",
+      "summary": "Trimethoprim behaves like a potassium-sparing diuretic on the distal renal tubule.",
+      "mechanism": "Trimethoprim behaves like a potassium-sparing diuretic on the distal renal tubule.",
+      "management": "Additive hyperkalemia risk — monitor potassium, especially in renal impairment."
     },
     {
       "a": "ibuprofen-naproxen",
       "b": "aspirin-low",
-      "sev": "caution",
-      "mech": "Ibuprofen can competitively occupy the platelet COX-1 site aspirin needs to acetylate, blunting aspirin’s irreversible antiplatelet effect if taken beforehand.",
-      "advice": "If both are needed, take low-dose aspirin at least 30–60 minutes before ibuprofen, or use an alternative analgesic."
+      "severity": "moderate",
+      "summary": "Ibuprofen can competitively occupy the platelet COX-1 site aspirin needs to acetylate, blunting aspirin’s irreversible antiplatelet effect if taken beforehand.",
+      "mechanism": "Ibuprofen can competitively occupy the platelet COX-1 site aspirin needs to acetylate, blunting aspirin’s irreversible antiplatelet effect if taken beforehand.",
+      "management": "If both are needed, take low-dose aspirin at least 30–60 minutes before ibuprofen, or use an alternative analgesic."
     },
     {
       "a": "ibuprofen-naproxen",
       "b": "warfarin",
-      "sev": "caution",
-      "mech": "Additive GI bleeding risk from NSAID mucosal effects plus anticoagulation, independent of any pharmacokinetic interaction.",
-      "advice": "Avoid combination where possible; use acetaminophen for analgesia instead if appropriate."
+      "severity": "moderate",
+      "summary": "Additive GI bleeding risk from NSAID mucosal effects plus anticoagulation, independent of any pharmacokinetic interaction.",
+      "mechanism": "Additive GI bleeding risk from NSAID mucosal effects plus anticoagulation, independent of any pharmacokinetic interaction.",
+      "management": "Avoid combination where possible; use acetaminophen for analgesia instead if appropriate."
     },
     {
       "a": "ibuprofen-naproxen",
       "b": "ace-diuretic",
-      "sev": "caution",
-      "mech": "The \"triple whammy\": NSAID + ACE inhibitor/ARB + diuretic together reduce renal perfusion from multiple angles at once.",
-      "advice": "Additive acute kidney injury risk, particularly with dehydration — avoid the three-way combination when possible."
+      "severity": "moderate",
+      "summary": "The \"triple whammy\": NSAID + ACE inhibitor/ARB + diuretic together reduce renal perfusion from multiple angles at once.",
+      "mechanism": "The \"triple whammy\": NSAID + ACE inhibitor/ARB + diuretic together reduce renal perfusion from multiple angles at once.",
+      "management": "Additive acute kidney injury risk, particularly with dehydration — avoid the three-way combination when possible."
     },
     {
       "a": "gentamicin",
       "b": "vancomycin",
-      "sev": "caution",
-      "mech": "Both are independently nephrotoxic; combined use compounds renal injury risk.",
-      "advice": "Monitor renal function and drug levels closely if co-administration is clinically necessary."
+      "severity": "moderate",
+      "summary": "Both are independently nephrotoxic; combined use compounds renal injury risk.",
+      "mechanism": "Both are independently nephrotoxic; combined use compounds renal injury risk.",
+      "management": "Monitor renal function and drug levels closely if co-administration is clinically necessary."
     },
     {
       "a": "gentamicin",
       "b": "loop-diuretic",
-      "sev": "caution",
-      "mech": "Loop diuretics and aminoglycosides are each independently ototoxic.",
-      "advice": "Additive ototoxicity risk — monitor hearing where prolonged co-therapy is unavoidable."
+      "severity": "moderate",
+      "summary": "Loop diuretics and aminoglycosides are each independently ototoxic.",
+      "mechanism": "Loop diuretics and aminoglycosides are each independently ototoxic.",
+      "management": "Additive ototoxicity risk — monitor hearing where prolonged co-therapy is unavoidable."
     },
     {
       "a": "ciprofloxacin",
       "b": "ibuprofen-naproxen",
-      "sev": "caution",
-      "mech": "Fluoroquinolones lower the seizure threshold; NSAIDs can potentiate this CNS effect.",
-      "advice": "Use cautiously in patients with seizure history or other risk factors."
+      "severity": "moderate",
+      "summary": "Fluoroquinolones lower the seizure threshold; NSAIDs can potentiate this CNS effect.",
+      "mechanism": "Fluoroquinolones lower the seizure threshold; NSAIDs can potentiate this CNS effect.",
+      "management": "Use cautiously in patients with seizure history or other risk factors."
     },
     {
       "a": "ciprofloxacin",
       "b": "qt-drugs",
-      "sev": "caution",
-      "mech": "Fluoroquinolones can prolong the QT interval; combining with other QT-prolonging drugs is additive.",
-      "advice": "Check baseline QT risk factors before combining."
+      "severity": "moderate",
+      "summary": "Fluoroquinolones can prolong the QT interval; combining with other QT-prolonging drugs is additive.",
+      "mechanism": "Fluoroquinolones can prolong the QT interval; combining with other QT-prolonging drugs is additive.",
+      "management": "Check baseline QT risk factors before combining."
     },
     {
       "a": "tretinoin",
       "b": "benzoyl-peroxide",
-      "sev": "note",
-      "mech": "Some tretinoin formulations can be oxidatively degraded by simultaneous contact with benzoyl peroxide.",
-      "advice": "Apply at different times of day (e.g., BPO in the morning, tretinoin at night) rather than layering together — modern micronized formulations are more stable, but time-separation remains the safer default."
+      "severity": "minor",
+      "summary": "Some tretinoin formulations can be oxidatively degraded by simultaneous contact with benzoyl peroxide.",
+      "mechanism": "Some tretinoin formulations can be oxidatively degraded by simultaneous contact with benzoyl peroxide.",
+      "management": "Apply at different times of day (e.g., BPO in the morning, tretinoin at night) rather than layering together — modern micronized formulations are more stable, but time-separation remains the safer default."
     },
     {
       "a": "tretinoin",
       "b": "salicylic-acid",
-      "sev": "caution",
-      "mech": "No chemical incompatibility, but both are actives that increase irritation and barrier disruption.",
-      "advice": "Avoid using both in the same session, especially early in treatment — cumulative irritation, not a drug interaction, is the real risk."
+      "severity": "moderate",
+      "summary": "No chemical incompatibility, but both are actives that increase irritation and barrier disruption.",
+      "mechanism": "No chemical incompatibility, but both are actives that increase irritation and barrier disruption.",
+      "management": "Avoid using both in the same session, especially early in treatment — cumulative irritation, not a drug interaction, is the real risk."
     },
     {
       "a": "isotretinoin",
       "b": "vitamin-a",
-      "sev": "contraindicated",
-      "mech": "Isotretinoin is a vitamin A derivative — additional vitamin A supplementation adds to the same toxicity pathway.",
-      "advice": "Avoid vitamin A supplements during isotretinoin therapy (hypervitaminosis A risk)."
+      "severity": "contraindicated",
+      "summary": "Isotretinoin is a vitamin A derivative — additional vitamin A supplementation adds to the same toxicity pathway.",
+      "mechanism": "Isotretinoin is a vitamin A derivative — additional vitamin A supplementation adds to the same toxicity pathway.",
+      "management": "Avoid vitamin A supplements during isotretinoin therapy (hypervitaminosis A risk)."
     },
     {
       "a": "doxycycline",
       "b": "sun-exposure",
-      "sev": "caution",
-      "mech": "Tetracyclines are photosensitizing, increasing the skin’s reactivity to UV light.",
-      "advice": "Use sun protection; exaggerated sunburn reactions are possible even with typical sun exposure."
+      "severity": "moderate",
+      "summary": "Tetracyclines are photosensitizing, increasing the skin’s reactivity to UV light.",
+      "mechanism": "Tetracyclines are photosensitizing, increasing the skin’s reactivity to UV light.",
+      "management": "Use sun protection; exaggerated sunburn reactions are possible even with typical sun exposure."
     },
     {
       "a": "doxycycline",
       "b": "oral-contraceptive",
-      "sev": "note",
-      "mech": "A commonly cited interaction, but evidence for a clinically significant reduction in contraceptive efficacy is weak for most antibiotics, tetracyclines included.",
-      "advice": "Discuss backup contraception as a precaution if there is uncertainty, but this is a weaker interaction than commonly assumed."
+      "severity": "minor",
+      "summary": "A commonly cited interaction, but evidence for a clinically significant reduction in contraceptive efficacy is weak for most antibiotics, tetracyclines included.",
+      "mechanism": "A commonly cited interaction, but evidence for a clinically significant reduction in contraceptive efficacy is weak for most antibiotics, tetracyclines included.",
+      "management": "Discuss backup contraception as a precaution if there is uncertainty, but this is a weaker interaction than commonly assumed."
     },
     {
       "a": "omeprazole",
       "b": "ketoconazole-atazanavir",
-      "sev": "caution",
-      "mech": "These drugs require an acidic gastric environment for adequate absorption — raising gastric pH reduces their bioavailability.",
-      "advice": "Consider dosing timing or alternative acid-suppression strategy if co-prescribed."
+      "severity": "moderate",
+      "summary": "These drugs require an acidic gastric environment for adequate absorption — raising gastric pH reduces their bioavailability.",
+      "mechanism": "These drugs require an acidic gastric environment for adequate absorption — raising gastric pH reduces their bioavailability.",
+      "management": "Consider dosing timing or alternative acid-suppression strategy if co-prescribed."
     },
     {
       "a": "clarithromycin",
       "b": "clindamycin",
-      "sev": "note",
-      "mech": "Macrolides and clindamycin bind overlapping, adjacent sites on the 50S ribosomal subunit and can antagonize each other’s binding.",
-      "advice": "Avoid routinely combining a macrolide and clindamycin — added benefit is unlikely, and antagonism is a real theoretical concern."
+      "severity": "minor",
+      "summary": "Macrolides and clindamycin bind overlapping, adjacent sites on the 50S ribosomal subunit and can antagonize each other’s binding.",
+      "mechanism": "Macrolides and clindamycin bind overlapping, adjacent sites on the 50S ribosomal subunit and can antagonize each other’s binding.",
+      "management": "Avoid routinely combining a macrolide and clindamycin — added benefit is unlikely, and antagonism is a real theoretical concern."
     },
     {
       "a": "azelaic-acid",
       "b": "tretinoin",
-      "sev": "note",
-      "mech": "No significant interaction — different, complementary mechanisms.",
-      "advice": "Commonly combined; generally well tolerated together."
+      "severity": "minor",
+      "summary": "No significant interaction — different, complementary mechanisms.",
+      "mechanism": "No significant interaction — different, complementary mechanisms.",
+      "management": "Commonly combined; generally well tolerated together."
     },
     {
       "a": "niacinamide",
       "b": "vitamin-c",
-      "sev": "note",
-      "mech": "Older, less-stable vitamin C formulations combined with niacinamide at certain pH levels were historically linked to flushing or reduced efficacy.",
-      "advice": "Largely a non-issue with modern stabilized formulations — a commonly repeated caution more than a significant real-world interaction."
+      "severity": "minor",
+      "summary": "Older, less-stable vitamin C formulations combined with niacinamide at certain pH levels were historically linked to flushing or reduced efficacy.",
+      "mechanism": "Older, less-stable vitamin C formulations combined with niacinamide at certain pH levels were historically linked to flushing or reduced efficacy.",
+      "management": "Largely a non-issue with modern stabilized formulations — a commonly repeated caution more than a significant real-world interaction."
     }
   ]
 }

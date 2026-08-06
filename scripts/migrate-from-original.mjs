@@ -342,10 +342,23 @@ writeFileSync(
   JSON.stringify({ acid: walk(evalLit(algoAcid)), acne: walk(evalLit(algoAcne)) }, null, 2) + '\n'
 );
 
-/* Interactions (entities + pairs) */
+/* Interactions (entities + pairs) — normalize v1 vocabulary to the
+   canonical schema: sev→severity (caution→moderate, note→minor),
+   mech→mechanism, advice→management; summary is derived from advice
+   or mechanism so the engine always has prose. */
+const SEV_MAP = { contraindicated: 'contraindicated', caution: 'moderate', note: 'minor', major: 'major', avoid: 'major', watch: 'moderate', minor: 'minor', info: 'minor' };
+const pairs = (DATA.interactions || []).map((p) => ({
+  a: p.a,
+  b: p.b,
+  severity: SEV_MAP[p.sev] ?? 'moderate',
+  summary: p.mech || p.advice || p.summary || `${p.a} + ${p.b}`,
+  mechanism: p.mech,
+  management: p.advice,
+  evidence: p.evidence,
+}));
 writeFileSync(
   join(OUT_DATA, 'interactions.json'),
-  JSON.stringify({ entities: DATA.entities, pairs: DATA.interactions }, null, 2) + '\n'
+  JSON.stringify({ entities: DATA.entities, pairs }, null, 2) + '\n'
 );
 
 /* ---------- summary ---------- */
