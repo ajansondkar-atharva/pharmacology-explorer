@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "acyclovir",
+  "name": "Acyclovir",
+  "class": "Antiviral",
+  "systems": [
+    "anti"
+  ],
+  "summary": "A guanosine analog antiviral used mainly for HSV and VZV, where early treatment makes the largest difference.",
+  "good": "HSV/VZV treatment or prophylaxis when appropriate.",
+  "bad": "Ignoring kidney function in higher-risk patients.",
+  "clinicalPearls": [
+    "Starting early is more important than trying to rescue a late lesion with a perfect dose."
+  ],
+  "mechanism": "After viral thymidine kinase activation, it inhibits viral DNA polymerase and terminates chain elongation.",
+  "indications": [
+    "Herpes simplex, shingles, and prophylaxis or treatment in selected immunocompromised settings."
+  ],
+  "interactionNotes": [
+    "Other nephrotoxic exposures can compound renal risk."
+  ],
+  "safety": {
+    "warnings": [
+      "Renal dose adjustment and hydration matter, especially with IV use."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "After viral thymidine kinase activation, it inhibits viral DNA polymerase and terminates chain elongation."
+    ],
+    [
+      "Typical uses",
+      "Herpes simplex, shingles, and prophylaxis or treatment in selected immunocompromised settings."
+    ],
+    [
+      "Key cautions",
+      "Renal dose adjustment and hydration matter, especially with IV use."
+    ],
+    [
+      "Important interactions",
+      "Other nephrotoxic exposures can compound renal risk."
+    ],
+    [
+      "Pearl",
+      "Starting early is more important than trying to rescue a late lesion with a perfect dose."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id acyclovir)."
+  }
+}

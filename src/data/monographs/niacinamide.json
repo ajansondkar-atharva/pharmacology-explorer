@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "niacinamide",
+  "name": "Niacinamide",
+  "class": "Vitamin B3 derivative — adjunct",
+  "systems": [
+    "derm"
+  ],
+  "summary": "The barrier-support ingredient that makes the rest of a regimen tolerable — genuinely useful, but rarely enough to clear acne on its own.",
+  "good": "Offsetting dryness/irritation from a retinoid or benzoyl peroxide regimen.",
+  "bad": "Treating it as a substitute for an actual active ingredient — on its own it rarely clears meaningful acne.",
+  "clinicalPearls": [
+    "Niacinamide’s real job is damage control for the barrier while the retinoid or BPO does the actual clearing work — useful, but a supporting role, not the lead."
+  ],
+  "mechanism": "Mildly sebum-regulating and anti-inflammatory, and directly supports barrier lipid (ceramide) synthesis — a supportive rather than primary comedolytic or antibacterial action.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Mildly sebum-regulating and anti-inflammatory, and directly supports barrier lipid (ceramide) synthesis — a supportive rather than primary comedolytic or antibacterial action."
+    ],
+    [
+      "Best use case",
+      "Adjunct for redness/irritation reduction and barrier support alongside more active agents like retinoids or benzoyl peroxide."
+    ],
+    [
+      "Speed of response",
+      "Slow and subtle — a maintenance ingredient more than a primary treatment."
+    ],
+    [
+      "Irritation risk",
+      "Very low — one of the best-tolerated actives available."
+    ],
+    [
+      "Pigmentation relevance",
+      "Modest evidence for reducing PIH by interfering with melanosome transfer to keratinocytes — weaker than azelaic acid or hydroquinone, but essentially risk-free to add."
+    ],
+    [
+      "Barrier effects",
+      "Genuinely barrier-supportive — increases ceramide synthesis, which is why it’s frequently paired with more irritating actives."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Primarily leave-on, via serums or moisturizers."
+    ],
+    [
+      "AM / PM use",
+      "Either — commonly layered under a retinoid or alongside benzoyl peroxide as a buffer."
+    ],
+    [
+      "Combination compatibility",
+      "One of the most combination-friendly ingredients available — no significant incompatibilities."
+    ]
+  ],
+  "classId": "acne",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id niacinamide)."
+  }
+}

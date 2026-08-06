@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "bisoprolol",
+  "name": "Bisoprolol",
+  "class": "Beta-1 blocker",
+  "systems": [
+    "signal"
+  ],
+  "summary": "A highly beta-1-selective blocker commonly used when a clean, once-daily cardioselective beta blocker is wanted.",
+  "good": "Cardiac rate control or heart-failure regimens where beta-1 selectivity is preferred.",
+  "bad": "Severe bradycardia or active decompensation without specialist direction.",
+  "clinicalPearls": [
+    "Its strong beta-1 selectivity is the reason clinicians often describe it as a clean cardiac beta blocker."
+  ],
+  "mechanism": "Selective beta-1 blockade lowers heart rate and renin release.",
+  "indications": [
+    "Hypertension and heart failure, especially where a simple once-daily regimen helps adherence."
+  ],
+  "interactionNotes": [
+    "Other rate-lowering drugs and severe conduction disease are the main practical concerns."
+  ],
+  "safety": {
+    "warnings": [
+      "Bradycardia, fatigue, dizziness, and masked hypoglycemia symptoms can occur."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Selective beta-1 blockade lowers heart rate and renin release."
+    ],
+    [
+      "Typical uses",
+      "Hypertension and heart failure, especially where a simple once-daily regimen helps adherence."
+    ],
+    [
+      "Key cautions",
+      "Bradycardia, fatigue, dizziness, and masked hypoglycemia symptoms can occur."
+    ],
+    [
+      "Important interactions",
+      "Other rate-lowering drugs and severe conduction disease are the main practical concerns."
+    ],
+    [
+      "Pearl",
+      "Its strong beta-1 selectivity is the reason clinicians often describe it as a clean cardiac beta blocker."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id bisoprolol)."
+  }
+}

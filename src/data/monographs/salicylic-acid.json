@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "salicylic-acid",
+  "name": "Salicylic Acid",
+  "class": "Beta-hydroxy acid (BHA)",
+  "systems": [
+    "derm"
+  ],
+  "summary": "A lipophilic exfoliant that can actually get inside an oily, congested pore — the mechanistic reason it’s favored specifically for blackheads.",
+  "good": "Blackheads, oily/congested skin, and maintenance-phase pore care.",
+  "bad": "Layering with a retinoid or another exfoliant in the same routine without spacing — the risk is cumulative irritation, not a specific chemical interaction.",
+  "clinicalPearls": [
+    "Because it’s oil-soluble, salicylic acid reaches inside a clogged, oily pore in a way water-soluble AHAs mostly can’t — that’s the actual reason it outperforms them for blackheads specifically."
+  ],
+  "mechanism": "Lipophilic beta-hydroxy acid that penetrates into the sebaceous follicle and exfoliates keratinocytes lining the pore, reducing comedone formation, with mild anti-inflammatory activity.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Lipophilic beta-hydroxy acid that penetrates into the sebaceous follicle and exfoliates keratinocytes lining the pore, reducing comedone formation, with mild anti-inflammatory activity."
+    ],
+    [
+      "Best use case",
+      "Mild comedonal acne (blackheads/whiteheads) and oily, congested skin — usually an adjunct or maintenance step rather than primary inflammatory-acne therapy."
+    ],
+    [
+      "Speed of response",
+      "Moderate — several weeks for visible pore and texture improvement."
+    ],
+    [
+      "Irritation risk",
+      "Low-moderate, concentration-dependent; OTC cleansers/toners are typically low-risk, higher-concentration peels more irritating."
+    ],
+    [
+      "Pigmentation relevance",
+      "Minimal direct pigment effect; low irritation keeps PIH risk low."
+    ],
+    [
+      "Barrier effects",
+      "Mild and dose-dependent — can be drying with frequent use at higher concentrations."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Available both ways — wash-off cleansers for gentle daily maintenance, leave-on toners/serums for more active but more drying use."
+    ],
+    [
+      "AM / PM use",
+      "Either — often part of a cleansing step, so timing is flexible."
+    ],
+    [
+      "Combination compatibility",
+      "A reasonable adjunct to benzoyl peroxide or a retinoid for maintenance, though stacking multiple active exfoliating steps in one routine raises cumulative irritation."
+    ]
+  ],
+  "classId": "acne",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id salicylic-acid)."
+  }
+}

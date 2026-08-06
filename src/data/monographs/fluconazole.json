@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "fluconazole",
+  "name": "Fluconazole",
+  "class": "Azole antifungal",
+  "systems": [
+    "anti"
+  ],
+  "summary": "A widely used oral azole antifungal with straightforward dosing and a strong interaction profile because of CYP inhibition.",
+  "good": "Candida infections where an oral azole is appropriate.",
+  "bad": "Complex polypharmacy without interaction review.",
+  "clinicalPearls": [
+    "It is simple to prescribe but never simple to ignore interaction-wise."
+  ],
+  "mechanism": "Inhibits fungal ergosterol synthesis via lanosterol 14-alpha-demethylase inhibition.",
+  "indications": [
+    "Vaginal candidiasis, oral/esophageal candidiasis, and selected systemic fungal infections."
+  ],
+  "interactionNotes": [
+    "Warfarin, some statins, sulfonylureas, and other CYP-metabolized drugs can be affected."
+  ],
+  "safety": {
+    "warnings": [
+      "Liver toxicity, QT prolongation, and interaction burden are the main concerns."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Inhibits fungal ergosterol synthesis via lanosterol 14-alpha-demethylase inhibition."
+    ],
+    [
+      "Typical uses",
+      "Vaginal candidiasis, oral/esophageal candidiasis, and selected systemic fungal infections."
+    ],
+    [
+      "Key cautions",
+      "Liver toxicity, QT prolongation, and interaction burden are the main concerns."
+    ],
+    [
+      "Important interactions",
+      "Warfarin, some statins, sulfonylureas, and other CYP-metabolized drugs can be affected."
+    ],
+    [
+      "Pearl",
+      "It is simple to prescribe but never simple to ignore interaction-wise."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id fluconazole)."
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmacology Explorer</title>
+<meta name="description" content="An offline-first pharmacology encyclopedia — structured monographs, interaction analysis, PK visualizations, guidelines, and study tools.">
+<meta name="theme-color" content="#0A0E13">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/src/styles/design-system.css">
+<link rel="stylesheet" href="/src/styles/fonts.css">
+</head>
+<body>
+<a class="skip-link" href="#app">Skip to content</a>
+
+<div class="app-shell">
+  <div class="sidebar-scrim" id="scrim"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Primary">
+    <div class="brand">
+      <svg class="curve-mark" width="26" height="26" viewBox="0 0 26 26"><path d="M2 20 C 6 20, 8 6, 13 6 S 20 20, 24 20" stroke-dasharray="0"/></svg>
+      <div class="brand-word">Pharm<span>.</span>Explorer</div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">
+      <button class="basket-pill" data-nav="saved" data-hint="Compare basket">
+        <span>Compare basket</span>
+        <b id="basketCount">0</b>
+      </button>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 4px 0;">
+        <span class="sync-badge" id="syncBadge" title="Local-first: sync state"><span class="sync-dot"></span><span id="syncLabel">local</span></span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="topbar">
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <div class="crumb" id="crumb">Dashboard</div>
+      <div class="search-wrap">
+        <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input class="search-input" id="searchInput" type="text" placeholder="Search drugs, classes, mechanisms…  ( / )" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search">
+        <div class="search-results" id="searchResults" role="listbox"></div>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="studyBtn" aria-label="Study mode" title="Study mode"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></button>
+        <button class="icon-btn" id="paletteBtn" aria-label="Command palette" title="Command palette (Ctrl+K)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></button>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle light/dark (T)"><svg id="themeIcon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg></button>
+      </div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+  </div>
+</div>
+
+<!-- command palette -->
+<div class="palette-backdrop" id="paletteBackdrop">
+  <div class="palette" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input class="palette-input" id="paletteInput" type="text" placeholder="Type a command, drug name, or action…" role="combobox" aria-expanded="true" aria-controls="paletteList">
+    <div class="palette-list" id="paletteList" role="listbox"></div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

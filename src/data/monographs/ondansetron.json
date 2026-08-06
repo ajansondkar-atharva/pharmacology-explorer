@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "ondansetron",
+  "name": "Ondansetron",
+  "class": "5-HT3 antagonist",
+  "systems": [
+    "signal"
+  ],
+  "summary": "A highly effective antiemetic for nausea and vomiting, especially when serotonin-mediated emesis is central to the problem.",
+  "good": "Acute nausea/vomiting where serotonin receptor blockade is effective.",
+  "bad": "Unreviewed QT-risk stacking or severe constipation-prone patients.",
+  "clinicalPearls": [
+    "It is one of the cleanest symptom-relief antiemetics when QT risk is kept in view."
+  ],
+  "mechanism": "Blocks 5-HT3 receptors in the gut and central vomiting pathways.",
+  "indications": [
+    "Post-operative nausea, chemotherapy-related nausea, gastroenteritis-associated vomiting, and other acute nausea states."
+  ],
+  "interactionNotes": [
+    "Other QT-prolonging drugs and serotonergic combinations deserve review."
+  ],
+  "safety": {
+    "warnings": [
+      "Constipation and QT prolongation are the classic watch-outs."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Blocks 5-HT3 receptors in the gut and central vomiting pathways."
+    ],
+    [
+      "Typical uses",
+      "Post-operative nausea, chemotherapy-related nausea, gastroenteritis-associated vomiting, and other acute nausea states."
+    ],
+    [
+      "Key cautions",
+      "Constipation and QT prolongation are the classic watch-outs."
+    ],
+    [
+      "Important interactions",
+      "Other QT-prolonging drugs and serotonergic combinations deserve review."
+    ],
+    [
+      "Pearl",
+      "It is one of the cleanest symptom-relief antiemetics when QT risk is kept in view."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id ondansetron)."
+  }
+}

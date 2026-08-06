@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "omeprazole",
+  "name": "Omeprazole",
+  "class": "PPI (first-gen, racemic)",
+  "systems": [
+    "gi"
+  ],
+  "summary": "The original PPI — benchmark for the class; cheap, generic, and the reference point everything else is compared against.",
+  "good": "First-line, cost-sensitive prescribing; well-established long-term safety data.",
+  "bad": "Patients on clopidogrel where a lower-interaction PPI is preferred, or those who can’t reliably time doses before meals.",
+  "clinicalPearls": [
+    "Because activation needs meal-stimulated acid secretion, taking it with or after food — a very common patient error — is one of the most frequent reasons for \"PPI failure.\""
+  ],
+  "mechanism": "Irreversible covalent inhibition of the parietal cell H⁺/K⁺-ATPase (proton pump) after acid-catalyzed activation to a reactive sulfenamide.",
+  "pharmacodynamics": "Raises intragastric pH >4 for roughly 12–14h/day at steady state; nocturnal acid breakthrough is common.",
+  "pharmacokinetics": {
+    "onset": "Partial effect within hours, but full acid suppression needs 3–5 days as new pumps are progressively inhibited across doses.",
+    "duration": "~24h from a single dose despite a short plasma half-life (~1h) — because inhibition is irreversible, duration tracks pump turnover, not drug clearance.",
+    "metabolism": "Hepatic, mainly CYP2C19 with a CYP3A4 minor pathway. CYP2C19 poor metabolizers get higher exposure and stronger suppression; extensive/rapid metabolizers may be under-treated at standard doses."
+  },
+  "indications": [
+    "GERD, peptic ulcer disease, H. pylori eradication (triple therapy), NSAID gastroprotection, Zollinger–Ellison syndrome."
+  ],
+  "interactionNotes": [
+    "Inhibits CYP2C19 → reduces conversion of clopidogrel to its active metabolite (contested but label-cautioned); reduces absorption of drugs needing low gastric pH (ketoconazole, atazanavir, iron salts)."
+  ],
+  "originalFields": [
+    [
+      "Mechanism",
+      "Irreversible covalent inhibition of the parietal cell H⁺/K⁺-ATPase (proton pump) after acid-catalyzed activation to a reactive sulfenamide."
+    ],
+    [
+      "Potency / pH control",
+      "Raises intragastric pH >4 for roughly 12–14h/day at steady state; nocturnal acid breakthrough is common."
+    ],
+    [
+      "Onset",
+      "Partial effect within hours, but full acid suppression needs 3–5 days as new pumps are progressively inhibited across doses."
+    ],
+    [
+      "Duration",
+      "~24h from a single dose despite a short plasma half-life (~1h) — because inhibition is irreversible, duration tracks pump turnover, not drug clearance."
+    ],
+    [
+      "Meal timing",
+      "Take 30–60 min before breakfast. Pumps must be actively secreting acid to be activated and bound, so dosing with or after food blunts the effect."
+    ],
+    [
+      "Metabolism / CYP",
+      "Hepatic, mainly CYP2C19 with a CYP3A4 minor pathway. CYP2C19 poor metabolizers get higher exposure and stronger suppression; extensive/rapid metabolizers may be under-treated at standard doses."
+    ],
+    [
+      "Key interactions",
+      "Inhibits CYP2C19 → reduces conversion of clopidogrel to its active metabolite (contested but label-cautioned); reduces absorption of drugs needing low gastric pH (ketoconazole, atazanavir, iron salts)."
+    ],
+    [
+      "Indications",
+      "GERD, peptic ulcer disease, H. pylori eradication (triple therapy), NSAID gastroprotection, Zollinger–Ellison syndrome."
+    ]
+  ],
+  "classId": "ppi",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id omeprazole)."
+  }
+}

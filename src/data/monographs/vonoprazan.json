@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "vonoprazan",
+  "name": "Vonoprazan",
+  "class": "PCAB",
+  "systems": [
+    "gi"
+  ],
+  "summary": "A potassium-competitive acid blocker: acid-stable, reversible, and effective from the first dose without needing an acidic environment to activate.",
+  "good": "Refractory GERD, nocturnal acid breakthrough on a PPI, or H. pylori regimens where faster, deeper acid suppression improves antibiotic efficacy.",
+  "bad": "Newer agent — less long-term outcome data than decades-old PPIs; availability and cost vary by region.",
+  "clinicalPearls": [
+    "Because a PCAB doesn’t need an acidic canaliculus to switch on, it sidesteps the exact mechanism that makes PPIs slow to reach full effect and blind to nocturnal pumps."
+  ],
+  "mechanism": "Reversible, competitive inhibition of the H⁺/K⁺-ATPase at the potassium-binding site — no acid-catalyzed activation required, unlike PPIs.",
+  "pharmacodynamics": "More potent and more consistent acid suppression than PPIs, including better nocturnal control, from the first dose.",
+  "pharmacokinetics": {
+    "onset": "Rapid — near-maximal effect on day one, since activation doesn’t depend on cumulative pump turnover across several doses.",
+    "duration": "Long duration of action from a single dose; suppression doesn’t taper as the drug is cleared the way PPI benefit is capped by pump half-life.",
+    "metabolism": "Primarily CYP3A4, with additional non-CYP pathways; far less affected by CYP2C19 genotype than PPIs."
+  },
+  "indications": [
+    "GERD and erosive esophagitis; increasingly used in H. pylori eradication regimens, including against strains showing reduced PPI-based regimen efficacy."
+  ],
+  "interactionNotes": [
+    "Fewer CYP2C19-driven concerns than PPIs, but CYP3A4 interactions (e.g., strong inducers/inhibitors) are relevant."
+  ],
+  "originalFields": [
+    [
+      "Mechanism",
+      "Reversible, competitive inhibition of the H⁺/K⁺-ATPase at the potassium-binding site — no acid-catalyzed activation required, unlike PPIs."
+    ],
+    [
+      "Potency / pH control",
+      "More potent and more consistent acid suppression than PPIs, including better nocturnal control, from the first dose."
+    ],
+    [
+      "Onset",
+      "Rapid — near-maximal effect on day one, since activation doesn’t depend on cumulative pump turnover across several doses."
+    ],
+    [
+      "Duration",
+      "Long duration of action from a single dose; suppression doesn’t taper as the drug is cleared the way PPI benefit is capped by pump half-life."
+    ],
+    [
+      "Meal timing",
+      "Acid-stable and not dependent on meal-stimulated pumps for activation — can be taken without strict meal timing."
+    ],
+    [
+      "Metabolism / CYP",
+      "Primarily CYP3A4, with additional non-CYP pathways; far less affected by CYP2C19 genotype than PPIs."
+    ],
+    [
+      "Key interactions",
+      "Fewer CYP2C19-driven concerns than PPIs, but CYP3A4 interactions (e.g., strong inducers/inhibitors) are relevant."
+    ],
+    [
+      "Indications",
+      "GERD and erosive esophagitis; increasingly used in H. pylori eradication regimens, including against strains showing reduced PPI-based regimen efficacy."
+    ]
+  ],
+  "classId": "ppi",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id vonoprazan)."
+  }
+}

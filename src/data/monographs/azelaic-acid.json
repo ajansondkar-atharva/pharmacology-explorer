@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "azelaic-acid",
+  "name": "Azelaic Acid",
+  "class": "Dicarboxylic acid — dual-action",
+  "systems": [
+    "derm"
+  ],
+  "summary": "One of the few acne ingredients that treats active lesions and existing pigmentation through two genuinely separate mechanisms in the same molecule.",
+  "good": "Concurrent active acne and post-inflammatory pigmentation, or pregnancy-safe regimens.",
+  "bad": "No major incompatibilities — one of the more combination-friendly ingredients on this page.",
+  "clinicalPearls": [
+    "For acne marks versus active acne: azelaic acid is the rare ingredient that meaningfully addresses both at once, rather than treating one and hoping the other follows."
+  ],
+  "mechanism": "Mild antibacterial and comedolytic effect against C. acnes, plus direct tyrosinase inhibition that reduces melanin synthesis in hyperactive melanocytes.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Mild antibacterial and comedolytic effect against C. acnes, plus direct tyrosinase inhibition that reduces melanin synthesis in hyperactive melanocytes."
+    ],
+    [
+      "Best use case",
+      "Mild inflammatory/comedonal acne with concurrent post-inflammatory pigmentation, and acne care during pregnancy, where it is considered one of the safer options."
+    ],
+    [
+      "Speed of response",
+      "Slow-to-moderate — 8–12 weeks for full pigmentation benefit, somewhat faster for mild inflammatory improvement."
+    ],
+    [
+      "Irritation risk",
+      "Low-moderate; transient tingling or mild stinging on application is common but usually settles."
+    ],
+    [
+      "Pigmentation relevance",
+      "A genuine, mechanism-based depigmenting effect via tyrosinase inhibition — one of the strongest pigment benefits on this list outside of hydroquinone."
+    ],
+    [
+      "Barrier effects",
+      "Minimal to mild."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Leave-on."
+    ],
+    [
+      "AM / PM use",
+      "Either — reasonably photostable, though frequently used at night alongside a retinoid."
+    ],
+    [
+      "Combination compatibility",
+      "Combines well with retinoids and benzoyl peroxide, and is a reasonable core agent for pregnancy-safe regimens where retinoids and oral options are excluded."
+    ]
+  ],
+  "classId": "acne",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id azelaic-acid)."
+  }
+}

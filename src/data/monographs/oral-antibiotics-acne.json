@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "oral-antibiotics-acne",
+  "name": "Oral Antibiotics (Doxycycline / Minocycline)",
+  "class": "Tetracycline-class — systemic bridge therapy",
+  "systems": [
+    "derm"
+  ],
+  "summary": "Meant to be a time-limited bridge to a topical-maintenance regimen — not a long-term solution, however comfortable it feels once it’s working.",
+  "good": "A defined, capped course (commonly a few months) as a bridge to topical maintenance therapy.",
+  "bad": "Combining with isotretinoin (absolute contraindication), dosing alongside calcium/iron/antacids, or open-ended courses beyond about 3–4 months.",
+  "clinicalPearls": [
+    "Guidelines increasingly cap oral antibiotic courses for acne at a few months specifically because indefinite use offers diminishing benefit while accumulating resistance and side-effect risk."
+  ],
+  "mechanism": "Antibacterial against C. acnes plus a genuinely separate anti-inflammatory effect — inhibition of matrix metalloproteinases and neutrophil chemotaxis — which is why sub-antimicrobial dosing is sometimes used specifically for the anti-inflammatory effect alone.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Antibacterial against C. acnes plus a genuinely separate anti-inflammatory effect — inhibition of matrix metalloproteinases and neutrophil chemotaxis — which is why sub-antimicrobial dosing is sometimes used specifically for the anti-inflammatory effect alone."
+    ],
+    [
+      "Best use case",
+      "Moderate-severe inflammatory acne not adequately controlled by topicals alone, used as a bridge rather than indefinite maintenance."
+    ],
+    [
+      "Speed of response",
+      "Moderate — 6–8 weeks for meaningful inflammatory improvement."
+    ],
+    [
+      "Irritation risk",
+      "Systemic rather than topical — photosensitivity (especially doxycycline), GI upset, and minocycline-specific dizziness/vestibular symptoms."
+    ],
+    [
+      "Pigmentation relevance",
+      "Minocycline carries a rare but recognized risk of blue-gray skin or mucosal pigmentation with prolonged use — distinct from acne-related PIH, but worth knowing given this section’s focus."
+    ],
+    [
+      "Barrier effects",
+      "No direct topical barrier effect, though photosensitivity increases UV vulnerability."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Not applicable — oral medication, taken away from dairy, calcium, iron, or antacids, which chelate the drug and reduce absorption."
+    ],
+    [
+      "AM / PM use",
+      "Per prescriber, with a full glass of water and away from meals containing calcium-rich dairy or iron/antacids."
+    ],
+    [
+      "Combination compatibility",
+      "Should be paired with topical benzoyl peroxide to reduce resistance risk; absolutely contraindicated alongside isotretinoin."
+    ]
+  ],
+  "classId": "acne",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id oral-antibiotics-acne)."
+  }
+}

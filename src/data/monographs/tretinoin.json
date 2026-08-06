@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tretinoin",
+  "name": "Tretinoin",
+  "class": "Retinoid (RAR agonist)",
+  "systems": [
+    "derm"
+  ],
+  "summary": "The original, best-evidenced topical retinoid — gold standard for comedonal acne, at the cost of the most irritation to manage on the way there.",
+  "good": "Comedonal acne with a long runway to build tolerance; combined acne + photoaging goals.",
+  "bad": "Applying at the same time as benzoyl peroxide or another exfoliant on the same night — space them out to limit cumulative irritation and formulation interaction.",
+  "clinicalPearls": [
+    "The \"purge\" is genuinely part of the mechanism, not a sign of failure — new microcomedones surfacing faster is what faster turnover looks like in month one. Patients who stop during the purge lose the benefit right before it starts."
+  ],
+  "mechanism": "Retinoic acid receptor agonist — normalizes keratinocyte turnover and desquamation, directly reducing microcomedone formation, with additional anti-inflammatory activity.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Retinoic acid receptor agonist — normalizes keratinocyte turnover and desquamation, directly reducing microcomedone formation, with additional anti-inflammatory activity."
+    ],
+    [
+      "Best use case",
+      "Comedonal acne, and patients also wanting long-term texture/photoaging benefit."
+    ],
+    [
+      "Speed of response",
+      "Slow — 8–12 weeks for visible comedonal change; a \"purging\" phase in the first 2–4 weeks (temporary worsening as microcomedones surface faster) is common and expected."
+    ],
+    [
+      "Irritation risk",
+      "High initially — retinoid dermatitis (redness, peeling, dryness) is the main adherence barrier. Requires gradual introduction."
+    ],
+    [
+      "Pigmentation relevance",
+      "Helps resolve existing PIH over time via faster turnover of pigmented keratinocytes, but early irritation can transiently aggravate pigmentation in darker skin if introduced too fast."
+    ],
+    [
+      "Barrier effects",
+      "Thins the stratum corneum initially, raising transepidermal water loss and sun sensitivity — moisturizer and daily sunscreen are not optional."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Leave-on, applied at night."
+    ],
+    [
+      "AM / PM use",
+      "Night only — photolabile and photosensitizing."
+    ],
+    [
+      "Combination compatibility",
+      "Pairs well with benzoyl peroxide (apply at a different time of day — some formulations degrade with simultaneous BPO contact) and niacinamide, which buffers irritation."
+    ]
+  ],
+  "classId": "acne",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id tretinoin)."
+  }
+}

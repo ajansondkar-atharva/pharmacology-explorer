@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "doxycycline",
+  "name": "Doxycycline",
+  "class": "Tetracycline",
+  "systems": [
+    "anti"
+  ],
+  "summary": "A versatile tetracycline used heavily in acne, atypical infections, and tick-borne disease because it is orally convenient and broad enough to matter.",
+  "good": "Acne or atypical/tick-borne infections where doxycycline is a standard choice.",
+  "bad": "Pregnancy, young children, or anyone who cannot follow the absorption rules.",
+  "clinicalPearls": [
+    "Take it with water and do not lie down right after dosing."
+  ],
+  "mechanism": "Binds the 30S ribosomal subunit and blocks aminoacyl-tRNA attachment.",
+  "indications": [
+    "Acne, atypical respiratory infections, chlamydia, Lyme disease, and several rickettsial infections."
+  ],
+  "interactionNotes": [
+    "Iron, calcium, magnesium, and antacids reduce absorption; avoid combination with isotretinoin because of intracranial hypertension risk."
+  ],
+  "safety": {
+    "warnings": [
+      "Photosensitivity, esophagitis, pregnancy/children under 8, and GI upset are central warnings."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Binds the 30S ribosomal subunit and blocks aminoacyl-tRNA attachment."
+    ],
+    [
+      "Typical uses",
+      "Acne, atypical respiratory infections, chlamydia, Lyme disease, and several rickettsial infections."
+    ],
+    [
+      "Key cautions",
+      "Photosensitivity, esophagitis, pregnancy/children under 8, and GI upset are central warnings."
+    ],
+    [
+      "Important interactions",
+      "Iron, calcium, magnesium, and antacids reduce absorption; avoid combination with isotretinoin because of intracranial hypertension risk."
+    ],
+    [
+      "Pearl",
+      "Take it with water and do not lie down right after dosing."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id doxycycline)."
+  }
+}

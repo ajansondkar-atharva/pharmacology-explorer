@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "metronidazole",
+  "name": "Metronidazole",
+  "class": "Nitroimidazole",
+  "systems": [
+    "anti"
+  ],
+  "summary": "A key anaerobic and protozoal agent whose usefulness is matched by its classic alcohol and neuropathy cautions.",
+  "good": "Anaerobic coverage and certain protozoal infections.",
+  "bad": "Unreviewed warfarin use or poor adherence to alcohol avoidance.",
+  "clinicalPearls": [
+    "It is a strong anaerobe drug because anaerobes activate it best."
+  ],
+  "mechanism": "Reduced in anaerobic organisms to reactive metabolites that damage DNA.",
+  "indications": [
+    "Anaerobic infections, bacterial vaginosis, trichomoniasis, and selected GI/dental infections."
+  ],
+  "interactionNotes": [
+    "Warfarin interaction and alcohol avoidance are the practical classics."
+  ],
+  "safety": {
+    "warnings": [
+      "Alcohol reaction, metallic taste, GI upset, and peripheral neuropathy with prolonged use."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Reduced in anaerobic organisms to reactive metabolites that damage DNA."
+    ],
+    [
+      "Typical uses",
+      "Anaerobic infections, bacterial vaginosis, trichomoniasis, and selected GI/dental infections."
+    ],
+    [
+      "Key cautions",
+      "Alcohol reaction, metallic taste, GI upset, and peripheral neuropathy with prolonged use."
+    ],
+    [
+      "Important interactions",
+      "Warfarin interaction and alcohol avoidance are the practical classics."
+    ],
+    [
+      "Pearl",
+      "It is a strong anaerobe drug because anaerobes activate it best."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id metronidazole)."
+  }
+}

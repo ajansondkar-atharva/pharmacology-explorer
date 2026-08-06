@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "escitalopram",
+  "name": "Escitalopram",
+  "class": "SSRI",
+  "systems": [
+    "psych"
+  ],
+  "summary": "A common SSRI choice when tolerability and straightforward dosing are the priority.",
+  "good": "When a clean, familiar SSRI option is needed.",
+  "bad": "Significant QT concerns or high serotonergic polypharmacy.",
+  "clinicalPearls": [
+    "Often favored for simplicity, but it is still an SSRI with the full class caveat set."
+  ],
+  "mechanism": "Selective serotonin reuptake inhibition.",
+  "indications": [
+    "Depression and generalized anxiety disorder, with off-label use in some anxiety-spectrum conditions."
+  ],
+  "interactionNotes": [
+    "Other serotonergic drugs and QT-prolonging agents need review."
+  ],
+  "safety": {
+    "warnings": [
+      "Sexual dysfunction, GI upset, hyponatremia, and QT prolongation at higher exposures."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Selective serotonin reuptake inhibition."
+    ],
+    [
+      "Typical uses",
+      "Depression and generalized anxiety disorder, with off-label use in some anxiety-spectrum conditions."
+    ],
+    [
+      "Key cautions",
+      "Sexual dysfunction, GI upset, hyponatremia, and QT prolongation at higher exposures."
+    ],
+    [
+      "Important interactions",
+      "Other serotonergic drugs and QT-prolonging agents need review."
+    ],
+    [
+      "Pearl",
+      "Often favored for simplicity, but it is still an SSRI with the full class caveat set."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id escitalopram)."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "insulin-glargine",
+  "name": "Insulin glargine",
+  "class": "Basal insulin",
+  "systems": [
+    "gi",
+    "endo"
+  ],
+  "summary": "A long-acting basal insulin used to provide background insulin coverage with a flatter profile than older intermediate insulins.",
+  "good": "Basal coverage when steady background insulin is required.",
+  "bad": "Unstructured use without glucose monitoring or understanding of hypoglycemia response.",
+  "clinicalPearls": [
+    "It is the background layer; it does not replace meal-time insulin when that is needed."
+  ],
+  "mechanism": "Subcutaneous depot formation produces slow, relatively steady insulin release over roughly a day.",
+  "indications": [
+    "Basal control in type 1 diabetes and type 2 diabetes needing background insulin support."
+  ],
+  "interactionNotes": [
+    "Exercise, missed meals, dose stacking, and other glucose-lowering drugs can change hypoglycemia risk."
+  ],
+  "safety": {
+    "warnings": [
+      "Hypoglycemia, weight gain, and injection technique errors are the main concerns."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Subcutaneous depot formation produces slow, relatively steady insulin release over roughly a day."
+    ],
+    [
+      "Typical uses",
+      "Basal control in type 1 diabetes and type 2 diabetes needing background insulin support."
+    ],
+    [
+      "Key cautions",
+      "Hypoglycemia, weight gain, and injection technique errors are the main concerns."
+    ],
+    [
+      "Important interactions",
+      "Exercise, missed meals, dose stacking, and other glucose-lowering drugs can change hypoglycemia risk."
+    ],
+    [
+      "Pearl",
+      "It is the background layer; it does not replace meal-time insulin when that is needed."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id insulin-glargine)."
+  }
+}

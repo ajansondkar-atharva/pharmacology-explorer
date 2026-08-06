@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "rosuvastatin",
+  "name": "Rosuvastatin",
+  "class": "Statin",
+  "systems": [
+    "cardio"
+  ],
+  "summary": "A potent statin often chosen when strong LDL lowering is needed with relatively little CYP3A4 interaction burden.",
+  "good": "High-intensity LDL reduction or patients who need a statin with fewer CYP3A4 issues.",
+  "bad": "Any unexplained muscle toxicity signal that has not been evaluated.",
+  "clinicalPearls": [
+    "It is a potency choice as much as an interaction choice."
+  ],
+  "mechanism": "Same HMG-CoA reductase inhibition class effect as other statins.",
+  "indications": [
+    "High-intensity LDL lowering, mixed dyslipidemia, and high-risk cardiovascular prevention."
+  ],
+  "interactionNotes": [
+    "Still worth checking interaction burden, but it is less CYP3A4-dependent than atorvastatin."
+  ],
+  "safety": {
+    "warnings": [
+      "Muscle symptoms, liver enzyme elevation, and dose caution in kidney impairment are the main themes."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Same HMG-CoA reductase inhibition class effect as other statins."
+    ],
+    [
+      "Typical uses",
+      "High-intensity LDL lowering, mixed dyslipidemia, and high-risk cardiovascular prevention."
+    ],
+    [
+      "Key cautions",
+      "Muscle symptoms, liver enzyme elevation, and dose caution in kidney impairment are the main themes."
+    ],
+    [
+      "Important interactions",
+      "Still worth checking interaction burden, but it is less CYP3A4-dependent than atorvastatin."
+    ],
+    [
+      "Pearl",
+      "It is a potency choice as much as an interaction choice."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id rosuvastatin)."
+  }
+}

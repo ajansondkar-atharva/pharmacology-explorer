@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "etoricoxib",
+  "name": "Etoricoxib",
+  "class": "COX-2 selective (highly)",
+  "systems": [
+    "signal"
+  ],
+  "summary": "One of the most COX-2-selective agents available, with once-daily dosing from a long half-life — and correspondingly closer clinical attention to blood pressure and CV risk.",
+  "good": "Short courses in patients with clear GI risk and confirmed low cardiovascular risk, where once-daily dosing aids adherence.",
+  "bad": "Hypertension or established cardiovascular disease — blood pressure should be monitored even in appropriate candidates.",
+  "clinicalPearls": [
+    "Higher COX-2 selectivity is not simply \"better\" — it trades GI safety for a more pronounced cardiovascular/blood-pressure signal, illustrating the mechanism’s tradeoff directly."
+  ],
+  "mechanism": "Highly selective COX-2 inhibition — among the highest COX-2:COX-1 selectivity ratios in clinical use.",
+  "pharmacokinetics": {},
+  "originalFields": [
+    [
+      "Mechanism",
+      "Highly selective COX-2 inhibition — among the highest COX-2:COX-1 selectivity ratios in clinical use."
+    ],
+    [
+      "COX selectivity",
+      "Greater selectivity than celecoxib, which produces very low COX-1-mediated GI toxicity but a clearer dose-dependent blood pressure/CV signal."
+    ],
+    [
+      "GI risk",
+      "Low relative to nonselective NSAIDs, consistent with high COX-2 selectivity."
+    ],
+    [
+      "CV risk",
+      "Dose-dependent increases in blood pressure and cardiovascular events are more clinically prominent than with celecoxib, especially at higher doses."
+    ],
+    [
+      "Renal risk",
+      "Same COX-2-mediated mechanism as other agents in the class."
+    ],
+    [
+      "Dosing frequency",
+      "Long half-life supports once-daily dosing."
+    ]
+  ],
+  "classId": "nsaid",
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id etoricoxib)."
+  }
+}

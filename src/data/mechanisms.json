@@ -1,0 +1,312 @@
+[
+  {
+    "id": "ppi-mechanism",
+    "name": "Proton pump inhibition",
+    "sys": "gi",
+    "fields": [
+      [
+        "Target",
+        "The H⁺/K⁺-ATPase (proton pump) on the luminal membrane of gastric parietal cells."
+      ],
+      [
+        "Downstream effect",
+        "Irreversible blockade of the final common step of acid secretion — acid production stops regardless of what stimulated the pump (histamine, gastrin, or acetylcholine)."
+      ],
+      [
+        "Clinical implications",
+        "Because inhibition is irreversible, effect duration tracks pump turnover (~24–48h to regenerate meaningful capacity), not plasma half-life — this is why once-daily dosing works despite a short half-life. Activation requires the pump to be actively secreting acid, hence the meal-timing rule."
+      ],
+      [
+        "Key examples",
+        "Omeprazole, esomeprazole, pantoprazole, rabeprazole, lansoprazole, dexlansoprazole."
+      ],
+      [
+        "Why it matters",
+        "Blocking the shared final pathway is more complete than blocking any single upstream receptor — the reason PPIs outperform H2 blockers on acid suppression."
+      ],
+      [
+        "Comparison with alternatives",
+        "H2 receptor antagonists block only the histamine-driven input, leaving gastrin/acetylcholine-driven secretion untouched. PCABs (below) hit the identical target reversibly, without needing acid-catalyzed activation."
+      ]
+    ]
+  },
+  {
+    "id": "pcab-mechanism",
+    "name": "Potassium-competitive acid blockade",
+    "sys": "gi",
+    "fields": [
+      [
+        "Target",
+        "The same H⁺/K⁺-ATPase as PPIs, but at the potassium-binding site rather than the covalent cysteine site PPIs use."
+      ],
+      [
+        "Downstream effect",
+        "Reversible, competitive inhibition — the pump is blocked without needing chemical activation by stomach acid first."
+      ],
+      [
+        "Clinical implications",
+        "Faster onset (no multi-dose ramp-up), no dependence on meal timing for activation, and more complete/consistent suppression, including overnight."
+      ],
+      [
+        "Key examples",
+        "Vonoprazan and related PCABs."
+      ],
+      [
+        "Why it matters",
+        "Removes the single biggest practical limitation of PPIs — the requirement for an acidic, meal-stimulated environment to switch on."
+      ],
+      [
+        "Comparison with alternatives",
+        "Faster and more genotype-independent than PPIs; still the same final target, so downstream physiology like rebound acid hypersecretion on withdrawal is relevant to both classes."
+      ]
+    ]
+  },
+  {
+    "id": "cox-mechanism",
+    "name": "COX inhibition",
+    "sys": "gi",
+    "fields": [
+      [
+        "Target",
+        "Cyclooxygenase enzymes — COX-1 (mostly constitutive) and COX-2 (mostly inducible) — which convert arachidonic acid into prostaglandins and thromboxane."
+      ],
+      [
+        "Downstream effect",
+        "Reduced prostaglandin synthesis lowers inflammation, pain signaling, and fever — but also reduces gastroprotective/renal-protective prostaglandins (COX-1) and vascular prostacyclin (COX-2)."
+      ],
+      [
+        "Clinical implications",
+        "The same enzyme family explains the therapeutic effect and essentially all major NSAID toxicities at once — GI, renal, and cardiovascular risk are different faces of one mechanism, not separate side effects."
+      ],
+      [
+        "Key examples",
+        "Ibuprofen, naproxen, diclofenac (nonselective); celecoxib, etoricoxib (COX-2 selective); aspirin (irreversible, uniquely antiplatelet)."
+      ],
+      [
+        "Why it matters",
+        "A textbook case of one molecular target explaining an entire risk-benefit profile — see NSAID Evolution for how 40 years of drug design tried to split the \"good\" and \"bad\" effects of this one enzyme family."
+      ],
+      [
+        "Comparison with alternatives",
+        "Acetaminophen achieves analgesia/antipyresis through a still-debated, mostly central mechanism without meaningful peripheral COX-1/2 inhibition — explaining its GI safety and lack of real anti-inflammatory effect."
+      ]
+    ]
+  },
+  {
+    "id": "cellwall-mechanism",
+    "name": "Cell wall synthesis inhibition",
+    "sys": "anti",
+    "fields": [
+      [
+        "Target",
+        "Penicillin-binding proteins (PBPs) — enzymes that cross-link peptidoglycan strands in the bacterial cell wall."
+      ],
+      [
+        "Downstream effect",
+        "Without cross-linking, the wall can’t withstand osmotic pressure and the bacterium lyses — bactericidal, and selective for bacteria since human cells have no cell wall."
+      ],
+      [
+        "Clinical implications",
+        "Time-dependent killing — efficacy tracks how long drug levels stay above the minimum inhibitory concentration, not how high the peak is — which drives beta-lactam dosing frequency."
+      ],
+      [
+        "Key examples",
+        "Penicillins, cephalosporins."
+      ],
+      [
+        "Why it matters",
+        "One of the cleanest examples of selective toxicity in pharmacology: the target simply doesn’t exist in human cells."
+      ],
+      [
+        "Comparison with alternatives",
+        "Vancomycin (not covered elsewhere on this site) blocks an earlier step in the same broad pathway — useful against organisms resistant to PBP-targeting beta-lactams."
+      ]
+    ]
+  },
+  {
+    "id": "ribosome30s-mechanism",
+    "name": "Protein synthesis inhibition — 30S subunit",
+    "sys": "anti",
+    "fields": [
+      [
+        "Target",
+        "The bacterial 30S ribosomal subunit."
+      ],
+      [
+        "Downstream effect",
+        "Tetracyclines block aminoacyl-tRNA binding (bacteriostatic); aminoglycosides cause misreading of the genetic code during translation (bactericidal) — same subunit, different binding site, different outcome."
+      ],
+      [
+        "Clinical implications",
+        "Aminoglycoside uptake requires active oxidative bacterial metabolism, which is exactly why the class has zero activity against anaerobes — a direct mechanistic consequence, not a spectrum coincidence."
+      ],
+      [
+        "Key examples",
+        "Doxycycline, minocycline (tetracyclines); gentamicin, amikacin (aminoglycosides)."
+      ],
+      [
+        "Why it matters",
+        "Shows that sharing a ribosomal subunit doesn’t mean sharing a mechanism or outcome — binding site and downstream consequence matter as much as target identity."
+      ],
+      [
+        "Comparison with alternatives",
+        "The 50S-targeting drugs below hit a different ribosomal component entirely, which is why tetracyclines and macrolides don’t share cross-resistance despite both inhibiting protein synthesis."
+      ]
+    ]
+  },
+  {
+    "id": "ribosome50s-mechanism",
+    "name": "Protein synthesis inhibition — 50S subunit",
+    "sys": "anti",
+    "fields": [
+      [
+        "Target",
+        "The bacterial 50S ribosomal subunit."
+      ],
+      [
+        "Downstream effect",
+        "Macrolides block translocation during elongation; clindamycin binds an overlapping site with a similar effect — both mostly bacteriostatic."
+      ],
+      [
+        "Clinical implications",
+        "Because macrolides and clindamycin share an overlapping binding site, ribosomal methylation resistance (the MLSb phenotype) confers cross-resistance across both — the basis for the clinical D-test before relying on clindamycin against certain staph isolates."
+      ],
+      [
+        "Key examples",
+        "Azithromycin, clarithromycin, erythromycin (macrolides); clindamycin (lincosamide)."
+      ],
+      [
+        "Why it matters",
+        "Explains both the shared toxin-suppression utility of this group (less protein synthesis means less bacterial exotoxin production, relevant in severe strep/staph disease) and the shared resistance liability."
+      ],
+      [
+        "Comparison with alternatives",
+        "Contrast with the 30S-targeting drugs above — different subunit, no cross-resistance, entirely different spectrum logic."
+      ]
+    ]
+  },
+  {
+    "id": "folate-mechanism",
+    "name": "Folate synthesis inhibition",
+    "sys": "anti",
+    "fields": [
+      [
+        "Target",
+        "Two sequential bacterial folate-synthesis enzymes — dihydropteroate synthase (blocked by sulfamethoxazole) and dihydrofolate reductase (blocked by trimethoprim)."
+      ],
+      [
+        "Downstream effect",
+        "Blocking two steps in the same pathway is synergistic — bacteria can’t easily route around a sequential double block the way they might a single-step inhibition."
+      ],
+      [
+        "Clinical implications",
+        "Human cells obtain folate from the diet rather than synthesizing it — which is why this pathway is selectively bacterial, and why methotrexate (which blocks the analogous mammalian enzyme) is such a dangerous combination with trimethoprim."
+      ],
+      [
+        "Key examples",
+        "Trimethoprim-sulfamethoxazole."
+      ],
+      [
+        "Why it matters",
+        "A clean example of deliberate sequential blockade as a pharmacological strategy, distinct from simply combining two unrelated mechanisms."
+      ],
+      [
+        "Comparison with alternatives",
+        "Most other classes here hit a single, non-sequential target — this combination’s synergy is a designed feature, not a coincidence of co-administration."
+      ]
+    ]
+  },
+  {
+    "id": "dnareplication-mechanism",
+    "name": "DNA replication inhibition",
+    "sys": "anti",
+    "fields": [
+      [
+        "Target",
+        "Bacterial DNA gyrase and topoisomerase IV — enzymes that manage DNA supercoiling during replication."
+      ],
+      [
+        "Downstream effect",
+        "Blocking these enzymes prevents DNA unwinding/religation, causing strand breaks and cell death — bactericidal, concentration-dependent."
+      ],
+      [
+        "Clinical implications",
+        "Structural distinctness from human topoisomerases makes the class selectively bactericidal, though its broader connective-tissue adverse effects (tendon, CNS, vascular) remain an area of ongoing research rather than a fully settled mechanism."
+      ],
+      [
+        "Key examples",
+        "Ciprofloxacin, levofloxacin, moxifloxacin."
+      ],
+      [
+        "Why it matters",
+        "Illustrates concentration-dependent killing — higher peak-to-MIC ratios predict efficacy, a genuinely different dosing philosophy than the time-dependent logic of beta-lactams."
+      ],
+      [
+        "Comparison with alternatives",
+        "Directly contrasts with beta-lactams’ time-dependent killing — two different bactericidal strategies requiring different dosing logic to optimize."
+      ]
+    ]
+  },
+  {
+    "id": "keratinization-mechanism",
+    "name": "Keratinization normalization",
+    "sys": "derm",
+    "fields": [
+      [
+        "Target",
+        "Retinoic acid receptors (RARs) in keratinocytes."
+      ],
+      [
+        "Downstream effect",
+        "Normalizes the rate and pattern of keratinocyte shedding within the follicle, preventing the abnormal cohesion that forms a microcomedone — the first step of acne pathogenesis."
+      ],
+      [
+        "Clinical implications",
+        "Because this addresses the earliest step in the pathogenic cascade, retinoids are foundational/first-line for comedonal acne — but the same turnover-acceleration is also what causes the initial \"purge\" and irritation."
+      ],
+      [
+        "Key examples",
+        "Tretinoin, adapalene, tazarotene (topical); isotretinoin (oral, systemic)."
+      ],
+      [
+        "Why it matters",
+        "A rare case where one receptor-mediated effect explains both a drug’s primary benefit and its main tolerability challenge."
+      ],
+      [
+        "Comparison with alternatives",
+        "Salicylic acid achieves a related but distinct outcome — direct chemical exfoliation of the follicular lining, without receptor signaling — part of why it’s gentler but generally less powerful."
+      ]
+    ]
+  },
+  {
+    "id": "dual-mechanism",
+    "name": "Antimicrobial + anti-inflammatory dual mechanisms",
+    "sys": "derm",
+    "fields": [
+      [
+        "Target",
+        "Varies by drug — tetracyclines act on the C. acnes 30S ribosome and, separately, inhibit matrix metalloproteinases and neutrophil chemotaxis; benzoyl peroxide combines non-specific oxidative bacterial killing with mild direct comedolytic activity."
+      ],
+      [
+        "Downstream effect",
+        "Two mechanistically independent effects from one molecule — antibacterial and anti-inflammatory action don’t have to travel together, but in these specific agents, they do."
+      ],
+      [
+        "Clinical implications",
+        "Explains why sub-antimicrobial-dose doxycycline is sometimes used purely for its anti-inflammatory effect, independent of any antibacterial goal, and why benzoyl peroxide stays useful even with sparse bacterial involvement."
+      ],
+      [
+        "Key examples",
+        "Doxycycline/minocycline (dual mechanism in acne), benzoyl peroxide (oxidative kill + mild comedolytic)."
+      ],
+      [
+        "Why it matters",
+        "A reminder that a drug’s effect in a specific indication isn’t always fully explained by its textbook primary mechanism."
+      ],
+      [
+        "Comparison with alternatives",
+        "Contrast with topical clindamycin, which is essentially single-mechanism (antibacterial only) here — part of why it’s paired with benzoyl peroxide for a complementary, not redundant, effect."
+      ]
+    ]
+  }
+]

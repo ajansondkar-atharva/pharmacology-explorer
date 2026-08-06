@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "atorvastatin",
+  "name": "Atorvastatin",
+  "class": "Statin",
+  "systems": [
+    "cardio"
+  ],
+  "summary": "A high-value statin used for LDL lowering and cardiovascular risk reduction across primary and secondary prevention settings.",
+  "good": "Patients needing meaningful LDL lowering and CV risk reduction.",
+  "bad": "Unexplained muscle symptoms or strong interaction burden without review.",
+  "clinicalPearls": [
+    "The dose-intensity strategy matters more than the brand name."
+  ],
+  "mechanism": "Inhibits HMG-CoA reductase, lowering hepatic cholesterol synthesis and increasing LDL receptor expression.",
+  "indications": [
+    "Hyperlipidemia, atherosclerotic risk reduction, post-ACS care, and diabetes-associated CV prevention."
+  ],
+  "interactionNotes": [
+    "CYP3A4 inhibitors, grapefruit-heavy intake in susceptible patients, and combination with fibrates raise caution."
+  ],
+  "safety": {
+    "warnings": [
+      "Myalgia, rare myopathy/rhabdomyolysis, and liver enzyme elevation are the major safety themes."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Inhibits HMG-CoA reductase, lowering hepatic cholesterol synthesis and increasing LDL receptor expression."
+    ],
+    [
+      "Typical uses",
+      "Hyperlipidemia, atherosclerotic risk reduction, post-ACS care, and diabetes-associated CV prevention."
+    ],
+    [
+      "Key cautions",
+      "Myalgia, rare myopathy/rhabdomyolysis, and liver enzyme elevation are the major safety themes."
+    ],
+    [
+      "Important interactions",
+      "CYP3A4 inhibitors, grapefruit-heavy intake in susceptible patients, and combination with fibrates raise caution."
+    ],
+    [
+      "Pearl",
+      "The dose-intensity strategy matters more than the brand name."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id atorvastatin)."
+  }
+}

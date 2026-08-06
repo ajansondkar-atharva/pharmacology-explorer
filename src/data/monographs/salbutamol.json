@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "salbutamol",
+  "name": "Salbutamol",
+  "class": "SABA",
+  "systems": [
+    "resp"
+  ],
+  "summary": "The classic rescue bronchodilator for acute bronchospasm, built for rapid symptom relief rather than long-term control.",
+  "good": "Immediate relief of bronchospasm.",
+  "bad": "As a substitute for controller therapy or in uncontrolled frequent symptoms.",
+  "clinicalPearls": [
+    "Frequent rescue use is a signal that controller therapy is insufficient."
+  ],
+  "mechanism": "Short-acting beta-2 agonism relaxes bronchial smooth muscle quickly.",
+  "indications": [
+    "Asthma or COPD rescue relief for wheeze, chest tightness, and acute bronchospasm."
+  ],
+  "interactionNotes": [
+    "Other sympathomimetics and beta-blockers can alter response."
+  ],
+  "safety": {
+    "warnings": [
+      "Tremor, tachycardia, hypokalemia, and overreliance on rescue use are the main concerns."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Short-acting beta-2 agonism relaxes bronchial smooth muscle quickly."
+    ],
+    [
+      "Typical uses",
+      "Asthma or COPD rescue relief for wheeze, chest tightness, and acute bronchospasm."
+    ],
+    [
+      "Key cautions",
+      "Tremor, tachycardia, hypokalemia, and overreliance on rescue use are the main concerns."
+    ],
+    [
+      "Important interactions",
+      "Other sympathomimetics and beta-blockers can alter response."
+    ],
+    [
+      "Pearl",
+      "Frequent rescue use is a signal that controller therapy is insufficient."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id salbutamol)."
+  }
+}

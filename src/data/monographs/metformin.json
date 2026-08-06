@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "metformin",
+  "name": "Metformin",
+  "class": "Biguanide",
+  "systems": [
+    "endo"
+  ],
+  "summary": "The foundational type 2 diabetes drug that lowers hepatic glucose output and usually avoids hypoglycemia on its own.",
+  "good": "Type 2 diabetes when a low-cost, high-value foundation drug is needed.",
+  "bad": "Significant renal dysfunction or persistent GI intolerance without dose strategy adjustment.",
+  "clinicalPearls": [
+    "It is weight-neutral to mildly weight-lowering and usually low risk for hypoglycemia."
+  ],
+  "mechanism": "Reduces hepatic gluconeogenesis and improves insulin sensitivity, with additional gut-mediated metabolic effects.",
+  "indications": [
+    "First-line type 2 diabetes, insulin resistance, and polycystic-ovary-syndrome-related metabolic support in some settings."
+  ],
+  "interactionNotes": [
+    "Contrast studies, renal decline, and other lactic-acidosis risk situations warrant review."
+  ],
+  "safety": {
+    "warnings": [
+      "GI upset, B12 reduction, and kidney-function limits are the core issues."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Reduces hepatic gluconeogenesis and improves insulin sensitivity, with additional gut-mediated metabolic effects."
+    ],
+    [
+      "Typical uses",
+      "First-line type 2 diabetes, insulin resistance, and polycystic-ovary-syndrome-related metabolic support in some settings."
+    ],
+    [
+      "Key cautions",
+      "GI upset, B12 reduction, and kidney-function limits are the core issues."
+    ],
+    [
+      "Important interactions",
+      "Contrast studies, renal decline, and other lactic-acidosis risk situations warrant review."
+    ],
+    [
+      "Pearl",
+      "It is weight-neutral to mildly weight-lowering and usually low risk for hypoglycemia."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id metformin)."
+  }
+}

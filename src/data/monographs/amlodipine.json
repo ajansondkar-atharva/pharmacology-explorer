@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "amlodipine",
+  "name": "Amlodipine",
+  "class": "Dihydropyridine calcium channel blocker",
+  "systems": [
+    "cardio"
+  ],
+  "summary": "A vascular-selective calcium channel blocker used widely for hypertension and angina because it relaxes arterial smooth muscle smoothly and predictably.",
+  "good": "Hypertension when a long-acting, once-daily arterial vasodilator is desirable.",
+  "bad": "Patients who already have troublesome ankle edema or hypotension.",
+  "clinicalPearls": [
+    "Edema is the signature side effect — it often reflects arteriolar dilation rather than fluid overload."
+  ],
+  "mechanism": "Blocks L-type calcium channels in vascular smooth muscle, lowering peripheral resistance and blood pressure.",
+  "indications": [
+    "Hypertension, chronic stable angina, and vasospastic angina."
+  ],
+  "interactionNotes": [
+    "Strong CYP3A4 inhibitors can raise exposure; combining with other rate-lowering drugs requires clinical sense."
+  ],
+  "safety": {
+    "warnings": [
+      "Peripheral edema, flushing, headache, and occasional gingival overgrowth are the usual limiting effects."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Blocks L-type calcium channels in vascular smooth muscle, lowering peripheral resistance and blood pressure."
+    ],
+    [
+      "Typical uses",
+      "Hypertension, chronic stable angina, and vasospastic angina."
+    ],
+    [
+      "Key cautions",
+      "Peripheral edema, flushing, headache, and occasional gingival overgrowth are the usual limiting effects."
+    ],
+    [
+      "Important interactions",
+      "Strong CYP3A4 inhibitors can raise exposure; combining with other rate-lowering drugs requires clinical sense."
+    ],
+    [
+      "Pearl",
+      "Edema is the signature side effect — it often reflects arteriolar dilation rather than fluid overload."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id amlodipine)."
+  }
+}

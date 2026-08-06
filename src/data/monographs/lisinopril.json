@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "lisinopril",
+  "name": "Lisinopril",
+  "class": "ACE inhibitor",
+  "systems": [
+    "cardio"
+  ],
+  "summary": "A classic ACE inhibitor with strong blood-pressure and cardiorenal utility, limited mainly by cough, hyperkalemia, and angioedema risk.",
+  "good": "Hypertension or heart failure where an ACE inhibitor is appropriate and tolerated.",
+  "bad": "Pregnancy, previous ACE-inhibitor angioedema, or troublesome cough.",
+  "clinicalPearls": [
+    "The bradykinin increase is the mechanistic reason for both the cough and the rare angioedema."
+  ],
+  "mechanism": "Inhibits angiotensin-converting enzyme, lowering angiotensin II and increasing bradykinin.",
+  "indications": [
+    "Hypertension, heart failure, post-MI care, and kidney-protective therapy in selected patients."
+  ],
+  "interactionNotes": [
+    "NSAIDs can blunt antihypertensive effect; potassium-raising drugs increase hyperkalemia risk."
+  ],
+  "safety": {
+    "warnings": [
+      "Cough, angioedema, hyperkalemia, pregnancy, and bilateral renal artery stenosis are major concerns."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Inhibits angiotensin-converting enzyme, lowering angiotensin II and increasing bradykinin."
+    ],
+    [
+      "Typical uses",
+      "Hypertension, heart failure, post-MI care, and kidney-protective therapy in selected patients."
+    ],
+    [
+      "Key cautions",
+      "Cough, angioedema, hyperkalemia, pregnancy, and bilateral renal artery stenosis are major concerns."
+    ],
+    [
+      "Important interactions",
+      "NSAIDs can blunt antihypertensive effect; potassium-raising drugs increase hyperkalemia risk."
+    ],
+    [
+      "Pearl",
+      "The bradykinin increase is the mechanistic reason for both the cough and the rare angioedema."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id lisinopril)."
+  }
+}

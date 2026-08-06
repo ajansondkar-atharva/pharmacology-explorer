@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "benzoyl-peroxide",
+  "name": "Benzoyl peroxide",
+  "class": "Topical anti-acne agent",
+  "systems": [
+    "derm"
+  ],
+  "summary": "A core acne topical that lowers bacterial burden and helps prevent antibiotic resistance when paired with topical or oral antibiotics.",
+  "good": "Acne regimens that need antimicrobial support and resistance suppression.",
+  "bad": "Very sensitive or already-overtreated skin unless introduced carefully.",
+  "clinicalPearls": [
+    "It is one of the most useful acne drugs because it helps both treatment and stewardship."
+  ],
+  "mechanism": "Oxidative antimicrobial action reduces Cutibacterium acnes and helps unclog acne-prone follicles.",
+  "indications": [
+    "Inflammatory acne, combination acne regimens, and antibiotic-resistance mitigation."
+  ],
+  "interactionNotes": [
+    "Often paired with topical clindamycin or other acne regimens to improve the resistance profile."
+  ],
+  "safety": {
+    "warnings": [
+      "Irritation, dryness, bleaching of fabrics, and barrier disruption are common practical issues."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Oxidative antimicrobial action reduces Cutibacterium acnes and helps unclog acne-prone follicles."
+    ],
+    [
+      "Typical uses",
+      "Inflammatory acne, combination acne regimens, and antibiotic-resistance mitigation."
+    ],
+    [
+      "Key cautions",
+      "Irritation, dryness, bleaching of fabrics, and barrier disruption are common practical issues."
+    ],
+    [
+      "Important interactions",
+      "Often paired with topical clindamycin or other acne regimens to improve the resistance profile."
+    ],
+    [
+      "Pearl",
+      "It is one of the most useful acne drugs because it helps both treatment and stewardship."
+    ],
+    [
+      "Best use case",
+      "Inflammatory acne, and specifically as the resistance-preventing partner for any topical or oral antibiotic."
+    ],
+    [
+      "Speed of response",
+      "Relatively fast for inflammatory lesions — visible reduction in active pustules/papules within 2–4 weeks."
+    ],
+    [
+      "Irritation risk",
+      "Moderate to high, dose-dependent; dryness, peeling, and occasional allergic contact dermatitis. Lower concentrations (2.5–5%) are often just as effective as 10% with less irritation."
+    ],
+    [
+      "Pigmentation relevance",
+      "Not pigment-targeted; irritation itself can trigger PIH in susceptible skin, so concentration matters."
+    ],
+    [
+      "Barrier effects",
+      "Can be drying and barrier-disruptive, especially at higher concentrations or with frequent use."
+    ],
+    [
+      "Wash-off vs leave-on",
+      "Both exist — leave-on gels/creams for spot or regional treatment, wash-off cleansers for broader or maintenance use with less irritation."
+    ],
+    [
+      "AM / PM use",
+      "Either — photostable, so timing is flexible; often used in the morning if a retinoid is used at night."
+    ],
+    [
+      "Combination compatibility",
+      "The single most important co-therapy ingredient in acne — always pair with a topical or oral antibiotic to prevent resistant C. acnes strains."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id benzoyl-peroxide). Merged with migrated entry (id benzoyl-peroxide)."
+  }
+}

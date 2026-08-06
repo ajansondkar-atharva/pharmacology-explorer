@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "ibuprofen",
+  "name": "Ibuprofen",
+  "class": "NSAID",
+  "systems": [
+    "musc"
+  ],
+  "summary": "A short-acting nonselective NSAID that balances analgesia, antipyresis, and anti-inflammatory effect with the classic COX-1/COX-2 tradeoff.",
+  "good": "Short-term inflammatory pain, fever, and dysmenorrhea when a nonselective NSAID is appropriate.",
+  "bad": "Active ulcer disease, advanced kidney disease, or patients already on multiple bleeding-risk drugs.",
+  "clinicalPearls": [
+    "Short half-life means it wears off faster than naproxen, but the GI and renal warnings still apply."
+  ],
+  "mechanism": "Reversible COX-1/COX-2 inhibition lowers prostaglandin synthesis, reducing pain, fever, and inflammation.",
+  "indications": [
+    "Headache, fever, dysmenorrhea, sprains, dental pain, and short bursts of inflammatory pain."
+  ],
+  "interactionNotes": [
+    "Anticoagulants, antiplatelets, ACE inhibitors, ARBs, and diuretics can turn a routine NSAID into a problem drug."
+  ],
+  "safety": {
+    "warnings": [
+      "Ulcer disease, kidney disease, dehydration, late pregnancy, aspirin-sensitive asthma, and bleeding risk all matter."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Reversible COX-1/COX-2 inhibition lowers prostaglandin synthesis, reducing pain, fever, and inflammation."
+    ],
+    [
+      "Typical uses",
+      "Headache, fever, dysmenorrhea, sprains, dental pain, and short bursts of inflammatory pain."
+    ],
+    [
+      "Key cautions",
+      "Ulcer disease, kidney disease, dehydration, late pregnancy, aspirin-sensitive asthma, and bleeding risk all matter."
+    ],
+    [
+      "Important interactions",
+      "Anticoagulants, antiplatelets, ACE inhibitors, ARBs, and diuretics can turn a routine NSAID into a problem drug."
+    ],
+    [
+      "Pearl",
+      "Short half-life means it wears off faster than naproxen, but the GI and renal warnings still apply."
+    ],
+    [
+      "COX selectivity",
+      "Nonselective, roughly balanced COX-1/COX-2 inhibition at typical doses."
+    ],
+    [
+      "GI risk",
+      "Lower than many other nonselective NSAIDs at OTC doses, rising with dose and duration."
+    ],
+    [
+      "CV risk",
+      "Present at higher doses/chronic use; can blunt aspirin’s antiplatelet effect if taken shortly before it (timing matters)."
+    ],
+    [
+      "Renal risk",
+      "Reversible reduction in renal blood flow via COX-1-dependent prostaglandins — relevant in dehydration, CKD, or with ACE inhibitors/diuretics (\"triple whammy\")."
+    ],
+    [
+      "Dosing frequency",
+      "Short half-life (~2h) — typically dosed every 6–8h."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id ibuprofen). Merged with migrated entry (id ibuprofen)."
+  }
+}

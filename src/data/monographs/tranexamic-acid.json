@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "tranexamic-acid",
+  "name": "Tranexamic acid",
+  "class": "Antifibrinolytic / pigmentation adjunct",
+  "systems": [
+    "gi"
+  ],
+  "summary": "An antifibrinolytic with a second life in pigmentation management, where its role is adjunctive rather than universal.",
+  "good": "Selected pigmentation or bleeding scenarios with proper risk review.",
+  "bad": "Patients with major thrombosis risk without specialist oversight.",
+  "clinicalPearls": [
+    "It is best thought of as an adjunctive specialist tool, not a magic depigmenting shortcut."
+  ],
+  "mechanism": "Blocks plasminogen activation, reducing fibrinolysis; pigmentation benefit is thought to relate to downstream melanogenic signaling modulation.",
+  "indications": [
+    "Bleeding disorders in appropriate settings and selected melasma/hyperpigmentation approaches."
+  ],
+  "interactionNotes": [
+    "Other prothrombotic factors and hormonal contexts deserve review."
+  ],
+  "safety": {
+    "warnings": [
+      "Thrombotic risk assessment matters, especially when used systemically rather than topically."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Blocks plasminogen activation, reducing fibrinolysis; pigmentation benefit is thought to relate to downstream melanogenic signaling modulation."
+    ],
+    [
+      "Typical uses",
+      "Bleeding disorders in appropriate settings and selected melasma/hyperpigmentation approaches."
+    ],
+    [
+      "Key cautions",
+      "Thrombotic risk assessment matters, especially when used systemically rather than topically."
+    ],
+    [
+      "Important interactions",
+      "Other prothrombotic factors and hormonal contexts deserve review."
+    ],
+    [
+      "Pearl",
+      "It is best thought of as an adjunctive specialist tool, not a magic depigmenting shortcut."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id tranexamic-acid)."
+  }
+}

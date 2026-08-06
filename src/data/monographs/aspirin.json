@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "aspirin",
+  "name": "Aspirin",
+  "class": "Antiplatelet / NSAID",
+  "systems": [
+    "cardio",
+    "musc",
+    "heme"
+  ],
+  "summary": "A unique NSAID because irreversible platelet COX-1 inhibition gives it a lasting antiplatelet effect at low doses.",
+  "good": "Secondary prevention in the right cardiovascular context and select acute coronary scenarios.",
+  "bad": "Anyone with substantial bleeding risk or an active peptic ulcer problem.",
+  "clinicalPearls": [
+    "Low-dose aspirin is a platelet drug first and a pain drug second."
+  ],
+  "mechanism": "Irreversible acetylation of COX-1 and COX-2; in platelets, COX-1 blockade reduces thromboxane A2 for the life of the platelet.",
+  "indications": [
+    "Secondary prevention of atherosclerotic events, acute coronary syndromes, and analgesic/antipyretic use at higher doses."
+  ],
+  "interactionNotes": [
+    "Other antiplatelets, anticoagulants, SSRIs, and ibuprofen timing can all matter."
+  ],
+  "safety": {
+    "warnings": [
+      "Bleeding, active ulcer disease, late pregnancy, and pediatric viral illness are classic avoid/strong-caution settings."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Irreversible acetylation of COX-1 and COX-2; in platelets, COX-1 blockade reduces thromboxane A2 for the life of the platelet."
+    ],
+    [
+      "Typical uses",
+      "Secondary prevention of atherosclerotic events, acute coronary syndromes, and analgesic/antipyretic use at higher doses."
+    ],
+    [
+      "Key cautions",
+      "Bleeding, active ulcer disease, late pregnancy, and pediatric viral illness are classic avoid/strong-caution settings."
+    ],
+    [
+      "Important interactions",
+      "Other antiplatelets, anticoagulants, SSRIs, and ibuprofen timing can all matter."
+    ],
+    [
+      "Pearl",
+      "Low-dose aspirin is a platelet drug first and a pain drug second."
+    ],
+    [
+      "COX selectivity",
+      "Nonselective, but the irreversible platelet effect at low dose is what defines its clinical identity."
+    ],
+    [
+      "GI risk",
+      "Elevated even at cardioprotective (75–100mg) doses, because platelet COX-1 inhibition is essentially complete at low dose."
+    ],
+    [
+      "CV / antiplatelet effect",
+      "The one NSAID with a genuine antiplatelet benefit — irreversible thromboxane A₂ suppression reduces clot formation."
+    ],
+    [
+      "Renal risk",
+      "Present at anti-inflammatory doses; minimal at low antiplatelet doses."
+    ],
+    [
+      "Typical use here",
+      "Low-dose: cardiovascular/stroke prophylaxis. High-dose: analgesic/anti-inflammatory use is now uncommon given safer alternatives."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id aspirin). Merged with migrated entry (id aspirin)."
+  }
+}

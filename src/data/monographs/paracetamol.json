@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "paracetamol",
+  "name": "Paracetamol",
+  "class": "Analgesic / antipyretic",
+  "systems": [
+    "neuro"
+  ],
+  "summary": "A central analgesic for pain and fever that is not a classic NSAID, so it avoids the strong COX-1 GI tradeoff seen with ibuprofen or naproxen.",
+  "good": "Mild to moderate pain or fever when GI or renal risk makes NSAIDs undesirable.",
+  "bad": "Severe inflammatory pain where a true anti-inflammatory effect is needed, or any setting with possible overdose risk.",
+  "clinicalPearls": [
+    "It is often the safest first step for simple pain, but the safety margin collapses once the dose creeps up repeatedly."
+  ],
+  "mechanism": "Primarily central analgesia and antipyresis; it weakly affects peripheral prostaglandin pathways and is not a strong anti-inflammatory drug.",
+  "indications": [
+    "Fever, headache, dental pain, musculoskeletal aches, and first-line symptomatic relief when GI risk makes NSAIDs less attractive."
+  ],
+  "interactionNotes": [
+    "Alcohol misuse, other hepatotoxic drugs, and combination cold products can all push the total daily dose into unsafe territory."
+  ],
+  "safety": {
+    "warnings": [
+      "Overdose can cause severe hepatotoxicity; dose discipline matters more than perceived gentleness."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Primarily central analgesia and antipyresis; it weakly affects peripheral prostaglandin pathways and is not a strong anti-inflammatory drug."
+    ],
+    [
+      "Typical uses",
+      "Fever, headache, dental pain, musculoskeletal aches, and first-line symptomatic relief when GI risk makes NSAIDs less attractive."
+    ],
+    [
+      "Key cautions",
+      "Overdose can cause severe hepatotoxicity; dose discipline matters more than perceived gentleness."
+    ],
+    [
+      "Important interactions",
+      "Alcohol misuse, other hepatotoxic drugs, and combination cold products can all push the total daily dose into unsafe territory."
+    ],
+    [
+      "Pearl",
+      "It is often the safest first step for simple pain, but the safety margin collapses once the dose creeps up repeatedly."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id paracetamol)."
+  }
+}

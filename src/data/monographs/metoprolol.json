@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "metoprolol",
+  "name": "Metoprolol",
+  "class": "Beta-1 blocker",
+  "systems": [
+    "signal"
+  ],
+  "summary": "A cardioselective beta blocker used for rate control, angina, hypertension, and selected heart-failure regimens.",
+  "good": "Patients who need rate control or a beta blocker with beta-1 selectivity.",
+  "bad": "Marked bradycardia, conduction disease, or severe bronchospasm risk.",
+  "clinicalPearls": [
+    "Tartrate and succinate are not interchangeable in every clinical context — the formulation matters."
+  ],
+  "mechanism": "Blocks beta-1 adrenergic receptors, lowering heart rate, contractility, and renin release.",
+  "indications": [
+    "Rate control, angina, post-MI therapy, hypertension, and heart failure depending on formulation."
+  ],
+  "interactionNotes": [
+    "Verapamil, diltiazem, and other rate-slowing drugs can stack bradycardia or conduction delay."
+  ],
+  "safety": {
+    "warnings": [
+      "Bradycardia, fatigue, AV block, and caution in asthma/COPD or brittle diabetes."
+    ]
+  },
+  "originalFields": [
+    [
+      "Mechanism",
+      "Blocks beta-1 adrenergic receptors, lowering heart rate, contractility, and renin release."
+    ],
+    [
+      "Typical uses",
+      "Rate control, angina, post-MI therapy, hypertension, and heart failure depending on formulation."
+    ],
+    [
+      "Key cautions",
+      "Bradycardia, fatigue, AV block, and caution in asthma/COPD or brittle diabetes."
+    ],
+    [
+      "Important interactions",
+      "Verapamil, diltiazem, and other rate-slowing drugs can stack bradycardia or conduction delay."
+    ],
+    [
+      "Pearl",
+      "Tartrate and succinate are not interchangeable in every clinical context — the formulation matters."
+    ]
+  ],
+  "provenance": {
+    "source": "migrated",
+    "confidence": "medium",
+    "lastUpdated": "2026-08-06",
+    "revision": 1,
+    "notes": "Migrated verbatim from the v1 single-file app (reference/original.html). Content is author-curated study material, not a regulatory source. Merged with migrated entry (id metoprolol)."
+  }
+}
