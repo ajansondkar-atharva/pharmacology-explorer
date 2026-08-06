@@ -21,6 +21,14 @@ export interface QuizCard {
   lapses: number;
 }
 
+export interface SyncedRecord {
+  drugId: string;
+  source: string;
+  hash: string;
+  json: string;          // overlay Monograph JSON
+  updatedAt: number;
+}
+
 interface PersistBackend {
   getFavs(): Promise<string[]>;
   addFav(id: string): Promise<void>;
@@ -38,6 +46,9 @@ interface PersistBackend {
   setQuiz(card: QuizCard): Promise<void>;
   getPrefs(): Promise<Record<string, string>>;
   setPref(key: string, value: string): Promise<void>;
+  getSynced(): Promise<SyncedRecord[]>;
+  putSynced(r: SyncedRecord): Promise<void>;
+  clearSynced(source?: string): Promise<void>;
 }
 
 /* ---------- IndexedDB backend (Dexie) ---------- */
@@ -51,6 +62,7 @@ class DexieBackend implements PersistBackend {
   basket!: Table<{ id: string; ts: number }, string>;
   quiz!: Table<QuizCard, string>;
   prefs!: Table<{ key: string; value: string }, string>;
+  synced!: Table<SyncedRecord, string>;
 
   constructor() {
     this.db = new Dexie('pharm-explorer-v2');
@@ -63,6 +75,16 @@ class DexieBackend implements PersistBackend {
       quiz: 'drugId, due',
       prefs: 'key',
     });
+    this.db.version(2).stores({
+      favs: 'id, createdAt',
+      notes: 'drugId, updatedAt',
+      recents: 'key, ts',
+      visits: 'id, ts',
+      basket: 'id, ts',
+      quiz: 'drugId, due',
+      prefs: 'key',
+      synced: 'drugId, source, updatedAt',
+    });
     this.favs = this.db.table('favs');
     this.notes = this.db.table('notes');
     this.recents = this.db.table('recents');
@@ -70,6 +92,7 @@ class DexieBackend implements PersistBackend {
     this.basket = this.db.table('basket');
     this.quiz = this.db.table('quiz');
     this.prefs = this.db.table('prefs');
+    this.synced = this.db.table('synced');
   }
 
   async getFavs() {
@@ -128,6 +151,19 @@ class DexieBackend implements PersistBackend {
   }
   async setPref(key: string, value: string) {
     await this.prefs.put({ key, value });
+  }
+  async getSynced() {
+    return this.synced.toArray();
+  }
+  async putSynced(r: SyncedRecord) {
+    await this.synced.put(r);
+  }
+  async clearSynced(source?: string) {
+    if (source) {
+      await this.synced.where('source').equals(source).delete();
+    } else {
+      await this.synced.clear();
+    }
   }
 }
 
@@ -215,6 +251,18 @@ class LSBackend implements PersistBackend {
     prefs[key] = value;
     this.write('prefs', prefs);
   }
+  async getSynced() {
+    return this.read<SyncedRecord[]>('synced', []);
+  }
+  async putSynced(r: SyncedRecord) {
+    const arr = (await this.getSynced()).filter((x) => x.drugId !== r.drugId || x.source !== r.source);
+    arr.push(r);
+    this.write('synced', arr);
+  }
+  async clearSynced(source?: string) {
+    const arr = (await this.getSynced()).filter((x) => (source ? x.source !== source : false));
+    this.write('synced', arr);
+  }
 }
 
 /* ---------- in-memory fallback (private mode / disabled storage) ---------- */
@@ -227,6 +275,7 @@ class MemBackend implements PersistBackend {
   basket: string[] = [];
   quiz = new Map<string, QuizCard>();
   prefs = new Map<string, string>();
+  synced = new Map<string, SyncedRecord>();
   async getFavs() { return [...this.favs]; }
   async addFav(id: string) { this.favs.add(id); }
   async removeFav(id: string) { this.favs.delete(id); }
@@ -247,6 +296,15 @@ class MemBackend implements PersistBackend {
   async setQuiz(card: QuizCard) { this.quiz.set(card.drugId, card); }
   async getPrefs() { return Object.fromEntries(this.prefs); }
   async setPref(key: string, value: string) { this.prefs.set(key, value); }
+  async getSynced() { return [...this.synced.values()]; }
+  async putSynced(r: SyncedRecord) { this.synced.set(`${r.source}:${r.drugId}`, r); }
+  async clearSynced(source?: string) {
+    if (source) {
+      for (const [k, v] of this.synced) if (v.source === source) this.synced.delete(k);
+    } else {
+      this.synced.clear();
+    }
+  }
 }
 
 /* ---------- facade ---------- */
@@ -355,4 +413,17 @@ export async function getPrefs(): Promise<Record<string, string>> {
 export async function setPref(key: string, value: string): Promise<void> {
   await b().setPref(key, value);
   appState.emit('prefs');
+}
+
+/* synced overlay records */
+export async function getSynced(): Promise<SyncedRecord[]> {
+  return b().getSynced();
+}
+export async function putSynced(r: SyncedRecord): Promise<void> {
+  await b().putSynced(r);
+  appState.emit('synced');
+}
+export async function clearSynced(source?: string): Promise<void> {
+  await b().clearSynced(source);
+  appState.emit('synced');
 }

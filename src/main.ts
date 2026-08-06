@@ -7,9 +7,10 @@ import { el, $, $$, svgIcon, ICONS, type IconName } from './lib/dom';
 import { navigate, initRouter, getViewLabel, type ViewKey } from './lib/router';
 import { initStore, getPrefs, setPref, addRecentSearch, getRecentSearches } from './lib/store';
 import { buildSearchIndex, search, highlightName, searchIndexSize, type SearchDoc } from './lib/search';
-import { catalogStats } from './lib/catalog';
+import { catalogStats, applySyncedOverlays } from './lib/catalog';
 import { toast } from './lib/toast';
 import { registerViews } from './views';
+import { storageMode } from './lib/store';
 
 /* ---------- nav ---------- */
 
@@ -213,6 +214,7 @@ function paletteItems(): PaletteItem[] {
     { label: 'Treatment Algorithms', icon: 'tree', action: () => navigate('algorithms') },
     { label: 'Study Mode', icon: 'quiz', action: () => navigate('study') },
     { label: 'Saved & Notes', icon: 'bookmark', action: () => navigate('saved') },
+    { label: 'Synchronization engine', icon: 'sync', action: () => navigate('sync') },
     { label: 'Toggle light / dark theme', icon: 'moon', kbd: 'T', action: () => $('#themeBtn')!.click() },
     { label: 'Focus search', icon: 'search', kbd: '/', action: () => $('#searchInput')!.focus() },
   ];
@@ -405,22 +407,31 @@ async function boot(): Promise<void> {
   initSearch();
   initPalette();
   initShortcuts();
-  buildSearchIndex();
   await initStore();
+  await applySyncedOverlays();
+  buildSearchIndex();
   updateCrumb();
   window.addEventListener('hashchange', updateCrumb);
 
-  // sync badge: local-first status
+  // sync badge: click → sync panel
   const badge = $('#syncBadge')!;
   const label = $('#syncLabel')!;
   badge.classList.add('offline');
   label.textContent = 'local';
-  badge.title = `Local-first — ${catalogStats().drugs} monographs offline. Sync arrives via the sync engine.`;
+  badge.style.cursor = 'pointer';
+  badge.setAttribute('role', 'button');
+  badge.setAttribute('tabindex', '0');
+  badge.title = `Local-first — ${catalogStats().drugs} monographs offline. Click to open the sync engine.`;
+  const openSync = () => navigate('sync');
+  badge.addEventListener('click', openSync);
+  badge.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSync(); }
+  });
 
   initRouter();
 
   // boot log
-  console.info(`[pharm-explorer] booted: ${searchIndexSize()} indexed entries, storage=${await import('./lib/store').then(m => m.storageMode)}`);
+  console.info(`[pharm-explorer] booted: ${searchIndexSize()} indexed entries, storage=${storageMode}`);
 }
 
 void boot();

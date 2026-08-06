@@ -12,6 +12,7 @@ import * as diseases from './diseases';
 import * as guidelines from './guidelines';
 import * as study from './study';
 import * as saved from './saved';
+import * as sync from './sync';
 
 export function registerViews(): void {
   home.register();
@@ -26,4 +27,5 @@ export function registerViews(): void {
   guidelines.register();
   study.register();
   saved.register();
+  sync.register();
 }

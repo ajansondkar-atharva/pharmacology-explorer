@@ -4,7 +4,7 @@
 export type ViewKey =
   | 'home' | 'directory' | 'monograph' | 'compare' | 'interactions'
   | 'pk' | 'mechanisms' | 'algorithms' | 'diseases' | 'guidelines'
-  | 'study' | 'saved';
+  | 'study' | 'saved' | 'sync';
 
 export interface Route {
   view: ViewKey;

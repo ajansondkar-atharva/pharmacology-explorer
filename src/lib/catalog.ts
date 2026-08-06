@@ -123,3 +123,44 @@ export function uniqueClasses(): Array<{ classId: string; label: string; count: 
   }
   return [...map.values()].sort((a, b) => b.count - a.count);
 }
+
+/* ---------- synced overlay merge ----------
+   Synced records (OpenFDA/RxNorm…) enrich bundled monographs in place.
+   Merging is additive: nested sections (identifiers, pharmacokinetics)
+   are shallow-merged, arrays are unioned, and the overlay's provenance
+   replaces the bundled one. User data is never involved. */
+
+export function mergeOverlay(base: Monograph, o: Partial<Monograph>): Monograph {
+  return {
+    ...base,
+    ...o,
+    systems: o.systems?.length ? o.systems : base.systems,
+    brandNames: [...new Set([...(base.brandNames ?? []), ...(o.brandNames ?? [])])],
+    identifiers: { ...(base.identifiers ?? {}), ...(o.identifiers ?? {}) },
+    pharmacokinetics: { ...(base.pharmacokinetics ?? {}), ...(o.pharmacokinetics ?? {}) },
+    safety: { ...(base.safety ?? {}), ...(o.safety ?? {}) },
+    provenance: o.provenance ?? base.provenance,
+  };
+}
+
+export async function applySyncedOverlays(): Promise<number> {
+  const { getSynced } = await import('./store');
+  const records = await getSynced();
+  let applied = 0;
+  for (const rec of records) {
+    const base = MONO_BY_ID.get(rec.drugId);
+    if (!base) continue;
+    let overlay: Partial<Monograph>;
+    try {
+      overlay = JSON.parse(rec.json) as Partial<Monograph>;
+    } catch {
+      continue;
+    }
+    const merged = mergeOverlay(base, overlay);
+    MONO_BY_ID.set(rec.drugId, merged);
+    const idx = MONOGRAPHS.findIndex((m) => m.id === rec.drugId);
+    if (idx >= 0) MONOGRAPHS[idx] = merged;
+    applied++;
+  }
+  return applied;
+}
