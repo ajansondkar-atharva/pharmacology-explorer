@@ -5,7 +5,7 @@ import './styles/design-system.css';
 import './styles/fonts.css';
 import { el, $, $$, svgIcon, ICONS, type IconName } from './lib/dom';
 import { navigate, initRouter, getViewLabel, type ViewKey } from './lib/router';
-import { initStore, getPrefs, setPref, addRecentSearch, getRecentSearches } from './lib/store';
+import { initStore, getPrefs, setPref, addRecentSearch, getRecentSearches, getBasket } from './lib/store';
 import { buildSearchIndex, search, highlightName, searchIndexSize, type SearchDoc } from './lib/search';
 import { catalogStats, applySyncedOverlays } from './lib/catalog';
 import { toast } from './lib/toast';
@@ -375,9 +375,9 @@ function initShell(): void {
   $$('.nav-link').forEach((n) => n.addEventListener('click', () => closeSidebar()));
   const basket = $('.basket-pill')!;
   basket.addEventListener('click', () => navigate('saved'));
-  import('./lib/store').then(({ getBasket }) => getBasket().then((ids) => {
+  void getBasket().then((ids) => {
     $('#basketCount')!.textContent = String(ids.length);
-  }));
+  });
 }
 
 function closeSidebar(): void {
@@ -399,39 +399,61 @@ function updateCrumb(): void {
 
 /* ---------- boot ---------- */
 
+function bootError(message: string): HTMLElement {
+  const wrap = el('div', { style: 'max-width:620px;margin:12vh auto 0;text-align:center;padding:0 20px' },
+    el('div', { class: 'h2', style: 'margin-bottom:12px' }, 'Something went wrong'),
+    el('p', { class: 'text-muted', style: 'margin-bottom:18px' },
+      'The app failed to start. Reloading usually fixes it — if the problem persists, the error below helps diagnose it.'),
+    el('div', { class: 'mono', style: 'font-size:12px;color:var(--text-muted);margin:0 auto 18px;max-width:560px;padding:12px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface);overflow-wrap:anywhere;text-align:left' }, message),
+    el('button', { class: 'btn btn-primary' }, 'Reload'));
+  const btn = wrap.querySelector('button')!;
+  btn.addEventListener('click', () => location.reload());
+  return wrap;
+}
+
 async function boot(): Promise<void> {
-  registerViews();
-  buildNav();
-  initShell();
-  await initTheme();
-  initSearch();
-  initPalette();
-  initShortcuts();
-  await initStore();
-  await applySyncedOverlays();
-  buildSearchIndex();
-  updateCrumb();
-  window.addEventListener('hashchange', updateCrumb);
+  try {
+    registerViews();
+    await initStore();
+    buildNav();
+    initShell();
+    await initTheme();
+    initSearch();
+    initPalette();
+    initShortcuts();
+    await applySyncedOverlays();
+    buildSearchIndex();
+    updateCrumb();
+    window.addEventListener('hashchange', updateCrumb);
 
-  // sync badge: click → sync panel
-  const badge = $('#syncBadge')!;
-  const label = $('#syncLabel')!;
-  badge.classList.add('offline');
-  label.textContent = 'local';
-  badge.style.cursor = 'pointer';
-  badge.setAttribute('role', 'button');
-  badge.setAttribute('tabindex', '0');
-  badge.title = `Local-first — ${catalogStats().drugs} monographs offline. Click to open the sync engine.`;
-  const openSync = () => navigate('sync');
-  badge.addEventListener('click', openSync);
-  badge.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSync(); }
-  });
+    // sync badge: click → sync panel
+    const badge = $('#syncBadge')!;
+    const label = $('#syncLabel')!;
+    badge.classList.add('offline');
+    label.textContent = 'local';
+    badge.style.cursor = 'pointer';
+    badge.setAttribute('role', 'button');
+    badge.setAttribute('tabindex', '0');
+    badge.title = `Local-first — ${catalogStats().drugs} monographs offline. Click to open the sync engine.`;
+    const openSync = () => navigate('sync');
+    badge.addEventListener('click', openSync);
+    badge.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSync(); }
+    });
 
-  initRouter();
+    initRouter();
 
-  // boot log
-  console.info(`[pharm-explorer] booted: ${searchIndexSize()} indexed entries, storage=${storageMode}`);
+    // boot log
+    console.info(`[pharm-explorer] booted: ${searchIndexSize()} indexed entries, storage=${storageMode}`);
+  } catch (err) {
+    // never fail silently — a dead shell with no content is the worst possible UX
+    console.error('[pharm-explorer] boot failed:', err);
+    const app = document.getElementById('app');
+    if (app) {
+      app.innerHTML = '';
+      app.appendChild(bootError(err instanceof Error ? err.message : String(err)));
+    }
+  }
 }
 
 void boot();

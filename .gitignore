@@ -5,3 +5,4 @@ dist-portable/
 .DS_Store
 .vite/
 coverage/
+.shots/
