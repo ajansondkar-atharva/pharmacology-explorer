@@ -175,9 +175,11 @@ kbd{
   border:1px solid transparent;
   transition:background .15s ease,color .15s ease;
   white-space:nowrap;
+  width:100%;
 }
 .nav-link:hover{background:var(--surface);color:var(--text);}
-.nav-link.active{background:var(--surface-2);color:var(--text);border-color:var(--border);}
+.nav-link.active{background:rgba(62,217,197,.09);color:var(--accent);border-color:rgba(62,217,197,.22);}
+.nav-link.active svg{color:var(--accent);}
 .nav-link.active .nav-dot{background:var(--accent);}
 .nav-link svg{flex:none;}
 .nav-dot{width:6px;height:6px;border-radius:50%;background:var(--text-faint);flex:none;}
@@ -229,7 +231,7 @@ main#app{padding:28px 36px 90px;max-width:1360px;width:100%;margin:0 auto;}
   width:100%;background:var(--surface);border:1px solid var(--border);color:var(--text);
   padding:9px 13px 9px 36px;border-radius:10px;font-size:13.5px;font-family:var(--font-body);
 }
-.search-input::placeholder{color:var(--text-faint);}
+.search-input::placeholder{color:var(--text-muted);}
 .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-faint);pointer-events:none;}
 .search-results{
   position:absolute;top:calc(100% + 6px);left:0;right:0;

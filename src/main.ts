@@ -8,7 +8,7 @@ import { navigate, initRouter, getViewLabel, type ViewKey } from './lib/router';
 import { initStore, getPrefs, setPref, addRecentSearch, getRecentSearches, getBasket } from './lib/store';
 import { buildSearchIndex, search, highlightName, searchIndexSize, type SearchDoc } from './lib/search';
 import { catalogStats, applySyncedOverlays } from './lib/catalog';
-import { toast } from './lib/toast';
+import { toast, toastAction } from './lib/toast';
 import { registerViews } from './views';
 import { storageMode } from './lib/store';
 
@@ -397,6 +397,20 @@ function updateCrumb(): void {
   $('#crumb')!.innerHTML = `Pharm.Explorer <span style="color:var(--text-faint)">/</span> <b>${label}</b>`;
 }
 
+/* ---------- PWA update prompt ---------- */
+
+function initPwa(): void {
+  if (!('serviceWorker' in navigator)) return;
+  // boot() is async (IndexedDB), so the `load` event may already have fired
+  // by the time we get here — register directly instead of waiting for it.
+  void import('virtual:pwa-register').then(({ registerSW }) => {
+    registerSW({ immediate: true });
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      toastAction('A new version is available.', 'Reload', () => location.reload());
+    });
+  }).catch(() => { /* SW registration unavailable — offline-first still works via HTTP cache */ });
+}
+
 /* ---------- boot ---------- */
 
 function bootError(message: string): HTMLElement {
@@ -421,6 +435,7 @@ async function boot(): Promise<void> {
     initSearch();
     initPalette();
     initShortcuts();
+    initPwa();
     await applySyncedOverlays();
     buildSearchIndex();
     updateCrumb();

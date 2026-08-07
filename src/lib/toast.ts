@@ -27,3 +27,13 @@ export function toast(message: string, kind: ToastKind = 'info', duration = 2600
     setTimeout(() => t.remove(), 320);
   }, duration);
 }
+
+/** Toast with a persistent action button (e.g. "Reload" for SW updates). */
+export function toastAction(message: string, actionLabel: string, onClick: () => void, duration = 30000): void {
+  const t = el('div', { class: 'toast' },
+    el('span', { style: 'flex:1;min-width:0' }, message),
+    el('button', { class: 'btn btn-primary btn-sm', style: 'flex:none' }, actionLabel));
+  t.querySelector('button')!.addEventListener('click', onClick);
+  getWrap().appendChild(t);
+  setTimeout(() => t.remove(), duration);
+}
